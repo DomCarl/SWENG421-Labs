@@ -1,0 +1,15 @@
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\bin\Debug\net6.0\M1_M2_Lab.exe
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\bin\Debug\net6.0\M1_M2_Lab.deps.json
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\bin\Debug\net6.0\M1_M2_Lab.runtimeconfig.json
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\bin\Debug\net6.0\M1_M2_Lab.dll
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\bin\Debug\net6.0\M1_M2_Lab.pdb
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\obj\Debug\net6.0\M1_M2_Lab.csproj.AssemblyReference.cache
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\obj\Debug\net6.0\M1_M2_Lab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\obj\Debug\net6.0\M1_M2_Lab.AssemblyInfoInputs.cache
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\obj\Debug\net6.0\M1_M2_Lab.AssemblyInfo.cs
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\obj\Debug\net6.0\M1_M2_Lab.csproj.CoreCompileInputs.cache
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\obj\Debug\net6.0\M1_M2_Lab.dll
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\obj\Debug\net6.0\refint\M1_M2_Lab.dll
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\obj\Debug\net6.0\M1_M2_Lab.pdb
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\obj\Debug\net6.0\M1_M2_Lab.genruntimeconfig.cache
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\M1_M2_Lab\M1_M2_Lab\obj\Debug\net6.0\ref\M1_M2_Lab.dll

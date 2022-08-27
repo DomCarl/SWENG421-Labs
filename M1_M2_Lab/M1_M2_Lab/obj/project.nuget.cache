@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3pzTFqQacua8XLNpapzA33Fwy0DnPKhWLIG+Un5amtYRWNnsyS4U9x8SJxKut8wKtVaCSaMCHgimEveU/zrDEQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\M1_M2_Lab\\M1_M2_Lab\\M1_M2_Lab.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jason\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22621.26\\microsoft.windows.sdk.net.ref.10.0.22621.26.nupkg.sha512"
+  ],
+  "logs": []
+}
