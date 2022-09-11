@@ -1,4 +1,5 @@
 ﻿using AccessControl;
+using Lab3;
 using System;
 
 namespace MyNamespace
@@ -9,6 +10,7 @@ namespace MyNamespace
         {
             Accountant accountant = new Accountant();
             Blacksmith b = new Blacksmith();
+            Owner o = new Owner();
 
             accountant.Update(b, 65000);
 

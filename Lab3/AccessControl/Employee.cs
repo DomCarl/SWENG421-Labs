@@ -13,7 +13,7 @@ namespace AccessControl
         private string title;
         private int salary;
 
-        private void setSalary(int amt)
+        internal void setSalary(int amt)
         {
             salary = amt;
         }
@@ -23,9 +23,9 @@ namespace AccessControl
             return salary;
         }
 
-        public void send(Employee p, string message)
+        public void send(Employee p, Employee o, string message)
         {
-            Console.WriteLine(Owner.name + " is sending " + p.name + " a message: " + message);
+            Console.WriteLine(o.name + " is sending " + p.name + " a message: " + message);
         }
     }
 }

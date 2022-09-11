@@ -8,7 +8,7 @@ namespace AccessControl
 {
     public class Accountant: Employee
     {
-        private void Update(Employee p, int amt)
+        public void Update(Employee p, int amt)
         {
             p.setSalary(amt);
         }
