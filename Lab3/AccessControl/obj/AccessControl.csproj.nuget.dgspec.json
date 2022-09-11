@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj": {}
+    "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj": {
+    "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj",
+        "projectUniqueName": "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj",
         "projectName": "AccessControl",
-        "projectPath": "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj",
-        "packagesPath": "C:\\Users\\Jason\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab3\\AccessControl\\obj\\",
+        "projectPath": "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj",
+        "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab3\\AccessControl\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Dom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,17 +45,11 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
         }
       }
     }

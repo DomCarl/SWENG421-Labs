@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
-    class Company
+    interface Company
     {
+        public void send();
 
+        public void evaluate();
+
+        public void update();
+
+        public void perform();
     }
 }

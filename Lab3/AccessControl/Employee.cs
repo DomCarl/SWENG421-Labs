@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace AccessControl
 {
-    public class Employee
+    public abstract class Employee
     {
-        public string name;
-        public int age;
-        public string title;
-        int salary;
+        private string name;
+        private int age;
+        private string title;
+        private int salary;
 
-        internal void setSalary(int amt)
+        private void setSalary(int amt)
         {
             salary = amt;
         }
@@ -21,6 +21,11 @@ namespace AccessControl
         public int getSalary()
         {
             return salary;
+        }
+
+        public void send(Employee p, string message)
+        {
+            Console.WriteLine(Owner.name + " is sending " + p.name + " a message: " + message);
         }
     }
 }

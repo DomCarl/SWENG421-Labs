@@ -9,6 +9,6 @@ namespace Lab3
 {
     class Owner: Employee
     {
-
+        private string name;
     }
 }
