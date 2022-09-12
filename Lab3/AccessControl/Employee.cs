@@ -13,19 +13,14 @@ namespace AccessControl
         private string title;
         private int salary;
 
-        internal void setSalary(int amt)
-        {
-            salary = amt;
-        }
-
-        public void send(Employee p, Employee o, string message)
-        {
-            Console.WriteLine(o.name + " is sending " + p.name + " a message: " + message);
-        }
-
         public string getName()
         {
             return name;
+        }
+
+        public void setName(string name)
+        {
+            this.name = name;
         }
 
         public int getAge()
@@ -33,14 +28,29 @@ namespace AccessControl
             return age;
         }
 
+        public void setAge(int age)
+        {
+            this.age = age;
+        }
+
         public string getTitle()
         {
             return title;
         }
 
+        public void setTitle(string title)
+        {
+            this.title = title;
+        }
+
         public int getSalary()
         {
             return salary;
+        }
+
+        public void setSalary(int amt)
+        {
+            this.salary = amt;
         }
     }
 }

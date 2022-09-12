@@ -8,9 +8,11 @@ namespace MyNamespace
     {
         static void Main(string[] args)
         {
-            Employee acc = new Accountant();
+            Employee jane = new Accountant("Jane", 45);
+            Employee joe = new Accountant("Joe", 56);
 
-            Console.WriteLine(acc.getName());
+            Employee john = new Manager("John", 28);
+            Employee mary = new Manager("Mary", 32);
         }
     }
 }

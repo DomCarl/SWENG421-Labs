@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
-    interface Company
+    public class Company
     {
-        public void send();
+        private string companyName;
 
-        public void evaluate();
-
-        public void update();
-
-        public void perform();
+        public Company()
+        {
+            this.companyName = "XYZ";
+        }
     }
 }
