@@ -8,16 +8,9 @@ namespace MyNamespace
     {
         static void Main(string[] args)
         {
-            Accountant accountant = new Accountant();
-            Blacksmith b = new Blacksmith();
-            Manager m = new Manager();
-            Owner o = new Owner();
+            Employee acc = new Accountant();
 
-            accountant.Update(b, 65000);
-            accountant.Update(m, 75000);
-
-            Console.WriteLine(b.getSalary());
-            Console.WriteLine(m.getSalary());
+            Console.WriteLine(acc.getName());
         }
     }
 }
