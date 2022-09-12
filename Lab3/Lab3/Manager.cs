@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab3
+namespace AccessControl
 {
     class Manager: Employee
     {
@@ -16,9 +16,15 @@ namespace Lab3
             this.setTitle("Manager");
             this.setSalary(50000);
         }
-        public void evaluate(Employee emp, int rating)
-        {
 
+        public override void evaluate(Employee emp, int rating)
+        {
+            Console.WriteLine(this.getName() + " evaluated " + emp.getName() + " with a score of " + rating);
+        }
+
+        public override void Delegate(Employee emp, Employee emp2, int rating)
+        {
+            emp.evaluate(emp2, rating);
         }
     }
 }

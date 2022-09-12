@@ -17,9 +17,25 @@ namespace AccessControl
             this.setSalary(45000);
         }
 
-        public void Update(Employee p, int amt)
+        public Accountant()
+        {
+
+        }
+
+        public override void Update(Employee p, int amt)
         {
             p.setSalary(amt);
+            Console.WriteLine(p.getName() + "'s salary is updated to: " + p.getSalary());
+        }
+
+        public override void perform(Task t)
+        {
+            Console.WriteLine(this.getName() + " is performing " + t.getTaskID());
+        }
+
+        public override void Delegate(Employee emp, Task t)
+        {
+            emp.perform(t);
         }
     }
 }

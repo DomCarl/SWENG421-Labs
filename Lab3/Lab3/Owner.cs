@@ -4,11 +4,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
-namespace Lab3
+namespace AccessControl
 {
     public class Owner: Employee
     {
-       
+       public Owner(int age)
+        {
+            this.setName("Craig");
+            this.setAge(age);
+            this.setTitle("Owner");
+        }
+
+        public override void Send(string message, Employee emp)
+        {
+            Console.WriteLine(this.getName() + " is sending a message to " + emp.getName());
+            Console.WriteLine(message);
+        }
     }
 }

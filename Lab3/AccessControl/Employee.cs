@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace AccessControl
 {
     public abstract class Employee
@@ -51,6 +52,36 @@ namespace AccessControl
         public void setSalary(int amt)
         {
             this.salary = amt;
+        }
+
+        public virtual void Send(string message, Employee emp)
+        {
+
+        }
+
+        public virtual void evaluate(Employee emp, int rating)
+        {
+
+        }
+
+        public virtual void Delegate(Employee emp, Task t)
+        {
+
+        }
+
+        public virtual void Delegate(Employee emp, Employee emp2, int rating)
+        {
+
+        }
+
+        public virtual void perform(Task t)
+        {
+
+        }
+
+        public virtual void Update(Employee emp, int raise)
+        {
+
         }
     }
 }
