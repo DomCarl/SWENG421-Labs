@@ -13,3 +13,18 @@ C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\La
 C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Lab3\AccessControl\obj\Debug\net6.0\AccessControl.pdb
 C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Lab3\AccessControl\obj\Debug\net6.0\AccessControl.genruntimeconfig.cache
 C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Lab3\AccessControl\obj\Debug\net6.0\ref\AccessControl.dll
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\bin\Debug\net6.0\AccessControl.exe
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\bin\Debug\net6.0\AccessControl.deps.json
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\bin\Debug\net6.0\AccessControl.runtimeconfig.json
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\bin\Debug\net6.0\AccessControl.dll
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\bin\Debug\net6.0\AccessControl.pdb
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\obj\Debug\net6.0\AccessControl.csproj.AssemblyReference.cache
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\obj\Debug\net6.0\AccessControl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\obj\Debug\net6.0\AccessControl.AssemblyInfoInputs.cache
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\obj\Debug\net6.0\AccessControl.AssemblyInfo.cs
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\obj\Debug\net6.0\AccessControl.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\obj\Debug\net6.0\AccessControl.dll
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\obj\Debug\net6.0\refint\AccessControl.dll
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\obj\Debug\net6.0\AccessControl.pdb
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\obj\Debug\net6.0\AccessControl.genruntimeconfig.cache
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab3\AccessControl\obj\Debug\net6.0\ref\AccessControl.dll

@@ -18,14 +18,29 @@ namespace AccessControl
             salary = amt;
         }
 
-        public int getSalary()
-        {
-            return salary;
-        }
-
         public void send(Employee p, Employee o, string message)
         {
             Console.WriteLine(o.name + " is sending " + p.name + " a message: " + message);
+        }
+
+        public string getName()
+        {
+            return name;
+        }
+
+        public int getAge()
+        {
+            return age;
+        }
+
+        public string getTitle()
+        {
+            return title;
+        }
+
+        public int getSalary()
+        {
+            return salary;
         }
     }
 }

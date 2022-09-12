@@ -8,6 +8,11 @@ namespace AccessControl
 {
     public class Accountant: Employee
     {
+
+        public Accountant()
+        {
+
+        }
         public void Update(Employee p, int amt)
         {
             p.setSalary(amt);

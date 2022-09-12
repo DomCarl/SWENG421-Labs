@@ -9,5 +9,9 @@ namespace Lab3
 {
     class Manager: Employee
     {
+        public void evaluate(Employee emp)
+        {
+
+        }
     }
 }
