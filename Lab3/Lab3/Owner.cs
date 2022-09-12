@@ -1,4 +1,10 @@
-﻿using AccessControl;
+﻿/*
+ * Class Owner
+ * Dominick Carlucci and Jason Cross
+ * Due: 9/11/22
+ */
+
+using AccessControl;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,4 +1,10 @@
-﻿using AccessControl;
+﻿/*
+ * Class Blacksmith
+ * Dominick Carlucci and Jason Cross
+ * Due: 9/11/22
+ */
+
+using AccessControl;
 using Task = AccessControl.Task;
 
 namespace Lab3

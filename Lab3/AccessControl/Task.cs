@@ -4,6 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * Class Task
+ * Dominick Carlucci and Jason Cross
+ * Due: 9/11/22
+ */
+
 namespace AccessControl
 {
     public class Task

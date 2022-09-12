@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Class Company
+ * Dominick Carlucci and Jason Cross
+ * Due: 9/11/22
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

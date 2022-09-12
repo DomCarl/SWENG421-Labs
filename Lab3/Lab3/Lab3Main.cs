@@ -1,4 +1,10 @@
-﻿using AccessControl;
+﻿/*
+ * Class Lab3Main
+ * Dominick Carlucci and Jason Cross
+ * Due: 9/11/22
+ */
+
+using AccessControl;
 using Lab3;
 
 namespace MyNamespace
