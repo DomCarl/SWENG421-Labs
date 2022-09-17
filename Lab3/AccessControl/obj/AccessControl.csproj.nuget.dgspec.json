@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj": {}
+    "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj": {
+    "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj",
+        "projectUniqueName": "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj",
         "projectName": "AccessControl",
-        "projectPath": "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj",
-        "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab3\\AccessControl\\obj\\",
+        "projectPath": "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab3\\AccessControl\\AccessControl.csproj",
+        "packagesPath": "C:\\Users\\Jason\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab3\\AccessControl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
