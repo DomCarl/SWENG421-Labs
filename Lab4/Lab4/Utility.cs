@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Utility.cs class 
+ * Jason Cross and Dominick Carlucci
+ * Due Date: September 18 2022 11:59 p.m.
+ */
+
+using System;
 using System.Collections;
 using System.Linq;
 using System.Text;
