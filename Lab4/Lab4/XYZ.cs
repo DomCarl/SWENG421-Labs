@@ -23,23 +23,17 @@ namespace Lab4
             desks.Add(new Desk(3) { name = "Desk 3", price = 25.13 });
             desks.Add(new Desk(4) { name = "Desk 4", price = 5.85 });
 
-            Utility<Desk> first = new Utility<Desk>();
+            Utility<Desk> first = new UtilityBubblesort<Desk>();
 
             List<Desk> defaultSort = first.Sort(desks);
 
-            foreach (Desk desk in defaultSort)
-            {
-                Console.WriteLine(desk.getID() + " " + desk.name + " " + desk.price);
-            }
+            first.print(defaultSort);
 
             Utility<Desk> utility = new UtilityQuicksort<Desk>();
 
             List<Desk> quickSortList = utility.Sort(desks);
 
-            foreach (Desk desk in quickSortList)
-            {
-                Console.WriteLine(desk.price + " " + desk.name + " " + desk.getID());
-            }
+            utility.print(quickSortList);
         }
     }
 }

@@ -38,5 +38,13 @@ namespace Lab4
             sorted.AddRange(Sort(greater));
             return sorted;
         }
+
+        public override void print(List<Desk> list)
+        {
+            foreach (Desk desk in list)
+            {
+                Console.WriteLine(desk.price + " " + desk.name + " " + desk.getID());
+            }
+        }
     }
 }
