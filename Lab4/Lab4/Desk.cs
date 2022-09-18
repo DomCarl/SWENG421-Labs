@@ -6,25 +6,20 @@ using System.Threading.Tasks;
 
 namespace Lab4
 {
-    internal class T
+    public class Desk: ProductIF
     {
-        public double price;
-        string ID;
+        private int ID;
         public string name;
+        public double price;
         
-        T(string ID)
+        public Desk(int ID)
         {
             this.ID = ID;
-        }        
+        }
 
         public void setPrice(double price)
         {
-            this.price = price;            
-        }
-
-        public double getPrice()
-        {
-            return price;
+            this.price = price;
         }
 
         public void setName(string name)
@@ -32,14 +27,19 @@ namespace Lab4
             this.name = name;
         }
 
+        public int getID()
+        {
+            return ID;
+        }
+
         public string getName()
         {
             return name;
         }
 
-        public string getID()
+        public double getPrice()
         {
-            return ID;
-        }
+            return price;
+        }              
     }
 }

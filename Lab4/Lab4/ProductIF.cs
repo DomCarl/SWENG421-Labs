@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lab4
 {
-    internal interface ProductIF
-    {
+    public interface ProductIF
+    {     
+        public void setPrice(double price)
+        {
+            
+        }        
+
+        public void setName(string name)
+        {
+           
+        }        
     }
 }
