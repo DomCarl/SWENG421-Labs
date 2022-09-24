@@ -4,3 +4,9 @@ Lab5/.vs/Lab5/v17/.suo
 *.cache
 *.resx
 *.settings
+*.vsidx
+*.lock
+*.pdb
+*.resources
+Lab5/Lab5/obj/Debug/Lab5.csproj.FileListAbsolute.txt
+Lab5/Lab5/bin/Debug/Lab5.exe

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab5
 {
-    internal class Initialize
+    public class Initialize
     {
     }
 }

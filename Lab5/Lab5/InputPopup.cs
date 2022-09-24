@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Lab5
 {
-    public partial class Form1 : Form
+    public partial class InputPopup : Form
     {
-        public Form1()
+        public InputPopup()
         {
             InitializeComponent();
         }

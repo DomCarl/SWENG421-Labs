@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lab5
 {
-    public class Subtract
+    public class Log: COMP
     {
+        
     }
 }

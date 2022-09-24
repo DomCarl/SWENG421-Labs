@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Lab5
 {
-    internal static class Program
+    public static class Lab5Main
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace Lab5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
     }
 }
