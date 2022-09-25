@@ -8,6 +8,16 @@ namespace Lab5
 {
     public class Log: COMP
     {
-        
+        public override void Compute()
+        {
+
+        }
+
+        public void LogEmDown(MainForm mf)
+        {
+            double log = Math.Log(Get());
+
+            mf.outputLabel.Text = log.ToString();
+        }
     }
 }
