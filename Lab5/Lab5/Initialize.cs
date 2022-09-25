@@ -8,5 +8,11 @@ namespace Lab5
 {
     public class Initialize
     {
+        double inputVal;
+
+        public Initialize(InputPopup ip)
+        {
+            inputVal = ip.inputVal;
+        }
     }
 }

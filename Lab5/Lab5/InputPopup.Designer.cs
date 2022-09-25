@@ -58,6 +58,7 @@
             this.inputBtn.TabIndex = 2;
             this.inputBtn.Text = "OK";
             this.inputBtn.UseVisualStyleBackColor = true;
+            this.inputBtn.Click += new System.EventHandler(this.inputBtn_Click);
             // 
             // InputPopup
             // 

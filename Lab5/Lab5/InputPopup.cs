@@ -12,9 +12,16 @@ namespace Lab5
 {
     public partial class InputPopup : Form
     {
+        public double inputVal;
+        
         public InputPopup()
         {
             InitializeComponent();
+        }
+
+        private void inputBtn_Click(object sender, EventArgs e)
+        {
+            inputVal = Convert.ToDouble(inputTB.Text);            
         }
     }
 }

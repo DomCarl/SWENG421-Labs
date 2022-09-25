@@ -13,13 +13,13 @@ namespace Lab5
             
         }
 
-        public void AddEmUp(double val)
+        public void AddEmUp(double val, MainForm mf)
         {
             double sum = Get() + val;
 
             Set(sum);
-
-            MainForm.outputLabel.Text = sum.ToString();
+            
+            mf.outputLabel.Text = sum.ToString();
         }
     }
 }

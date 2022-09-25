@@ -8,11 +8,11 @@ namespace Lab5
 {
     public class COMP
     {
-        private double currentValue = 0;
+        private double currentValue;
 
         public COMP()
         {
-            currentValue = 0;
+            
         }
 
         public void Set(double value)
