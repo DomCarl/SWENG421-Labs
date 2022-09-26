@@ -1,18 +1,24 @@
-﻿using System;
+﻿/**
+ * Initialize.cs class
+ * @author Jason Cross, Dominick Carlucci
+ * Due Date: 9/25/22 11:59 p.m.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Lab5
 {
-    public class Initialize
+    public class Initialize : COMP
     {
-        double inputVal;
-
-        public Initialize(InputPopup ip)
+        public override void Compute()
         {
-            inputVal = ip.inputVal;
+            Set(0);
+            MessageBox.Show("Initializing");
         }
     }
 }

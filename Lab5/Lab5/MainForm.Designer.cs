@@ -41,6 +41,8 @@
             this.compCB.Size = new System.Drawing.Size(121, 21);
             this.compCB.TabIndex = 0;
             this.compCB.Text = "Choose computation";
+            this.compCB.SelectedIndexChanged += new System.EventHandler(this.compCB_SelectedIndexChanged);
+            
             // 
             // CompLabel
             // 
@@ -59,7 +61,6 @@
             this.outputLabel.Size = new System.Drawing.Size(39, 13);
             this.outputLabel.TabIndex = 2;
             this.outputLabel.Text = "Output";
-            
             // 
             // MainForm
             // 

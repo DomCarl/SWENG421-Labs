@@ -48,7 +48,7 @@
             this.inputTB.Name = "inputTB";
             this.inputTB.Size = new System.Drawing.Size(100, 20);
             this.inputTB.TabIndex = 1;
-            this.inputTB.Text = "Enter a number";
+            this.inputTB.Text = "10";
             // 
             // inputBtn
             // 
