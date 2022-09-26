@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Lab5
 {
@@ -16,6 +17,7 @@ namespace Lab5
     {
         public override void Compute()
         {
+            MessageBox.Show("Computing Log");
             LogEmDown();
         }
 

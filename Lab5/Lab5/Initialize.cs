@@ -18,7 +18,7 @@ namespace Lab5
         public override void Compute()
         {
             Set(0);
-            MessageBox.Show("Initializing");
+            MessageBox.Show("Initializing")
         }
     }
 }
