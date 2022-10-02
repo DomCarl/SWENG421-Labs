@@ -1,4 +1,13 @@
 
 *.vsidx
+<<<<<<< Updated upstream
 Lab6/.vs/Lab6/v17/.suo
 *.cache
+=======
+*.lock
+*.pdb
+*.resources
+Lab5/Lab5/obj/Debug/Lab5.csproj.FileListAbsolute.txt
+Lab5/Lab5/bin/Debug/Lab5.exe
+Lab6/.vs/Lab6/v17/.suo
+>>>>>>> Stashed changes
