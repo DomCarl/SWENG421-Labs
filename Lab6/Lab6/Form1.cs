@@ -16,5 +16,16 @@ namespace Lab6
         {
             InitializeComponent();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = this.panel1.CreateGraphics();
+            Pen blackPen = new Pen(Color.Black, 3);
+
+            PointF p1 = new PointF(100.0F, 100.0F);
+            PointF p2 = new PointF(500.0F, 200.0F);
+
+            e.Graphics.DrawLine(blackPen, p1, p2);
+        } 
     }
 }

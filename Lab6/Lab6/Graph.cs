@@ -49,17 +49,14 @@ namespace Lab6
             return id;
         }
 
-        public void setID(int id)
+        public void setID()
         {
-            
+            this.id = id;
         }
 
         public object Clone()
         {
-            try
-            {
-                return base.MemberwiseClone();
-            }
+            return new object();
         }
     }
 }
