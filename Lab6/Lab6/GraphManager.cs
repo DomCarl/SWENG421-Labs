@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * GraphManager.cs class
+ * Due Date: 10/2/22 11:59 pm
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +12,9 @@ using System.Threading.Tasks;
 
 namespace Lab6
 {
-    internal class GraphManager
+    public class GraphManager
     {
-        private List<Graph> graphs;
+        public List<Graph> graphs;
 
         public GraphManager()
         {
@@ -23,6 +29,7 @@ namespace Lab6
         public void CopyGraph(Graph g)
         {
             Graph newGraph = (Graph)g.Clone();
+            newGraph.setID(graphs.Count + 1);
             graphs.Add(newGraph);
         }
 

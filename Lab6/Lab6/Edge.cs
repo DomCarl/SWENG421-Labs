@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * Edge.cs class
+ * Due Date: 10/2/22 11:59 pm
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +12,18 @@ using System.Threading.Tasks;
 
 namespace Lab6
 {
-    internal class Edge
+    public class Edge
     {
-        private int edgeNo;
-        private Vertex fromVert;
-        private Vertex toVert;
+        public int edgeNo;
+        public Vertex fromVert;
+        public Vertex toVert;
+
+        public Edge(int edgeNo, Vertex fromVert, Vertex toVert)
+        {
+            this.edgeNo = edgeNo;
+            this.fromVert = fromVert;
+            this.toVert = toVert;
+        }
 
         public void setEdgeNo(int edgeNo)
         {

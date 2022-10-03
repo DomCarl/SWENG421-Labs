@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * Program.cs class
+ * Due Date: 10/2/22 11:59 pm
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

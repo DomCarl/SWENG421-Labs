@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * Vertex.cs class
+ * Due Date: 10/2/22 11:59 pm
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +12,18 @@ using System.Threading.Tasks;
 
 namespace Lab6
 {
-    internal class Vertex
+    public class Vertex
     {
-        private int vertexNo;
-        private int x_coord;
-        private int y_coord;
+        public int vertexNo;
+        public int x_coord;
+        public int y_coord;
+
+        public Vertex(int vertexNo, int x_coord, int y_coord)
+        {
+            this.vertexNo = vertexNo;
+            this.x_coord = x_coord;
+            this.y_coord = y_coord;
+        }
 
         public void setVertexNo(int vertexNo)
         {

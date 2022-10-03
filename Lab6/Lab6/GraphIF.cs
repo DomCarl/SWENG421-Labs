@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * GraphIF.cs class
+ * Due Date: 10/2/22 11:59 pm
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +18,7 @@ namespace Lab6
 
         int getID();
 
-        void setID();
+        void setID(int id);
         
     }    
 }
