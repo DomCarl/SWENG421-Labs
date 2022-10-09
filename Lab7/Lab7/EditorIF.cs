@@ -8,10 +8,12 @@ namespace Lab7
 {
     internal interface EditorIF
     {
-        void Save(string name);
+        void Save();
 
-        Novel Retrieve(string name);
 
-        void Delete(string name);
+        void Retrieve();
+
+
+        void Delete();        
     }
 }

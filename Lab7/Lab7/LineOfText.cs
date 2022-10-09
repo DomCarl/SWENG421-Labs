@@ -7,17 +7,36 @@ using System.Threading.Tasks;
 namespace Lab7
 {
     internal class LineOfText : CompositeNovelIttyBits
-    {
-        private string text;
+    {        
+        List<NovelIttyBitsIF> al = new List<NovelIttyBitsIF>();
+        public Character character = new Character();
 
-        public void setText(string text)
+        public void Save()
         {
-            this.text = text;
+            Console.WriteLine("Saving!");
         }
 
-        public string getText()
+        public void Retrieve()
         {
-            return text;
+            Console.WriteLine("Retrieving!");
+        }
+
+        public void View()
+        {
+            for (int i = 0; i < al.Count; i++)
+            {
+                Console.Write(character.ch);
+            }
+        }
+
+        public void Edit()
+        {
+            Console.WriteLine("Editing!");
+        }
+
+        public void Delete()
+        {
+            Console.WriteLine("Deleting!");
         }
     }
 }

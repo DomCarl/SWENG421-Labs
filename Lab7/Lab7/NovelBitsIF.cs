@@ -8,6 +8,18 @@ namespace Lab7
 {
     internal interface NovelBitsIF
     {
-        
+        void Save();
+
+
+        void Retrieve();
+
+
+        void View();
+
+
+        void Edit();
+
+
+        void Delete();        
     }
 }

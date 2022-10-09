@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace Lab7
 {
-    internal interface AdminIF
+    internal class Writer
     {
-        void Save();
+        Novel novel;
+        
+        void View()
+        {
+            
+        }
 
 
-        void Retrieve();
+        void Edit()
+        {
 
-
-        void View();
-
-
-        void Edit();
-
-
-        void Delete();
+        }
         
     }
 }

@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace Lab7
 {
-    internal class NovelIttyBitsIF: NovelBitsIF
+    internal interface NovelIttyBitsIF: NovelBitsIF
     {
+        void Save();
         
+
+        void Retrieve();
+
+
+        void View();
+
+
+        void Edit();
+        
+
+        void Delete();        
     }
 }

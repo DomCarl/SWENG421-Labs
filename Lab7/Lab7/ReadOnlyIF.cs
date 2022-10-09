@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab7
 {
-    internal interface WriterIF
+    internal interface ReadOnlyIF
     {
-        Novel View(string name);
-
-        void Edit(string name);
     }
 }
