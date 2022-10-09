@@ -49,11 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminIF.cs" />
+    <Compile Include="Admin.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="Column.cs" />
     <Compile Include="CompositeNovelIttyBits.cs" />
-    <Compile Include="EditorIF.cs" />
+    <Compile Include="Editor.cs" />
     <Compile Include="Frame.cs" />
     <Compile Include="Image.cs" />
     <Compile Include="LineOfText.cs" />

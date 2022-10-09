@@ -12,14 +12,23 @@ using System.Threading.Tasks;
 
 namespace Lab7
 {
-    internal interface EditorIF
+    internal class Editor: ReadOnlyIF
     {
-        void Save();
+        public void Save()
+        {
+            
+        }
 
 
-        void Retrieve();
+        public void Retrieve()
+        {
+            
+        }
 
 
-        void Delete();        
+        public void Delete()
+        {
+            
+        }
     }
 }

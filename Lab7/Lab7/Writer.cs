@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Lab7
 {
-    internal class Writer
+    internal class Writer : ReadOnlyIF
     {
         Novel novel;
         
