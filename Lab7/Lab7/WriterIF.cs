@@ -8,5 +8,8 @@ namespace Lab7
 {
     internal interface WriterIF
     {
+        Novel View(string name);
+
+        void Edit(string name);
     }
 }
