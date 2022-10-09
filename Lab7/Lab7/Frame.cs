@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * Frame.cs class
+ * Due Date: 10/9/22 11:59 p.m.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,7 +28,10 @@ namespace Lab7
 
         public void View()
         {
-
+            for (int i = 0; i < al.Count; i++)
+            {
+                al[i].View();
+            }
         }
 
         public void Edit()

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * Character.cs class
+ * Due Date: 10/9/22 11:59 p.m.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,7 +38,7 @@ namespace Lab7
 
         public void View()
         {
-            Console.WriteLine(ch);
+            Console.Write(ch);
         }
 
         public void Edit()

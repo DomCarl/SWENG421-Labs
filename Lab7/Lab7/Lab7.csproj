@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{ED8D53D9-A031-4068-B899-9B36F8AAEEC1}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>Lab7</RootNamespace>
     <AssemblyName>Lab7</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,7 +52,7 @@
     <Compile Include="AdminIF.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="Column.cs" />
-    <Compile Include="CompositeNovelBits.cs" />
+    <Compile Include="CompositeNovelIttyBits.cs" />
     <Compile Include="EditorIF.cs" />
     <Compile Include="Frame.cs" />
     <Compile Include="Image.cs" />
