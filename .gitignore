@@ -2,3 +2,5 @@
 Lab7/.vs/Lab7/v17/.suo
 *.cache
 *.resx
+*.vsidx
+*.lock

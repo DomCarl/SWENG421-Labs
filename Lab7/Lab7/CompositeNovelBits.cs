@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab7
 {
-    internal class CompositeNovelBits: NovelBitsIF
+    internal class CompositeNovelIttyBits: NovelIttyBitsIF
     {
         
     }

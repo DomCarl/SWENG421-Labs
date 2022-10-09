@@ -8,5 +8,7 @@ namespace Lab7
 {
     internal class Novel : NovelBitsIF
     {
+
+        
     }
 }

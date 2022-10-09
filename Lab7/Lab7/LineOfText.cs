@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Lab7
 {
-    internal class LineOfText : CompositeNovelBits
+    internal class LineOfText : CompositeNovelIttyBits
     {
+        private string text;
+
+        public void setText(string text)
+        {
+            this.text = text;
+        }
+
+        public string getText()
+        {
+            return text;
+        }
     }
 }
