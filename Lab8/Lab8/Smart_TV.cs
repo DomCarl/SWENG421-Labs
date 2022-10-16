@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace P_TV
 {
-    internal class Smart_TV : TV
+    public class Smart_TV : TV
     {
         private int price = 300;
 

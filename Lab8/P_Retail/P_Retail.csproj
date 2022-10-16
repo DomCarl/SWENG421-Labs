@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lab8\P_TV.csproj" />
+  </ItemGroup>
+
 </Project>

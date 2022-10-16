@@ -1,32 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "P_TV/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/P_TV.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/P_TV.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "P_TV/1.0.0": {
+      "type": "project",
+      "path": "../Lab8/P_TV.csproj",
+      "msbuildProject": "../Lab8/P_TV.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "P_TV >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\Jason\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Dom\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab8\\P_Retail\\P_Retail.csproj",
+      "projectUniqueName": "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab8\\P_Retail\\P_Retail.csproj",
       "projectName": "P_Retail",
-      "projectPath": "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab8\\P_Retail\\P_Retail.csproj",
-      "packagesPath": "C:\\Users\\Jason\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab8\\P_Retail\\obj\\",
+      "projectPath": "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab8\\P_Retail\\P_Retail.csproj",
+      "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab8\\P_Retail\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dom\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -40,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab8\\Lab8\\P_TV.csproj": {
+              "projectPath": "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab8\\Lab8\\P_TV.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace P_TV
 {
-    internal class UltraHD_TV : TV
+    public class UltraHD_TV : TV
     {
         private int price = 400;
 
