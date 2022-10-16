@@ -6,23 +6,24 @@ using System.Threading.Tasks;
 
 namespace P_TV
 {
-    public sealed class UltraHD_TV : TV
+    public class TV_Proxy : TV, TV_IF
     {
-        public UltraHD_TV()
-        {
-            this.setPrice(400);
-        }
+
+        public TV base_tv;
+        public TV_IF sony_tvif = new Sony_TV();
+        public TV_IF visio_tvif = new Visio_TV();
+        
 
         public Object replenishTV(int budget)
         {
             if (this.getPrice() <= budget)
             {
-                return new UltraHD_TV();
+                return new Sony_UltraHD_TV();
             }
             else
             {
-                return new Sony_Smart_TV().replenishTV(budget);
+                return new Visio_UltraHD_TV().replenishTV(budget);
             }
-        }
+        }        
     }
 }

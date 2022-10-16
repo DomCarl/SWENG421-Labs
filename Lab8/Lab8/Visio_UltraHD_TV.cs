@@ -8,21 +8,21 @@ namespace P_TV
 {
     public class Visio_UltraHD_TV : Visio_TV
     {
-        private int price = 450;
-
-        String getType()
+        public Visio_UltraHD_TV()
         {
-            return "UltraHD TV";
+            this.setPrice(450);
         }
 
-        int getPrice()
+        public Object replenishTV(int budget)
         {
-            return price;
-        }
-
-        public void getInfo()
-        {
-            Console.WriteLine("The price is " + this.getPrice() + " and the type is " + this.getType());
+            if (this.getPrice() <= budget)
+            {
+                return new Visio_UltraHD_TV();
+            }
+            else
+            {
+                return new UltraHD_TV().replenishTV(budget);
+            }
         }
     }
 }

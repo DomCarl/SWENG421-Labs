@@ -6,41 +6,30 @@ using System.Threading.Tasks;
 
 namespace P_TV
 {
-    public class Smart_TV : TV
+    public sealed class Smart_TV : TV
     {
-        private int price = 300;
-
-        void setPrice(int price)
+        public Smart_TV_IF stvif;
+        
+        public Smart_TV()
         {
-            this.price = price;
+            this.setPrice(300);
         }
 
-        int getPrice()
+        public Object replenishTV(int budget)
         {
-            return price;
-        }
-
-        public void getInfo()
-        {
-            this.getPrice();
-            this.getType();
-        }
-
-        String getType()
-        {
-            return "Smart TV";
-        }
-
-        public Smart_TV replenishSmartTV(int budget)
-        {
-            if (budget >= price)
+            if (this.getPrice() <= budget)
             {
                 return new Smart_TV();
             }
             else
             {
-                return null;
+                return new Sony_TV().replenishTV(budget);
             }
+        }
+
+        internal double getPowerUsage()
+        {
+            return 5.5;
         }
     }
 }

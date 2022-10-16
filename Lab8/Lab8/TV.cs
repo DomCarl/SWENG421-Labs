@@ -10,30 +10,29 @@ namespace P_TV
     {
         private int price = 200;
 
-        void setPrice(int price)
+        internal void setPrice(int price)
         {
             this.price = price;
         }
 
-        int getPrice()
+        internal int getPrice()
         {
             return price;
         }
 
         public void getInfo()
         {
-            this.getPrice();
-            this.getType();
+            Console.WriteLine("Type: " + this.getType() + " Price: " + this.getPrice());
         }
 
-        String getType()
+        internal String getType()
         {
-            return "TV";
+            return this.ToString();
         }
 
         public TV replenishTV(int budget)
         {
-            if (budget >= price)
+            if (this.price <= budget)
             {
                 return new TV();
             }

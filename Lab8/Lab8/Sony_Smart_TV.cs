@@ -6,28 +6,28 @@ using System.Threading.Tasks;
 
 namespace P_TV
 {
-    public class Visio_Smart_TV : Visio_TV, Smart_TV_IF
+    public class Sony_Smart_TV : Sony_TV, Smart_TV_IF
     {
-        public Visio_Smart_TV()
+        public Sony_Smart_TV()
         {
-            this.setPrice(350);
+            this.setPrice(380);
         }
 
         public Object replenishTV(int budget)
         {
             if (this.getPrice() <= budget)
             {
-                return new Visio_Smart_TV();
+                return new Sony_Smart_TV();
             }
             else
             {
-                return new Smart_TV().replenishTV(budget);
+                return new Visio_Smart_TV().replenishTV(budget);
             }
         }
 
         internal double getPowerUsage()
         {
-            return 6.35;
+            return 5.15;
         }
     }
 }

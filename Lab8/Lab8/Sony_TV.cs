@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace P_TV
 {
-    public class Visio_TV : TV_IF
+    public class Sony_TV : TV_IF
     {
-        private int price = 250;
+        private int price = 280;
 
         internal void setPrice(int price)
         {
@@ -34,17 +34,17 @@ namespace P_TV
         {
             if (budget >= price)
             {
-                return new Visio_TV();
+                return new Sony_TV();
             }
             else
             {
-                return new TV().replenishTV(budget);
+                return new Visio_TV().replenishTV(budget);
             }
         }
 
         internal String getBrand()
         {
-            return "Visio";
+            return "Sony";
         }
     }
 }

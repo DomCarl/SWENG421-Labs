@@ -11,8 +11,8 @@ namespace P_Retail
 {
     public class Retailer
     {
-        public int budget = 400;
-        public TV tv = new TV();
+        public TV tele;
 
+        
     }
 }
