@@ -10,12 +10,13 @@ namespace P_TV
     {
         public Sony_UltraHD_TV()
         {
-            this.setPrice(480);
+            setPrice(480);
+            setType("Ultra");
         }       
 
         public Object replenishTV(int budget)
         {
-            if (this.getPrice() <= budget)
+            if (budget >= getPrice())
             {
                 getInfo();
                 return new Sony_UltraHD_TV();
@@ -24,6 +25,11 @@ namespace P_TV
             {
                 return new Visio_UltraHD_TV().replenishTV(budget);
             }
+        }
+
+        internal String getType()
+        {
+            return "Ultra";
         }
     }
 }

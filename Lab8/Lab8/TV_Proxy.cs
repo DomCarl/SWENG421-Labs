@@ -17,7 +17,7 @@ namespace P_TV
         {
             if (budget >= getPrice())
             {
-                return new Visio_UltraHD_TV().replenishTV(budget);
+                return new Sony_UltraHD_TV().replenishTV(budget);
             }
             else
             {

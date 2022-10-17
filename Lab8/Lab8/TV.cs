@@ -8,7 +8,8 @@ namespace P_TV
 {
     public class TV
     {
-        private int price = 200;        
+        private int price = 200;
+        private String type = "Regular";
 
         internal void setPrice(int price)
         {
@@ -22,12 +23,17 @@ namespace P_TV
 
         public void getInfo()
         {
-            Console.WriteLine("Type: " + this.getType() + " Price: " + this.getPrice());
+            Console.WriteLine("The price is $" + getPrice() + ", and the type is " + getType());
+        }
+
+        internal void setType(String type)
+        {
+            this.type = type;
         }
 
         internal String getType()
         {
-            return this.ToString();
+            return type;
         }
 
         public Object replenishTV(int budget)

@@ -9,6 +9,7 @@ namespace P_TV
     public class Sony_TV : TV_IF
     {
         private int price = 280;
+        private String type = "Regular";
 
         internal void setPrice(int price)
         {
@@ -17,17 +18,22 @@ namespace P_TV
 
         internal int getPrice()
         {
-            return this.price;
+            return price;
         }
 
         public void getInfo()
         {
-            Console.WriteLine("The price is " + this.getPrice() + " and the type is " + this.getType());
+            Console.WriteLine("The brand is " + getBrand() + ", the price is $" + getPrice() + ", and the type is " + getType());
+        }
+
+        internal void setType(String type)
+        {
+            this.type = type;
         }
 
         internal String getType()
         {
-            return this.ToString();
+            return type;
         }
 
         public Object replenishTV(int budget)

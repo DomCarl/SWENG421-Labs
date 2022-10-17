@@ -6,6 +6,9 @@ class MyProg
     {
         Retailer retail = new Retailer();
 
-        retail.tvp.replenishTV(350);
+        //retail.sony_tvif.getInfo();
+
+        retail.tvp.replenishTV(500);
+        //retail.tvp.getInfo();
     }
 }

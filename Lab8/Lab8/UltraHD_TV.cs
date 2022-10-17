@@ -10,13 +10,15 @@ namespace P_TV
     {
         public UltraHD_TV()
         {
-            this.setPrice(400);
+            setPrice(400);
+            setType("Ultra");
         }
 
         public Object replenishTV(int budget)
         {
             if (this.getPrice() <= budget)
             {
+                getInfo();                
                 return new UltraHD_TV();
             }
             else

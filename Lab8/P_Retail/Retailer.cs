@@ -11,6 +11,8 @@ namespace P_Retail
 {
     public class Retailer
     {
-        public TV_Proxy tvp = new TV_Proxy();        
+        public TV_Proxy tvp = new TV_Proxy();
+        public TV_IF sony_tvif = new Sony_TV();
+        public TV_IF visio_tvif = new Visio_TV();        
     }
 }

@@ -8,7 +8,6 @@ namespace P_TV
 {
     public interface Smart_TV_IF : TV_IF
     {
-        public Object replenishTV(int budget);
-        
+        public Object replenishTV(int budget);        
     }
 }

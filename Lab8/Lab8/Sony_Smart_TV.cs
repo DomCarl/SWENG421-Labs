@@ -10,12 +10,13 @@ namespace P_TV
     {
         public Sony_Smart_TV()
         {
-            this.setPrice(380);
+            setPrice(380);
+            setType("Smart");
         }
 
         public Object replenishTV(int budget)
         {
-            if (this.getPrice() <= budget)
+            if (getPrice() <= budget)
             {
                 getInfo();
                 Console.WriteLine("Power usage is: " + getPowerUsage() + " watts per hour");
@@ -30,6 +31,11 @@ namespace P_TV
         internal double getPowerUsage()
         {
             return 5.15;
+        }
+
+        internal String getType()
+        {
+            return "Smart";
         }
     }
 }

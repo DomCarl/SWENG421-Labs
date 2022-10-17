@@ -8,6 +8,7 @@ namespace P_TV
 {
     public interface TV_IF
     {
-        public Object replenishTV(int budget);        
+        public Object replenishTV(int budget);
+        public void getInfo();
     }
 }

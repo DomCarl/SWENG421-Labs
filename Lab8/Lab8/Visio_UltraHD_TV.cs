@@ -10,20 +10,21 @@ namespace P_TV
     {
         public Visio_UltraHD_TV()
         {
-            this.setPrice(450);
+            setPrice(450);
+            setType("Ultra");
         }
 
         public Object replenishTV(int budget)
         {
-            if (this.getPrice() <= budget)
+            if (getPrice() <= budget)
             {
-                getInfo();
+                getInfo();                
                 return new Visio_UltraHD_TV();
             }
             else
             {
                 return new UltraHD_TV().replenishTV(budget);
             }
-        }
+        }        
     }
 }

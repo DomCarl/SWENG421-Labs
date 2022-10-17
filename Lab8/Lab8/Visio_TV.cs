@@ -9,6 +9,7 @@ namespace P_TV
     public class Visio_TV : TV_IF
     {
         private int price = 250;
+        private String type = "Regular";
 
         internal void setPrice(int price)
         {
@@ -22,19 +23,24 @@ namespace P_TV
 
         public void getInfo()
         {
-            Console.WriteLine("The price is " + getPrice() + " and the type is " + getType());
+            Console.WriteLine("The brand is " + getBrand() + ", the price is $" + getPrice() + ", and the type is " + getType());
+        }
+
+        internal void setType(String type)
+        {
+            this.type = type;
         }
 
         internal String getType()
         {
-            return ToString();
+            return type;
         }
 
         public Object replenishTV(int budget)
         {
             if (budget >= price)
             {
-                getInfo();
+                getInfo();                
                 return new Visio_TV();
             }
             else

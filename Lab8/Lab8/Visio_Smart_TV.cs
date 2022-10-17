@@ -11,6 +11,7 @@ namespace P_TV
         public Visio_Smart_TV()
         {
             this.setPrice(350);
+            this.setType("Smart");
         }
 
         public Object replenishTV(int budget)
