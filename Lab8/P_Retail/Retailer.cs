@@ -11,8 +11,6 @@ namespace P_Retail
 {
     public class Retailer
     {
-        public TV tele;
-
-        
+        public TV_Proxy tvp = new TV_Proxy();        
     }
 }

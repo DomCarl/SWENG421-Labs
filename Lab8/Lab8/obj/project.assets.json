@@ -8,23 +8,25 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Dom\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Jason\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab8\\Lab8\\P_TV.csproj",
+      "projectUniqueName": "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab8\\Lab8\\P_TV.csproj",
       "projectName": "P_TV",
-      "projectPath": "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab8\\Lab8\\P_TV.csproj",
-      "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dom\\Documents\\GitHub\\SWENG421-Labs\\Lab8\\Lab8\\obj\\",
+      "projectPath": "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab8\\Lab8\\P_TV.csproj",
+      "packagesPath": "C:\\Users\\Jason\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jason\\OneDrive\\Desktop\\School\\Fall 2022\\SWENG 421\\Labs\\SWENG421-Labs\\Lab8\\Lab8\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

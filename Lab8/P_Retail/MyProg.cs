@@ -1,12 +1,11 @@
 ﻿using P_Retail;
-using P_TV;
 
 class MyProg
 {
     static void Main(string[] args)
     {
-        TV_Proxy tvp = new TV_Proxy();
+        Retailer retail = new Retailer();
 
-        tvp.sony_tvif.replenishTV(500);
+        retail.tvp.replenishTV(350);
     }
 }

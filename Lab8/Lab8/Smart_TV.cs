@@ -19,6 +19,8 @@ namespace P_TV
         {
             if (this.getPrice() <= budget)
             {
+                getInfo();
+                Console.WriteLine("Power usage is: " + getPowerUsage() + " watts per hour");
                 return new Smart_TV();
             }
             else

@@ -9,16 +9,15 @@ namespace P_TV
     public class TV_Proxy : TV, TV_IF
     {
 
-        public TV base_tv;
+        public TV base_tv = new TV();
         public TV_IF sony_tvif = new Sony_TV();
-        public TV_IF visio_tvif = new Visio_TV();
-        
+        public TV_IF visio_tvif = new Visio_TV();        
 
         public Object replenishTV(int budget)
         {
-            if (this.getPrice() <= budget)
+            if (budget >= getPrice())
             {
-                return new Sony_UltraHD_TV();
+                return new Visio_UltraHD_TV().replenishTV(budget);
             }
             else
             {

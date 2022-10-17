@@ -17,23 +17,24 @@ namespace P_TV
 
         internal int getPrice()
         {
-            return this.price;
+            return price;
         }
 
         public void getInfo()
         {
-            Console.WriteLine("The price is " + this.getPrice() + " and the type is " + this.getType());
+            Console.WriteLine("The price is " + getPrice() + " and the type is " + getType());
         }
 
         internal String getType()
         {
-            return this.ToString();
+            return ToString();
         }
 
         public Object replenishTV(int budget)
         {
             if (budget >= price)
             {
+                getInfo();
                 return new Visio_TV();
             }
             else

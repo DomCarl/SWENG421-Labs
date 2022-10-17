@@ -11,12 +11,13 @@ namespace P_TV
         public Sony_UltraHD_TV()
         {
             this.setPrice(480);
-        }
+        }       
 
         public Object replenishTV(int budget)
         {
             if (this.getPrice() <= budget)
             {
+                getInfo();
                 return new Sony_UltraHD_TV();
             }
             else

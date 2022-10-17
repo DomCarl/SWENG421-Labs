@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace P_TV
 {
-    public class Visio_UltraHD_TV : Visio_TV
+    public class Visio_UltraHD_TV : Visio_TV, UltraHD_TV_IF
     {
         public Visio_UltraHD_TV()
         {
@@ -17,6 +17,7 @@ namespace P_TV
         {
             if (this.getPrice() <= budget)
             {
+                getInfo();
                 return new Visio_UltraHD_TV();
             }
             else

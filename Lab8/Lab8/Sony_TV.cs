@@ -34,6 +34,7 @@ namespace P_TV
         {
             if (budget >= price)
             {
+                getInfo();
                 return new Sony_TV();
             }
             else

@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace P_TV
 {
-    public interface UltraHD_TV_IF : TV_IF
+    class DummyMain
     {
-        public Object replenishTV(int budget);
-        
+        static void Main(string[] args)
+        {
+            
+        }
     }
 }
