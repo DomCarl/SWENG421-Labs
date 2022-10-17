@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * Sony_Smart_TV.cs class
+ * Due Date: 10/16/22
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +20,7 @@ namespace P_TV
             setType("Smart");
         }
 
-        public Object replenishTV(int budget)
+        public object replenishTV(int budget)
         {
             if (getPrice() <= budget)
             {
@@ -33,7 +39,7 @@ namespace P_TV
             return 5.15;
         }
 
-        internal String getType()
+        internal string getType()
         {
             return "Smart";
         }

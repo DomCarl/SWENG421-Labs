@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * UltraHD_TV.cs class
+ * Due Date: 10/16/22
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +20,7 @@ namespace P_TV
             setType("Ultra");
         }
 
-        public Object replenishTV(int budget)
+        public object replenishTV(int budget)
         {
             if (this.getPrice() <= budget)
             {

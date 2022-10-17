@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * Sony_TV.cs class
+ * Due Date: 10/16/22
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +15,7 @@ namespace P_TV
     public class Sony_TV : TV_IF
     {
         private int price = 280;
-        private String type = "Regular";
+        private string type = "Regular";
 
         internal void setPrice(int price)
         {
@@ -26,17 +32,17 @@ namespace P_TV
             Console.WriteLine("The brand is " + getBrand() + ", the price is $" + getPrice() + ", and the type is " + getType());
         }
 
-        internal void setType(String type)
+        internal void setType(string type)
         {
             this.type = type;
         }
 
-        internal String getType()
+        internal string getType()
         {
             return type;
         }
 
-        public Object replenishTV(int budget)
+        public object replenishTV(int budget)
         {
             if (budget >= price)
             {
@@ -49,7 +55,7 @@ namespace P_TV
             }
         }
 
-        internal String getBrand()
+        internal string getBrand()
         {
             return "Sony";
         }

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * TV_Proxy.cs class
+ * Due Date: 10/16/22
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +14,7 @@ namespace P_TV
 {
     public class TV_Proxy : TV, TV_IF
     {
-
-        public TV base_tv = new TV();
-        public TV_IF sony_tvif = new Sony_TV();
-        public TV_IF visio_tvif = new Visio_TV();        
-
-        public Object replenishTV(int budget)
+        public object replenishTV(int budget)
         {
             if (budget >= getPrice())
             {
@@ -23,6 +24,6 @@ namespace P_TV
             {
                 return new Visio_UltraHD_TV().replenishTV(budget);
             }
-        }        
+        }
     }
 }

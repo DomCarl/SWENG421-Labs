@@ -1,4 +1,10 @@
-﻿using P_Retail;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * MyProg.cs class
+ * Due Date: 10/16/22
+ */
+
+using P_Retail;
 
 class MyProg
 {

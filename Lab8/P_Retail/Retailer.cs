@@ -1,4 +1,10 @@
-﻿using P_TV;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * Retailer.cs class
+ * Due Date: 10/16/22
+ */
+
+using P_TV;
 using System;
 using System.Collections.Generic;
 using System.Linq;
