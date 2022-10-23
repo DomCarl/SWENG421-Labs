@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * CoffeeWithStuff.cs class
+ * Due Date: 10/23/2022 11:59 p.m.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,21 +17,22 @@ namespace Lab9
     {
         CoffeeIF cif;
         CondimentIF cdif;
+        CMM cmm = new CMM();
 
         public CoffeeWithStuff(CoffeeIF cif, CondimentIF cdif)
         {
             this.cif = cif;
             this.cdif = cdif;
-        }
-
-        public double getBasePrice()
-        {
-            return cif.getBasePrice();
-        }
+        }        
 
         public double getPrice()
         {
-            return cif.getBasePrice() + cdif.getCharge();
+            return cif.getPrice() + cdif.getCharge();
+        }
+
+        public void run()
+        {
+            cif.run();
         }
     }
 }

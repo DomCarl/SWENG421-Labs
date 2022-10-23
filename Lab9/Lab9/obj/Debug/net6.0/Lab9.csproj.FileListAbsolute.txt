@@ -1,0 +1,15 @@
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\obj\Debug\net6.0\Lab9.csproj.AssemblyReference.cache
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\obj\Debug\net6.0\Lab9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\obj\Debug\net6.0\Lab9.AssemblyInfoInputs.cache
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\obj\Debug\net6.0\Lab9.AssemblyInfo.cs
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\obj\Debug\net6.0\Lab9.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\bin\Debug\net6.0\Lab9.exe
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\bin\Debug\net6.0\Lab9.deps.json
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\bin\Debug\net6.0\Lab9.runtimeconfig.json
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\bin\Debug\net6.0\Lab9.dll
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\bin\Debug\net6.0\Lab9.pdb
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\obj\Debug\net6.0\Lab9.dll
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\obj\Debug\net6.0\refint\Lab9.dll
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\obj\Debug\net6.0\Lab9.pdb
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\obj\Debug\net6.0\Lab9.genruntimeconfig.cache
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab9\Lab9\obj\Debug\net6.0\ref\Lab9.dll

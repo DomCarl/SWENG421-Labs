@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * Cappuccino.cs class
+ * Due Date: 10/23/2022 11:59 p.m.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,20 +17,22 @@ namespace Lab9
         readonly double basePrice = 3.00;
         public CMM cmm = new CMM();
 
-        void run()
+        public void run()
         {
-            cmm.setLEDNumber("11");
-            Console.WriteLine("LED Setting: " + cmm.LED_Num);
+            cmm.setLEDNumber(12);
 
-            cmm.setGrindingTime(8);
+            cmm.setCoffeeType("Cappuccino");            
 
-            cmm.setTemperature(150);
+            cmm.setGrindingTime(10);
 
-            cmm.setLEDNumber("01");
-            Console.WriteLine("LED Setting: " + cmm.LED_Num);
+            cmm.setTemperature(180);
+
+            cmm.setLEDNumber(2);
+
+            cmm.done();
         }
 
-        public double getBasePrice()
+        public double getPrice()
         {
             return basePrice;
         }

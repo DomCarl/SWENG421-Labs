@@ -1,6 +1,13 @@
-﻿using System;
+﻿/**
+ * Jason Cross and Dominick Carlucci
+ * CMM.cs class
+ * Due Date: 10/23/2022 11:59 p.m.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,13 +15,14 @@ namespace Lab9
 {
     internal class CMM
     {
-        List<CoffeeIF> sales = new List<CoffeeIF>();
+        public List<CoffeeIF> sales = new List<CoffeeIF>();
         double sale = 0;
-        public string LED_Num = "";
+        public int LED_Num = 0;
+        CoffeeIF cif;
 
-        void setCoffeeType(string str)
+        public void setCoffeeType(string str)
         {
-            
+            Console.WriteLine("Loading " + str);
         }
 
         public void setGrindingTime(int sec)
@@ -32,19 +40,27 @@ namespace Lab9
             Console.WriteLine("Temperature set to {0} degrees", degree);
         }
 
-        public void setLEDNumber(string num)
+        public void setLEDNumber(int num)
         {
-            this.LED_Num = num; 
+            string stringNum = num.ToString();
+            string padNum = stringNum.PadLeft(2, '0');
+            Console.WriteLine(padNum);
         }
 
         public double computePrice(CoffeeIF cif)
         {
-            return cif.getBasePrice();
+            return cif.getPrice();
         }
         
         public void done()
         {
-            this.LED_Num = "0";
+            sales.Add(cif);
+            Console.WriteLine("Added to sales list" + cif.getPrice());
+            
+            //foreach (Object o in sales)
+            //{
+            //    Console.WriteLine(o.GetType());
+            //}
         }
     }
 }
