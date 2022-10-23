@@ -21,7 +21,7 @@ namespace Lab9
         {
             cmm.setLEDNumber(12);
 
-            cmm.setCoffeeType("Cappuccino");            
+            cmm.setCoffeeType("Cappuccino");
 
             cmm.setGrindingTime(10);
 

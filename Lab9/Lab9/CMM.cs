@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,11 +19,41 @@ namespace Lab9
         public List<CoffeeIF> sales = new List<CoffeeIF>();
         double sale = 0;
         public int LED_Num = 0;
-        CoffeeIF cif;
+        CoffeeIF cif;  
+        
+        public CMM(CoffeeIF cif)
+        {
+            this.cif = cif;
+        }
+
+        public CMM()
+        {
+            
+        }
 
         public void setCoffeeType(string str)
         {
-            Console.WriteLine("Loading " + str);
+            if (str.ToUpper() == "ESPRESSO")
+            {
+
+                Type t = Type.GetType("Lab9." + str);
+                Object o = Activator.CreateInstance(t);
+                CoffeeIF cif = (Espresso)o;
+                cif = new CoffeeWithStuff(cif, null);
+                //cif = new Espresso();
+                //cif = new CoffeeWithStuff(cif, null);
+                //Console.WriteLine("Making Espresso");
+                cif.run();
+                //computePrice(cif);
+            }
+            else if (str.ToUpper() == "LATTE")
+            {
+                Console.WriteLine("Making Latte");
+            }
+            else
+            {
+                Console.WriteLine("Loading " + str);
+            }           
         }
 
         public void setGrindingTime(int sec)
@@ -30,9 +61,9 @@ namespace Lab9
             Console.WriteLine("Grinding for {0} seconds", sec);
         }
 
-        void addCondiment(CondimentIF type)
+        public void addCondiment(CondimentIF type)
         {
-            sale += type.getCharge();
+             cif = new CoffeeWithStuff(cif, type);
         }
 
         public void setTemperature(int degree)
@@ -49,13 +80,17 @@ namespace Lab9
 
         public double computePrice(CoffeeIF cif)
         {
+
             return cif.getPrice();
         }
         
         public void done()
         {
             sales.Add(cif);
-            Console.WriteLine("Added to sales list" + cif.getPrice());
+            
+            //sales.Add(cif);
+            //Console.WriteLine(computePrice(cif));
+            //Console.WriteLine("Added to sales list" + cif.getPrice());
             
             //foreach (Object o in sales)
             //{

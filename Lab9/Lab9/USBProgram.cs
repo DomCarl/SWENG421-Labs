@@ -8,16 +8,22 @@ namespace Lab9
 {
     internal abstract class USBProgram : CoffeeIF
     {
-        public abstract void run();
+        CoffeeIF cif;
+        CondimentIF cdif;
+        CMM cmm = new CMM();
 
-        public void setCoffeeType(CoffeeIF cif)
-        {
-
-        }
+        public abstract void run();        
 
         public double getPrice()
         {
-            return 2.0;
+            if (cdif == null)
+            {
+                return cif.getPrice();
+            }
+            else
+            {
+                return cif.getPrice() + cdif.getCharge();
+            }
         }
     }
 }

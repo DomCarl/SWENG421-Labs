@@ -34,5 +34,10 @@ namespace Lab9
         {
             cif.run();
         }
+
+        public double getCondPrice()
+        {
+            return cdif.getCharge();
+        }
     }
 }
