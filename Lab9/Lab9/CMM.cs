@@ -9,31 +9,32 @@ namespace Lab9
     internal class CMM
     {
         List<CoffeeIF> sales = new List<CoffeeIF>();
-        int sale = 0;
+        double sale = 0;
+        public string LED_Num = "";
 
         void setCoffeeType(string str)
         {
             
         }
 
-        void setGrindingTime(int sec)
+        public void setGrindingTime(int sec)
         {
             Console.WriteLine("Grinding for {0} seconds", sec);
         }
 
         void addCondiment(CondimentIF type)
         {
-            
+            sale += type.getCharge();
         }
 
-        void setTemperature(int degree)
+        public void setTemperature(int degree)
         {
             Console.WriteLine("Temperature set to {0} degrees", degree);
         }
 
-        void setLEDNumber(int num)
+        public void setLEDNumber(string num)
         {
-            
+            this.LED_Num = num; 
         }
 
         public double computePrice(CoffeeIF cif)
@@ -41,9 +42,9 @@ namespace Lab9
             return cif.getBasePrice();
         }
         
-        void done()
+        public void done()
         {
-            
+            this.LED_Num = "0";
         }
     }
 }
