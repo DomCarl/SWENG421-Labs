@@ -15,7 +15,12 @@ namespace Lab9
     internal class Cappuccino : CoffeeIF
     {
         readonly double basePrice = 3.00;
-        public CMM cmm = new CMM();
+        public CMM cmm;
+
+        public Cappuccino(CMM cmm)
+        {
+            this.cmm = cmm;
+        }
 
         public void run()
         {
@@ -29,7 +34,9 @@ namespace Lab9
 
             cmm.setLEDNumber(2);
 
-            cmm.done();
+            cmm.sales.Add(this);
+
+            cmm.done("Cappucino");
         }
 
         public double getPrice()

@@ -17,9 +17,8 @@ namespace Lab9
     internal class CMM
     {
         public List<CoffeeIF> sales = new List<CoffeeIF>();
-        double sale = 0;
         public int LED_Num = 0;
-        CoffeeIF cif;  
+        CoffeeIF cif;
         
         public CMM(CoffeeIF cif)
         {
@@ -31,28 +30,29 @@ namespace Lab9
             
         }
 
-        public void setCoffeeType(string str)
+        public Object setCoffeeType(string str)
         {
             if (str.ToUpper() == "ESPRESSO")
             {
+                Console.WriteLine("Loading " + str);
 
                 Type t = Type.GetType("Lab9." + str);
-                Object o = Activator.CreateInstance(t);
-                CoffeeIF cif = (Espresso)o;
-                cif = new CoffeeWithStuff(cif, null);
-                //cif = new Espresso();
-                //cif = new CoffeeWithStuff(cif, null);
-                //Console.WriteLine("Making Espresso");
-                cif.run();
-                //computePrice(cif);
+                Object o = Activator.CreateInstance(t, this);
+                
+                cif = (Espresso)o;
+                return cif;
+
+                
             }
             else if (str.ToUpper() == "LATTE")
             {
                 Console.WriteLine("Making Latte");
+                return null;
             }
             else
             {
                 Console.WriteLine("Loading " + str);
+                return null;
             }           
         }
 
@@ -60,10 +60,12 @@ namespace Lab9
         {
             Console.WriteLine("Grinding for {0} seconds", sec);
         }
-
-        public void addCondiment(CondimentIF type)
+        
+        public Object addCondiment(CondimentIF type)
         {
-             cif = new CoffeeWithStuff(cif, type);
+            cif = new CoffeeWithStuff(cif, type);
+
+            return cif;
         }
 
         public void setTemperature(int degree)
@@ -78,24 +80,16 @@ namespace Lab9
             Console.WriteLine(padNum);
         }
 
-        public double computePrice(CoffeeIF cif)
+        public double computePrice(CoffeeIF c)
         {
-
-            return cif.getPrice();
+            return c.getPrice();
         }
         
-        public void done()
-        {
-            sales.Add(cif);
-            
-            //sales.Add(cif);
-            //Console.WriteLine(computePrice(cif));
-            //Console.WriteLine("Added to sales list" + cif.getPrice());
-            
-            //foreach (Object o in sales)
-            //{
-            //    Console.WriteLine(o.GetType());
-            //}
+        public void done(string str)
+        {            
+            Console.WriteLine("Finished making " + str);
+                        
+            Console.WriteLine("Number of items in List is now: " + sales.Count());            
         }
     }
 }

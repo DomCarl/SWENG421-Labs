@@ -4,3 +4,5 @@ Lab9/.vs/Lab9/v17/.suo
 *.1
 *.json
 *.targets
+*.vsidx
+*.props

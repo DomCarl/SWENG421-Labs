@@ -17,7 +17,7 @@ namespace Lab9
     {
         CoffeeIF cif;
         CondimentIF cdif;
-        CMM cmm = new CMM();
+        CMM cmm;
 
         public CoffeeWithStuff(CoffeeIF cif, CondimentIF cdif)
         {

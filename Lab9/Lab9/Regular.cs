@@ -15,7 +15,12 @@ namespace Lab9
     internal class Regular: CoffeeIF
     {
         readonly double basePrice = 2.00;
-        CMM cmm = new CMM();
+        CMM cmm;
+
+        public Regular(CMM cmm)
+        {
+            this.cmm = cmm;
+        }
 
         public void run()
         {
@@ -29,7 +34,9 @@ namespace Lab9
 
             cmm.setLEDNumber(0);
 
-            cmm.done();
+            cmm.sales.Add(this);
+
+            cmm.done("Regular");
         }
 
         public double getPrice()

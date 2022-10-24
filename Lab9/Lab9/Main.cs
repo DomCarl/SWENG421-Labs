@@ -6,42 +6,51 @@ using Lab9;
 * Due Date: 10/23/2022 11:59 p.m.
 */
 
-//string str = "Espresso";
+
 CMM cmm = new CMM();
-CoffeeIF sample1 = new Mocha();
+
 CondimentIF cdifCh = new Chocolate();
-//Object o = Activator.CreateInstance(t);
-//CoffeeIF ecif = (Espresso)o;
-CoffeeIF esp = new Espresso();
-CoffeeIF espWithStuff = new CoffeeWithStuff(esp, cdifCh);
+CoffeeIF esp = (Espresso)cmm.setCoffeeType("Espresso");
+
+CoffeeIF espWithStuff = (CoffeeWithStuff)cmm.addCondiment(cdifCh);
+espWithStuff = (CoffeeWithStuff)cmm.addCondiment(cdifCh);
+espWithStuff = (CoffeeWithStuff)cmm.addCondiment(cdifCh);
 espWithStuff.run();
 
-Console.WriteLine(cmm.computePrice(espWithStuff));
+Console.WriteLine("Total price: $" + cmm.computePrice(espWithStuff) + "\n");
 
-//cmm.setCoffeeType("Espresso");
-//cmm.addCondiment(cdifCh);
-
-//cmm.done();
-//CoffeeIF sample = new CoffeeWithStuff(sample1, cdifCh);
-//Console.WriteLine(cmm.computePrice(sample));
-
-
-CoffeeIF mocha = new Mocha();
 
 CondimentIF cdifV = new Vanilla();
 CondimentIF cdifC = new Cream();
 
-
+CoffeeIF mocha = new Mocha(cmm);
 CoffeeIF mochaWithStuff = new CoffeeWithStuff(mocha, cdifV);
 mochaWithStuff = new CoffeeWithStuff(mochaWithStuff, cdifC);
 
 mochaWithStuff.run();
 
-Console.WriteLine("Total price: $" + cmm.computePrice(mochaWithStuff));
+Console.WriteLine("Total price: $" + cmm.computePrice(mochaWithStuff) + "\n");
 
-//CoffeeIF espWithStuff = new CoffeeWithStuff(esp, cdifC);
-//espWithStuff = new CoffeeWithStuff(espWithStuff, cdifV);
-//espWithStuff = new CoffeeWithStuff(espWithStuff, cdifCh);
-//espWithStuff = new CoffeeWithStuff(espWithStuff, cdifCh);
-//espWithStuff.run();
+
+
+CoffeeIF mocha2 = new Mocha(cmm);
+CoffeeIF mochaWithStuff2 = new CoffeeWithStuff(mocha2, cdifV);
+mochaWithStuff2 = new CoffeeWithStuff(mochaWithStuff2, cdifC);
+mochaWithStuff2 = new CoffeeWithStuff(mochaWithStuff2, cdifC);
+
+mochaWithStuff2.run();
+
+Console.WriteLine("Total price: $" + cmm.computePrice(mochaWithStuff2) + "\n");
+
+
+
+CoffeeIF cap = new Cappuccino(cmm);
+CoffeeIF capWithStuff = new CoffeeWithStuff(cap, cdifV);
+capWithStuff = new CoffeeWithStuff(capWithStuff, cdifCh);
+mochaWithStuff2 = new CoffeeWithStuff(capWithStuff, cdifCh);
+
+capWithStuff.run();
+
+Console.WriteLine("Total price: $" + cmm.computePrice(capWithStuff) + "\n");
+
 

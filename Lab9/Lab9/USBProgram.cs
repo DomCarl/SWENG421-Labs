@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+* Jason Cross and Dominick Carlucci
+* USBProgram.cs class
+* Due Date: 10/23/2022 11:59 p.m.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,20 +16,13 @@ namespace Lab9
     {
         CoffeeIF cif;
         CondimentIF cdif;
-        CMM cmm = new CMM();
 
-        public abstract void run();        
+        public abstract void run();
+        
 
         public double getPrice()
-        {
-            if (cdif == null)
-            {
-                return cif.getPrice();
-            }
-            else
-            {
-                return cif.getPrice() + cdif.getCharge();
-            }
+        { 
+            return cif.getPrice() + cdif.getCharge();
         }
     }
 }

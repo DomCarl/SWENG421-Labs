@@ -15,21 +15,28 @@ namespace Lab9
     internal class Mocha: CoffeeIF
     {
         readonly double basePrice = 4.00;
-        public CMM cmm = new CMM();
+        CMM cmm;
+
+        public Mocha(CMM cmm)
+        {
+            this.cmm = cmm;
+        }
 
         public void run()
         {
             cmm.setLEDNumber(11);
 
             cmm.setCoffeeType("Mocha");
-            
+
             cmm.setGrindingTime(8);
 
             cmm.setTemperature(150);
 
             cmm.setLEDNumber(1);
 
-            cmm.done();
+            cmm.sales.Add(this);
+
+            cmm.done("Mocha");
         }
 
         public double getPrice()
