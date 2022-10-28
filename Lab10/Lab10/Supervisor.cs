@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab10
 {
-    internal class Supervisor
+    internal class Supervisor : Employee
     {
     }
 }

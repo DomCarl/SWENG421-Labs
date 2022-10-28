@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Lab10
 {
-    internal class CEO : Employee
+    internal class Employee
     {
+        string? name;
     }
 }

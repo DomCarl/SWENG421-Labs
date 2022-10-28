@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab10
 {
-    internal class Manager
+    internal class Manager : Employee
     {
     }
 }
