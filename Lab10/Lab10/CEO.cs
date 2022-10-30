@@ -8,5 +8,10 @@ namespace Lab10
 {
     internal class CEO : Employee
     {
+
+        public Decision grant(Decision[] da)
+        {
+            return da[0];
+        }
     }
 }
