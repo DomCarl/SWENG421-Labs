@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +6,20 @@ using System.Threading.Tasks;
 
 namespace Lab10
 {
-    internal class Employee
+    internal abstract class Employee : EmployeeIF
     {
-        string? name;
+        public string? name;
+        public Employee parent;
+
+        public Employee()
+        {
+            
+        }
+
+        public Employee getParent()
+        {
+            return parent;
+        }
 
         public void seeDanger()
         {
@@ -23,6 +34,11 @@ namespace Lab10
         public void contactBoss()
         {
 
+        }
+
+        public void evacuate()
+        {
+            Console.WriteLine("The person " + name + " is evacuating.");
         }
     }
 }

@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lab10
 {
-    internal class ProjectLeader : Employee
+    internal interface EmployeeIF
     {
-        public ProjectLeader(string name)
-        {
-            this.name = name;
-        }
+        public abstract void seeDanger();
+
+        public abstract void contactBoss();
     }
 }

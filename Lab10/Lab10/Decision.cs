@@ -8,5 +8,11 @@ namespace Lab10
 {
     internal class Decision
     {
+        private Employee emp;
+        
+        public void doIt()
+        {
+            
+        }
     }
 }

@@ -8,7 +8,10 @@ namespace Lab10
 {
     internal class Supervisor : Employee
     {
-        string name;
+        public Supervisor(string name)
+        {
+            this.name = name;
+        }
 
         public string provideInfo()
         {

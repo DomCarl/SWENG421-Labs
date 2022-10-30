@@ -8,5 +8,9 @@ namespace Lab10
 {
     internal class Worker : Employee
     {
+        public Worker(string name)
+        {
+            this.name = name;
+        }
     }
 }

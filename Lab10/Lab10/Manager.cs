@@ -8,5 +8,15 @@ namespace Lab10
 {
     internal class Manager : Employee
     {
+        public Manager(string name)
+        {
+            this.name = name;
+        }
+
+        public Decision suggestedDecision()
+        {
+            return new Decision();
+        }
     }
+    
 }
