@@ -1,18 +1,31 @@
 ﻿using Lab10;
 
-Employee chuck = new ProjectLeader("Chuck");
+Employee steve = new CEO("Steve", null);
 
-Employee denise = new ProjectLeader("Denise");
+Employee bob = new Manager("Bob", steve);
+Employee rachel = new Manager("Rachel", steve);
 
-Employee jack = new Supervisor("Jack");
+Employee chuck = new ProjectLeader("Chuck", rachel);
 
-Employee jeff = new Supervisor("Jeff");
+Employee denise = new ProjectLeader("Denise", rachel);
 
-Employee john = new Worker("John");
-john.parent = jack;
+Employee jack = new Supervisor("Jack", bob);
 
-Employee steve = new CEO("Steve");
+Employee jeff = new Supervisor("Jeff", bob);
 
-Employee bob = new Manager("Bob");
+Employee john = new Worker("John", jack);
+Employee mary = new Worker("Mary", jack);
+Employee jane = new Worker("Jane", jack);
+Employee tom = new Worker("Tom", jack);
+Employee nick = new Worker("Nick", jack);
+Employee joe = new Worker("Joe", chuck);
+Employee frank = new Worker("Frank", chuck);
+Employee sam = new Worker("Sam", chuck);
+Employee greg = new Worker("Greg", chuck);
+Employee rob = new Worker("Rob", jeff);
+Employee ed = new Worker("Ed", jeff);
+Employee rick = new Worker("Rick", jeff);
+Employee michael = new Worker("Michael", jeff);
 
-steve.evacuate();
+
+john.seeDanger();

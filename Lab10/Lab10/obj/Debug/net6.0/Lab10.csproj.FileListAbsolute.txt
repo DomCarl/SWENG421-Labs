@@ -13,3 +13,18 @@ C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\La
 C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Lab10\Lab10\obj\Debug\net6.0\Lab10.pdb
 C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Lab10\Lab10\obj\Debug\net6.0\Lab10.genruntimeconfig.cache
 C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Lab10\Lab10\obj\Debug\net6.0\ref\Lab10.dll
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\bin\Debug\net6.0\Lab10.exe
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\bin\Debug\net6.0\Lab10.deps.json
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\bin\Debug\net6.0\Lab10.runtimeconfig.json
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\bin\Debug\net6.0\Lab10.dll
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\bin\Debug\net6.0\Lab10.pdb
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\obj\Debug\net6.0\Lab10.csproj.AssemblyReference.cache
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\obj\Debug\net6.0\Lab10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\obj\Debug\net6.0\Lab10.AssemblyInfoInputs.cache
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\obj\Debug\net6.0\Lab10.AssemblyInfo.cs
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\obj\Debug\net6.0\Lab10.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\obj\Debug\net6.0\Lab10.dll
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\obj\Debug\net6.0\refint\Lab10.dll
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\obj\Debug\net6.0\Lab10.pdb
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\obj\Debug\net6.0\Lab10.genruntimeconfig.cache
+C:\Users\Dom\Documents\GitHub\SWENG421-Labs\Lab10\Lab10\obj\Debug\net6.0\ref\Lab10.dll
