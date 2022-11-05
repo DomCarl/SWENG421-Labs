@@ -1,0 +1,6 @@
+
+*.vsidx
+Lab11/.vs/Lab11/v17/.suo
+*.exe
+*.pdb
+*.cache

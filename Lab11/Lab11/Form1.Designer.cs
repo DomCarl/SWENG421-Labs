@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.tB1 = new System.Windows.Forms.TextBox();
             this.backspace = new System.Windows.Forms.Button();
             this.clearEntry = new System.Windows.Forms.Button();
             this.clear = new System.Windows.Forms.Button();
@@ -51,19 +52,20 @@
             this.squareRoot = new System.Windows.Forms.Button();
             this.inverse = new System.Windows.Forms.Button();
             this.equals = new System.Windows.Forms.Button();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tB1
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("SansSerif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.textBox1.Location = new System.Drawing.Point(7, 6);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 40);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tB1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tB1.Font = new System.Drawing.Font("SansSerif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
+            this.tB1.Location = new System.Drawing.Point(7, 6);
+            this.tB1.Multiline = true;
+            this.tB1.Name = "tB1";
+            this.tB1.Size = new System.Drawing.Size(252, 40);
+            this.tB1.TabIndex = 0;
+            this.tB1.Text = "0";
+            this.tB1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // backspace
             // 
@@ -74,6 +76,7 @@
             this.backspace.TabIndex = 1;
             this.backspace.Text = "🠨";
             this.backspace.UseVisualStyleBackColor = true;
+            this.backspace.Click += new System.EventHandler(this.backspace_Click);
             // 
             // clearEntry
             // 
@@ -83,6 +86,7 @@
             this.clearEntry.TabIndex = 2;
             this.clearEntry.Text = "CE";
             this.clearEntry.UseVisualStyleBackColor = true;
+            this.clearEntry.Click += new System.EventHandler(this.clearEntry_Click);
             // 
             // clear
             // 
@@ -92,7 +96,7 @@
             this.clear.TabIndex = 3;
             this.clear.Text = "C";
             this.clear.UseVisualStyleBackColor = true;
-            this.clear.Click += new System.EventHandler(this.button3_Click);
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
             // plusMinus
             // 
@@ -102,6 +106,7 @@
             this.plusMinus.TabIndex = 4;
             this.plusMinus.Text = "±";
             this.plusMinus.UseVisualStyleBackColor = true;
+            this.plusMinus.Click += new System.EventHandler(this.plusMinus_Click);
             // 
             // divide
             // 
@@ -111,6 +116,7 @@
             this.divide.TabIndex = 8;
             this.divide.Text = "/";
             this.divide.UseVisualStyleBackColor = true;
+            this.divide.Click += new System.EventHandler(this.operator_Click);
             // 
             // nine
             // 
@@ -120,6 +126,7 @@
             this.nine.TabIndex = 7;
             this.nine.Text = "9";
             this.nine.UseVisualStyleBackColor = true;
+            this.nine.Click += new System.EventHandler(this.button_Click);
             // 
             // eight
             // 
@@ -129,6 +136,7 @@
             this.eight.TabIndex = 6;
             this.eight.Text = "8";
             this.eight.UseVisualStyleBackColor = true;
+            this.eight.Click += new System.EventHandler(this.button_Click);
             // 
             // seven
             // 
@@ -138,6 +146,7 @@
             this.seven.TabIndex = 5;
             this.seven.Text = "7";
             this.seven.UseVisualStyleBackColor = true;
+            this.seven.Click += new System.EventHandler(this.button_Click);
             // 
             // multiply
             // 
@@ -147,6 +156,7 @@
             this.multiply.TabIndex = 12;
             this.multiply.Text = "*";
             this.multiply.UseVisualStyleBackColor = true;
+            this.multiply.Click += new System.EventHandler(this.operator_Click);
             // 
             // six
             // 
@@ -156,6 +166,7 @@
             this.six.TabIndex = 11;
             this.six.Text = "6";
             this.six.UseVisualStyleBackColor = true;
+            this.six.Click += new System.EventHandler(this.button_Click);
             // 
             // five
             // 
@@ -165,6 +176,7 @@
             this.five.TabIndex = 10;
             this.five.Text = "5";
             this.five.UseVisualStyleBackColor = true;
+            this.five.Click += new System.EventHandler(this.button_Click);
             // 
             // four
             // 
@@ -174,6 +186,7 @@
             this.four.TabIndex = 9;
             this.four.Text = "4";
             this.four.UseVisualStyleBackColor = true;
+            this.four.Click += new System.EventHandler(this.button_Click);
             // 
             // subtract
             // 
@@ -183,6 +196,7 @@
             this.subtract.TabIndex = 16;
             this.subtract.Text = "-";
             this.subtract.UseVisualStyleBackColor = true;
+            this.subtract.Click += new System.EventHandler(this.operator_Click);
             // 
             // three
             // 
@@ -192,6 +206,7 @@
             this.three.TabIndex = 15;
             this.three.Text = "3";
             this.three.UseVisualStyleBackColor = true;
+            this.three.Click += new System.EventHandler(this.button_Click);
             // 
             // two
             // 
@@ -201,6 +216,7 @@
             this.two.TabIndex = 14;
             this.two.Text = "2";
             this.two.UseVisualStyleBackColor = true;
+            this.two.Click += new System.EventHandler(this.button_Click);
             // 
             // one
             // 
@@ -210,6 +226,7 @@
             this.one.TabIndex = 13;
             this.one.Text = "1";
             this.one.UseVisualStyleBackColor = true;
+            this.one.Click += new System.EventHandler(this.button_Click);
             // 
             // addition
             // 
@@ -219,6 +236,7 @@
             this.addition.TabIndex = 18;
             this.addition.Text = "+";
             this.addition.UseVisualStyleBackColor = true;
+            this.addition.Click += new System.EventHandler(this.operator_Click);
             // 
             // point
             // 
@@ -228,6 +246,7 @@
             this.point.TabIndex = 17;
             this.point.Text = ".";
             this.point.UseVisualStyleBackColor = true;
+            this.point.Click += new System.EventHandler(this.button_Click);
             // 
             // zero
             // 
@@ -237,6 +256,7 @@
             this.zero.TabIndex = 19;
             this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = true;
+            this.zero.Click += new System.EventHandler(this.button_Click);
             // 
             // squareRoot
             // 
@@ -246,6 +266,7 @@
             this.squareRoot.TabIndex = 20;
             this.squareRoot.Text = "√";
             this.squareRoot.UseVisualStyleBackColor = true;
+            this.squareRoot.Click += new System.EventHandler(this.squareRoot_Click);
             // 
             // inverse
             // 
@@ -255,6 +276,7 @@
             this.inverse.TabIndex = 21;
             this.inverse.Text = "1/x";
             this.inverse.UseVisualStyleBackColor = true;
+            this.inverse.Click += new System.EventHandler(this.inverse_Click);
             // 
             // equals
             // 
@@ -264,12 +286,23 @@
             this.equals.TabIndex = 22;
             this.equals.Text = "=";
             this.equals.UseVisualStyleBackColor = true;
+            this.equals.Click += new System.EventHandler(this.equals_Click);
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(7, 6);
+            this.lbl1.MaximumSize = new System.Drawing.Size(300, 13);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(0, 13);
+            this.lbl1.TabIndex = 23;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(264, 265);
+            this.Controls.Add(this.lbl1);
             this.Controls.Add(this.equals);
             this.Controls.Add(this.inverse);
             this.Controls.Add(this.squareRoot);
@@ -292,9 +325,15 @@
             this.Controls.Add(this.clear);
             this.Controls.Add(this.clearEntry);
             this.Controls.Add(this.backspace);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tB1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculation Performer";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,7 +341,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tB1;
         private System.Windows.Forms.Button backspace;
         private System.Windows.Forms.Button clearEntry;
         private System.Windows.Forms.Button clear;
@@ -325,6 +364,7 @@
         private System.Windows.Forms.Button squareRoot;
         private System.Windows.Forms.Button inverse;
         private System.Windows.Forms.Button equals;
+        private System.Windows.Forms.Label lbl1;
     }
 }
 
