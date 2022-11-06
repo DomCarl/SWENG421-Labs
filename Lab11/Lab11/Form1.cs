@@ -26,59 +26,53 @@ namespace Lab11
         {
             switch(e.KeyChar.ToString())
             {
-                case "0":
-                    backspace.PerformClick();
+                case "0":                    
                     zero.PerformClick();
                     break;
                 case "1":
-                    backspace.PerformClick();
                     one.PerformClick();
                     break;
                 case "2":
-                    backspace.PerformClick();
                     two.PerformClick();
                     break;
                 case "3":
-                    backspace.PerformClick();
                     three.PerformClick();
                     break;
                 case "4":
-                    backspace.PerformClick();
                     four.PerformClick();
                     break;
                 case "5":
-                    backspace.PerformClick();
                     five.PerformClick();
                     break;
                 case "6":
-                    //six.PerformClick();
+                    six.PerformClick();
                     break;
                 case "7":
-                    //seven.PerformClick();
+                    seven.PerformClick();
                     break;
                 case "8":
-                    //eight.PerformClick();
+                    eight.PerformClick();
                     break;
                 case "9":
-                    //nine.PerformClick();
+                    nine.PerformClick();
                     break;
                 case ".":
-                    //point.PerformClick();
+                    point.PerformClick();
                     break;
                 case "+":
-                    //addition.PerformClick();
+                    addition.PerformClick();
                     break;
                 case "-":
-                    //subtract.PerformClick();
+                    subtract.PerformClick();
                     break;
                 case "*":
-                    //multiply.PerformClick();
+                    multiply.PerformClick();
                     break;
                 case "/":
-                    //divide.PerformClick();
+                    divide.PerformClick();
                     break;
                 case "ENTER":
-                    //equals.PerformClick();
+                    equals.PerformClick();
                     break;
                 deault:
                     break;
@@ -103,8 +97,7 @@ namespace Lab11
             else
             {
                 tB1.Text = tB1.Text + b.Text;
-            }
-            this.Focus();
+            }            
         }
 
         private void backspace_Click(object sender, EventArgs e)
@@ -178,14 +171,14 @@ namespace Lab11
             if (operation == "")
             {
                 value = double.Parse(tB1.Text);
-                tB1.Text = Math.Sqrt(value).ToString();
+                lbl1.Text = value.ToString();
             }
             else
             {
                 switch (operation)
                 {
                     case "+":
-                        tB1.Text = (value + double.Parse(tB1.Text)).ToString();                        
+                        tB1.Text = (value + double.Parse(tB1.Text)).ToString();                      
                         break;
                     case "-":
                         tB1.Text = (value - double.Parse(tB1.Text)).ToString();

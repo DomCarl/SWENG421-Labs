@@ -58,6 +58,7 @@
             // tB1
             // 
             this.tB1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tB1.Enabled = false;
             this.tB1.Font = new System.Drawing.Font("SansSerif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.tB1.Location = new System.Drawing.Point(7, 6);
             this.tB1.Multiline = true;
@@ -74,6 +75,7 @@
             this.backspace.Name = "backspace";
             this.backspace.Size = new System.Drawing.Size(45, 35);
             this.backspace.TabIndex = 1;
+            this.backspace.TabStop = false;
             this.backspace.Text = "🠨";
             this.backspace.UseVisualStyleBackColor = true;
             this.backspace.Click += new System.EventHandler(this.backspace_Click);
@@ -84,6 +86,7 @@
             this.clearEntry.Name = "clearEntry";
             this.clearEntry.Size = new System.Drawing.Size(45, 35);
             this.clearEntry.TabIndex = 2;
+            this.clearEntry.TabStop = false;
             this.clearEntry.Text = "CE";
             this.clearEntry.UseVisualStyleBackColor = true;
             this.clearEntry.Click += new System.EventHandler(this.clearEntry_Click);
@@ -94,6 +97,7 @@
             this.clear.Name = "clear";
             this.clear.Size = new System.Drawing.Size(45, 35);
             this.clear.TabIndex = 3;
+            this.clear.TabStop = false;
             this.clear.Text = "C";
             this.clear.UseVisualStyleBackColor = true;
             this.clear.Click += new System.EventHandler(this.clear_Click);
@@ -104,6 +108,7 @@
             this.plusMinus.Name = "plusMinus";
             this.plusMinus.Size = new System.Drawing.Size(45, 35);
             this.plusMinus.TabIndex = 4;
+            this.plusMinus.TabStop = false;
             this.plusMinus.Text = "±";
             this.plusMinus.UseVisualStyleBackColor = true;
             this.plusMinus.Click += new System.EventHandler(this.plusMinus_Click);
@@ -114,6 +119,7 @@
             this.divide.Name = "divide";
             this.divide.Size = new System.Drawing.Size(45, 35);
             this.divide.TabIndex = 8;
+            this.divide.TabStop = false;
             this.divide.Text = "/";
             this.divide.UseVisualStyleBackColor = true;
             this.divide.Click += new System.EventHandler(this.operator_Click);
@@ -124,6 +130,7 @@
             this.nine.Name = "nine";
             this.nine.Size = new System.Drawing.Size(45, 35);
             this.nine.TabIndex = 7;
+            this.nine.TabStop = false;
             this.nine.Text = "9";
             this.nine.UseVisualStyleBackColor = true;
             this.nine.Click += new System.EventHandler(this.button_Click);
@@ -134,6 +141,7 @@
             this.eight.Name = "eight";
             this.eight.Size = new System.Drawing.Size(45, 35);
             this.eight.TabIndex = 6;
+            this.eight.TabStop = false;
             this.eight.Text = "8";
             this.eight.UseVisualStyleBackColor = true;
             this.eight.Click += new System.EventHandler(this.button_Click);
@@ -144,6 +152,7 @@
             this.seven.Name = "seven";
             this.seven.Size = new System.Drawing.Size(45, 35);
             this.seven.TabIndex = 5;
+            this.seven.TabStop = false;
             this.seven.Text = "7";
             this.seven.UseVisualStyleBackColor = true;
             this.seven.Click += new System.EventHandler(this.button_Click);
@@ -154,6 +163,7 @@
             this.multiply.Name = "multiply";
             this.multiply.Size = new System.Drawing.Size(45, 35);
             this.multiply.TabIndex = 12;
+            this.multiply.TabStop = false;
             this.multiply.Text = "*";
             this.multiply.UseVisualStyleBackColor = true;
             this.multiply.Click += new System.EventHandler(this.operator_Click);
@@ -164,6 +174,7 @@
             this.six.Name = "six";
             this.six.Size = new System.Drawing.Size(45, 35);
             this.six.TabIndex = 11;
+            this.six.TabStop = false;
             this.six.Text = "6";
             this.six.UseVisualStyleBackColor = true;
             this.six.Click += new System.EventHandler(this.button_Click);
@@ -174,6 +185,7 @@
             this.five.Name = "five";
             this.five.Size = new System.Drawing.Size(45, 35);
             this.five.TabIndex = 10;
+            this.five.TabStop = false;
             this.five.Text = "5";
             this.five.UseVisualStyleBackColor = true;
             this.five.Click += new System.EventHandler(this.button_Click);
@@ -184,6 +196,7 @@
             this.four.Name = "four";
             this.four.Size = new System.Drawing.Size(45, 35);
             this.four.TabIndex = 9;
+            this.four.TabStop = false;
             this.four.Text = "4";
             this.four.UseVisualStyleBackColor = true;
             this.four.Click += new System.EventHandler(this.button_Click);
@@ -194,6 +207,7 @@
             this.subtract.Name = "subtract";
             this.subtract.Size = new System.Drawing.Size(45, 35);
             this.subtract.TabIndex = 16;
+            this.subtract.TabStop = false;
             this.subtract.Text = "-";
             this.subtract.UseVisualStyleBackColor = true;
             this.subtract.Click += new System.EventHandler(this.operator_Click);
@@ -204,6 +218,7 @@
             this.three.Name = "three";
             this.three.Size = new System.Drawing.Size(45, 35);
             this.three.TabIndex = 15;
+            this.three.TabStop = false;
             this.three.Text = "3";
             this.three.UseVisualStyleBackColor = true;
             this.three.Click += new System.EventHandler(this.button_Click);
@@ -214,6 +229,7 @@
             this.two.Name = "two";
             this.two.Size = new System.Drawing.Size(45, 35);
             this.two.TabIndex = 14;
+            this.two.TabStop = false;
             this.two.Text = "2";
             this.two.UseVisualStyleBackColor = true;
             this.two.Click += new System.EventHandler(this.button_Click);
@@ -224,6 +240,7 @@
             this.one.Name = "one";
             this.one.Size = new System.Drawing.Size(45, 35);
             this.one.TabIndex = 13;
+            this.one.TabStop = false;
             this.one.Text = "1";
             this.one.UseVisualStyleBackColor = true;
             this.one.Click += new System.EventHandler(this.button_Click);
@@ -234,6 +251,7 @@
             this.addition.Name = "addition";
             this.addition.Size = new System.Drawing.Size(45, 35);
             this.addition.TabIndex = 18;
+            this.addition.TabStop = false;
             this.addition.Text = "+";
             this.addition.UseVisualStyleBackColor = true;
             this.addition.Click += new System.EventHandler(this.operator_Click);
@@ -244,6 +262,7 @@
             this.point.Name = "point";
             this.point.Size = new System.Drawing.Size(45, 35);
             this.point.TabIndex = 17;
+            this.point.TabStop = false;
             this.point.Text = ".";
             this.point.UseVisualStyleBackColor = true;
             this.point.Click += new System.EventHandler(this.button_Click);
@@ -254,6 +273,7 @@
             this.zero.Name = "zero";
             this.zero.Size = new System.Drawing.Size(96, 35);
             this.zero.TabIndex = 19;
+            this.zero.TabStop = false;
             this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = true;
             this.zero.Click += new System.EventHandler(this.button_Click);
@@ -264,6 +284,7 @@
             this.squareRoot.Name = "squareRoot";
             this.squareRoot.Size = new System.Drawing.Size(45, 56);
             this.squareRoot.TabIndex = 20;
+            this.squareRoot.TabStop = false;
             this.squareRoot.Text = "√";
             this.squareRoot.UseVisualStyleBackColor = true;
             this.squareRoot.Click += new System.EventHandler(this.squareRoot_Click);
@@ -274,6 +295,7 @@
             this.inverse.Name = "inverse";
             this.inverse.Size = new System.Drawing.Size(45, 56);
             this.inverse.TabIndex = 21;
+            this.inverse.TabStop = false;
             this.inverse.Text = "1/x";
             this.inverse.UseVisualStyleBackColor = true;
             this.inverse.Click += new System.EventHandler(this.inverse_Click);
@@ -299,6 +321,7 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.equals;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(264, 265);
