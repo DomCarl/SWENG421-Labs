@@ -12,9 +12,10 @@ namespace Lab11
 {
     public partial class Form1 : Form
     {
-        double value, result = 0;
+        double value, operand2 = 0;
         string operation = "";        
         bool operationPressed = false;
+        AddIt a = new AddIt();
 
 
         public Form1()
@@ -74,7 +75,7 @@ namespace Lab11
                 case "ENTER":
                     equals.PerformClick();
                     break;
-                deault:
+                default:
                     break;
             }
         }
@@ -152,7 +153,7 @@ namespace Lab11
 
             if (value != 0)
             {
-                equals.PerformClick();
+                //equals.PerformClick();
                 operationPressed = true;
                 operation = b.Text;
                 lbl1.Text = value + " " + operation;
@@ -168,6 +169,8 @@ namespace Lab11
 
         private void equals_Click(object sender, EventArgs e)
         {
+            operand2 = double.Parse(tB1.Text);
+
             if (operation == "")
             {
                 value = double.Parse(tB1.Text);
@@ -178,25 +181,22 @@ namespace Lab11
                 switch (operation)
                 {
                     case "+":
-                        tB1.Text = (value + double.Parse(tB1.Text)).ToString();                      
+                        tB1.Text = (a.Add(value, operand2)).ToString();
                         break;
                     case "-":
-                        tB1.Text = (value - double.Parse(tB1.Text)).ToString();
+                        tB1.Text = (value - operand2).ToString();
                         break;
                     case "*":
-                        tB1.Text = (value * double.Parse(tB1.Text)).ToString();
+                        tB1.Text = (value * operand2).ToString();
                         break;
                     case "/":
-                        tB1.Text = (value / double.Parse(tB1.Text)).ToString();
-                        break;
-                    case "%":
-                        tB1.Text = (value % double.Parse(tB1.Text)).ToString();
-                        break;
+                        tB1.Text = (value / operand2).ToString();
+                        break;                    
                     default:
                         break;
                 }                
             }
-            value = double.Parse(tB1.Text);
+            //value = double.Parse(tB1.Text);
         }
     }
 }
