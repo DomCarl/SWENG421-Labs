@@ -15,7 +15,7 @@ namespace Lab11
         double value, operand2 = 0;
         string operation = "";        
         bool operationPressed = false;
-        AddIt a = new AddIt();
+        List<double> list = new List<double>();
 
 
         public Form1()
@@ -116,20 +116,21 @@ namespace Lab11
 
         private void clearEntry_Click(object sender, EventArgs e)
         {
-            tB1.Text = "0";            
+            tB1.Text = "0";
         }
 
         private void clear_Click(object sender, EventArgs e)
         {
-            tB1.Text = "0";            
+            tB1.Text = "0";
             operation = "";
             value = 0;
             lbl1.Text = "";
+            list.Clear();
         }
 
         private void inverse_Click(object sender, EventArgs e)
         {
-            value = double.Parse(tB1.Text);            
+            value = double.Parse(tB1.Text);
             tB1.Text = (1 / value).ToString();
             operationPressed = false;
         }
@@ -139,6 +140,7 @@ namespace Lab11
             value = double.Parse(tB1.Text);
             tB1.Text = (-1 * value).ToString();
             operationPressed = false;
+            value = value * -1;
         }
 
         private void squareRoot_Click(object sender, EventArgs e)
@@ -170,6 +172,7 @@ namespace Lab11
         private void equals_Click(object sender, EventArgs e)
         {
             operand2 = double.Parse(tB1.Text);
+            list.Add(operand2);
 
             if (operation == "")
             {
@@ -181,22 +184,22 @@ namespace Lab11
                 switch (operation)
                 {
                     case "+":
-                        tB1.Text = (a.Add(value, operand2)).ToString();
+                        tB1.Text = (value + list[0]).ToString();
                         break;
                     case "-":
-                        tB1.Text = (value - operand2).ToString();
+                        tB1.Text = (value - list[0]).ToString();
                         break;
                     case "*":
-                        tB1.Text = (value * operand2).ToString();
+                        tB1.Text = (value * list[0]).ToString();
                         break;
                     case "/":
-                        tB1.Text = (value / operand2).ToString();
+                        tB1.Text = (value / list[0]).ToString();
                         break;                    
                     default:
                         break;
-                }                
+                }
             }
-            //value = double.Parse(tB1.Text);
+            value = double.Parse(tB1.Text);            
         }
     }
 }
