@@ -1,0 +1,125 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Final_Project
+{
+    public partial class mainMenu : Form
+    {
+        public mainMenu()
+        {
+            InitializeComponent();
+        }
+
+        private void newItemMI_Click(object sender, EventArgs e)
+        {
+            AddScreen adds = new AddScreen();
+            this.Hide();
+            adds.Show();
+        }
+
+        private void closeMI_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void searchMI_Click(object sender, EventArgs e)
+        {
+            SearchScreen ss = new SearchScreen();
+            this.Hide();
+            ss.Show();
+        }        
+
+        private void quitBtn_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }        
+
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            SearchScreen ss = new SearchScreen();
+            this.Hide();
+            ss.Show();
+        }
+
+        private void catBtn_Click(object sender, EventArgs e)
+        {
+            Categories cs = new Categories();
+            this.Hide();
+            cs.Show();
+        }        
+
+        private void dietsBtn_Click(object sender, EventArgs e)
+        {
+            DietPlans dp = new DietPlans();
+            this.Hide();
+            dp.Show();
+        }             
+
+        private void makeBtn_Click(object sender, EventArgs e)
+        {
+            MakeAMeal mam = new MakeAMeal();
+            this.Hide();
+            mam.Show();
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            AddScreen adds = new AddScreen();
+            this.Hide();
+            adds.Show();
+        }
+
+        private void makeMI_Click(object sender, EventArgs e)
+        {
+            MakeAMeal mam = new MakeAMeal();
+            this.Hide();
+            mam.Show();
+        }
+
+        private void dietMI_Click(object sender, EventArgs e)
+        {
+            DietPlans dp = new DietPlans();
+            this.Hide();
+            dp.Show();
+        }
+
+        private void entreesMI_Click(object sender, EventArgs e)
+        {
+            ViewScreen vs = new ViewScreen();
+            this.Hide();
+            vs.Show();
+            vs.vsLbl.Text = "Entrees";
+        }
+
+        private void sidesMI_Click(object sender, EventArgs e)
+        {
+            ViewScreen vs = new ViewScreen();
+            this.Hide();
+            vs.Show();
+            vs.vsLbl.Text = "Side Dishes";
+        }
+
+        private void dessertsMI_Click(object sender, EventArgs e)
+        {
+            ViewScreen vs = new ViewScreen();
+            this.Hide();
+            vs.Show();
+            vs.vsLbl.Text = "Desserts";
+        }
+
+        private void snacksMI_Click(object sender, EventArgs e)
+        {
+            ViewScreen vs = new ViewScreen();
+            this.Hide();
+            vs.Show();
+            vs.vsLbl.Text = "Snacks";
+        }
+    }
+}
