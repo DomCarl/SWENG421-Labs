@@ -46,6 +46,7 @@ namespace Final_Project
             SearchScreen ss = new SearchScreen();
             this.Hide();
             ss.Show();
+            MessageBox.Show("HELLO");
         }
 
         private void catBtn_Click(object sender, EventArgs e)
