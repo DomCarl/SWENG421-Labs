@@ -86,6 +86,7 @@
     <Compile Include="DietPlans.Designer.cs">
       <DependentUpon>DietPlans.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormManager.cs" />
     <Compile Include="MakeAMeal.cs">
       <SubType>Form</SubType>
     </Compile>

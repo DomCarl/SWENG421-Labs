@@ -24,9 +24,8 @@ namespace Final_Project
 
         private void mainMenuBtn_Click(object sender, EventArgs e)
         {
-            mainMenu mm = new mainMenu();
             this.Hide();
-            mm.Show();
+            FormManager.mm.Show();
         }
 
         private void closeMI_Click(object sender, EventArgs e)
@@ -41,22 +40,30 @@ namespace Final_Project
 
         private void entreeBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FormManager.vs.Show();
+            FormManager.vs.vsLbl.Text = "Barking up the wrong Entrees";
         }
 
         private void sidesBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FormManager.vs.Show();
+            FormManager.vs.vsLbl.Text = "Side Dishes, bishes!";
         }
 
         private void dessertBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FormManager.vs.Show();
+            FormManager.vs.vsLbl.Text = "No sand in these Desserts!";
         }
 
         private void snackBtn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FormManager.vs.Show();
+            FormManager.vs.vsLbl.Text = "Snack attack!";
         }
     }
 }

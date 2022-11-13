@@ -24,9 +24,8 @@ namespace Final_Project
 
         private void mainMenuBtn_Click(object sender, EventArgs e)
         {
-            mainMenu mm = new mainMenu();
             this.Hide();
-            mm.Show();
+            FormManager.mm.Show();
         }
 
         private void quitBtn_Click(object sender, EventArgs e)
