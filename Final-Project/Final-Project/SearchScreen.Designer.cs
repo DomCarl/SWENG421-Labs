@@ -45,6 +45,9 @@
             this.mainMenuBtn = new System.Windows.Forms.Button();
             this.quitBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.searchBtn = new System.Windows.Forms.Button();
+            this.surpriseBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +77,7 @@
             this.newItemMI.Name = "newItemMI";
             this.newItemMI.Size = new System.Drawing.Size(145, 22);
             this.newItemMI.Text = "Add A Recipe";
+            this.newItemMI.Click += new System.EventHandler(this.newItemMI_Click);
             // 
             // closeMI
             // 
@@ -104,12 +108,14 @@
             this.makeAMealToolStripMenuItem.Name = "makeAMealToolStripMenuItem";
             this.makeAMealToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.makeAMealToolStripMenuItem.Text = "Make A Meal";
+            this.makeAMealToolStripMenuItem.Click += new System.EventHandler(this.makeAMealToolStripMenuItem_Click);
             // 
             // dietPlansToolStripMenuItem
             // 
             this.dietPlansToolStripMenuItem.Name = "dietPlansToolStripMenuItem";
             this.dietPlansToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.dietPlansToolStripMenuItem.Text = "Diet Plans";
+            this.dietPlansToolStripMenuItem.Click += new System.EventHandler(this.dietPlansToolStripMenuItem_Click);
             // 
             // categoriesToolStripMenuItem
             // 
@@ -127,24 +133,28 @@
             this.entreesToolStripMenuItem.Name = "entreesToolStripMenuItem";
             this.entreesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.entreesToolStripMenuItem.Text = "Entrees";
+            this.entreesToolStripMenuItem.Click += new System.EventHandler(this.entreesToolStripMenuItem_Click);
             // 
             // sideDishesToolStripMenuItem
             // 
             this.sideDishesToolStripMenuItem.Name = "sideDishesToolStripMenuItem";
             this.sideDishesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.sideDishesToolStripMenuItem.Text = "Side Dishes";
+            this.sideDishesToolStripMenuItem.Click += new System.EventHandler(this.sideDishesToolStripMenuItem_Click);
             // 
             // dessertsToolStripMenuItem
             // 
             this.dessertsToolStripMenuItem.Name = "dessertsToolStripMenuItem";
             this.dessertsToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.dessertsToolStripMenuItem.Text = "Desserts";
+            this.dessertsToolStripMenuItem.Click += new System.EventHandler(this.dessertsToolStripMenuItem_Click);
             // 
             // snacksToolStripMenuItem
             // 
             this.snacksToolStripMenuItem.Name = "snacksToolStripMenuItem";
             this.snacksToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.snacksToolStripMenuItem.Text = "Snacks";
+            this.snacksToolStripMenuItem.Click += new System.EventHandler(this.snacksToolStripMenuItem_Click);
             // 
             // mainMenuBtn
             // 
@@ -169,12 +179,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(223, 215);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(124, 203);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 55);
+            this.label1.Size = new System.Drawing.Size(543, 31);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Coming Soon!";
+            this.label1.Text = "What can we please your palate with today?";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(130, 265);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(537, 20);
+            this.textBox1.TabIndex = 9;
+            // 
+            // searchBtn
+            // 
+            this.searchBtn.Location = new System.Drawing.Point(199, 323);
+            this.searchBtn.Name = "searchBtn";
+            this.searchBtn.Size = new System.Drawing.Size(75, 23);
+            this.searchBtn.TabIndex = 10;
+            this.searchBtn.Text = "Search";
+            this.searchBtn.UseVisualStyleBackColor = true;
+            // 
+            // surpriseBtn
+            // 
+            this.surpriseBtn.Location = new System.Drawing.Point(496, 323);
+            this.surpriseBtn.Name = "surpriseBtn";
+            this.surpriseBtn.Size = new System.Drawing.Size(75, 23);
+            this.surpriseBtn.TabIndex = 11;
+            this.surpriseBtn.Text = "Surprise Me";
+            this.surpriseBtn.UseVisualStyleBackColor = true;
             // 
             // SearchScreen
             // 
@@ -182,6 +217,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.surpriseBtn);
+            this.Controls.Add(this.searchBtn);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.quitBtn);
             this.Controls.Add(this.mainMenuBtn);
@@ -193,6 +231,7 @@
             this.Name = "SearchScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SearchScreen_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -218,5 +257,8 @@
         private System.Windows.Forms.Button mainMenuBtn;
         private System.Windows.Forms.Button quitBtn;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button searchBtn;
+        private System.Windows.Forms.Button surpriseBtn;
     }
 }

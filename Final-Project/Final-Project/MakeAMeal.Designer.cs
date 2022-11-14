@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MakeAMeal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileMI = new System.Windows.Forms.ToolStripMenuItem();
             this.newItemMI = new System.Windows.Forms.ToolStripMenuItem();
@@ -183,12 +184,14 @@
             this.Controls.Add(this.mainMenuBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 600);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "MakeAMeal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MakeAMeal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MakeAMeal_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

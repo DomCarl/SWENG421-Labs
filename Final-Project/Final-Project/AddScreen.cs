@@ -52,5 +52,10 @@ namespace Final_Project
                 pb1.Image = Image.FromFile(fileName);
             }
         }
+
+        private void AddScreen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -35,7 +35,8 @@ namespace Final_Project
 
         private void newItemMI_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FormManager.adds.Show();
         }
 
         private void entreeBtn_Click(object sender, EventArgs e)
@@ -64,6 +65,29 @@ namespace Final_Project
             this.Hide();
             FormManager.vs.Show();
             FormManager.vs.vsLbl.Text = "Snack attack!";
+        }
+
+        private void searchMI_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormManager.ss.Show();
+        }
+
+        private void makeAMealToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormManager.mam.Show();
+        }
+
+        private void dietPlansToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormManager.dp.Show();
+        }
+
+        private void Categories_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -153,6 +153,7 @@
             this.vsLbl.Size = new System.Drawing.Size(329, 55);
             this.vsLbl.TabIndex = 10;
             this.vsLbl.Text = "Coming Soon!";
+            this.vsLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // quitBtn
             // 
@@ -191,6 +192,7 @@
             this.Name = "ViewScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ViewScreen_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

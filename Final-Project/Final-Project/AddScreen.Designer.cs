@@ -664,6 +664,7 @@
             this.Name = "AddScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add A Recipe";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddScreen_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();

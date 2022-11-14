@@ -25,7 +25,7 @@ namespace Final_Project
 
         private void closeMI_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Application.Exit();
         }
 
         private void searchMI_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace Final_Project
 
         private void quitBtn_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Application.Exit();
         }        
 
         private void searchBtn_Click(object sender, EventArgs e)

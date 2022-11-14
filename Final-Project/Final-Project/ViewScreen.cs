@@ -27,5 +27,10 @@ namespace Final_Project
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void ViewScreen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
