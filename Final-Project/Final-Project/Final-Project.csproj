@@ -93,6 +93,7 @@
     <Compile Include="MakeAMeal.Designer.cs">
       <DependentUpon>MakeAMeal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Recipe.cs" />
     <Compile Include="SearchScreen.cs">
       <SubType>Form</SubType>
     </Compile>

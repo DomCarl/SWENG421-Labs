@@ -12,6 +12,8 @@ namespace Final_Project
 {
     public partial class SearchScreen : Form
     {
+        Recipe r;
+        
         public SearchScreen()
         {
             InitializeComponent();
@@ -82,6 +84,29 @@ namespace Final_Project
         private void SearchScreen_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void searchBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var searchRecipe = FormManager.mm.recipes.FirstOrDefault(x => x.name == searchTB.Text);
+            FormManager.vs.Show();
+            FormManager.vs.vsLbl.Text = searchRecipe.name;
+            FormManager.vs.typeLbl.Text = searchRecipe.category;
+            FormManager.vs.dietLbl.Text = searchRecipe.diet;
+            FormManager.vs.servingsLbl.Text = searchRecipe.servings.ToString();            
+        }
+
+        private void surpriseBtn_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            int r = rnd.Next(0, FormManager.mm.recipes.Count);
+            this.Hide();
+            FormManager.vs.Show();
+            FormManager.vs.vsLbl.Text = FormManager.mm.recipes[r].name;
+            FormManager.vs.typeLbl.Text = FormManager.mm.recipes[r].category;
+            FormManager.vs.dietLbl.Text = FormManager.mm.recipes[r].diet;
+            FormManager.vs.servingsLbl.Text = FormManager.mm.recipes[r].servings.ToString();
         }
     }
 }

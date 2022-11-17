@@ -12,6 +12,8 @@ namespace Final_Project
 {
     public partial class mainMenu : Form
     {
+        public List<Recipe> recipes = new List<Recipe>();
+
         public mainMenu()
         {
             InitializeComponent();            

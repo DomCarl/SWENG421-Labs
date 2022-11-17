@@ -48,49 +48,49 @@
             this.nameTB = new System.Windows.Forms.TextBox();
             this.nameLbl = new System.Windows.Forms.Label();
             this.typeLbl = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.typeCB = new System.Windows.Forms.ComboBox();
+            this.dietCB = new System.Windows.Forms.ComboBox();
             this.dietLbl = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dirTB = new System.Windows.Forms.TextBox();
             this.directionsLbl = new System.Windows.Forms.Label();
             this.servingsLbl = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.servingsTB = new System.Windows.Forms.TextBox();
             this.IngLbl = new System.Windows.Forms.Label();
             this.amntLbl = new System.Windows.Forms.Label();
             this.unitLbl = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.ingTB1 = new System.Windows.Forms.TextBox();
+            this.amtTB1 = new System.Windows.Forms.TextBox();
+            this.unitTB1 = new System.Windows.Forms.TextBox();
+            this.unitTB2 = new System.Windows.Forms.TextBox();
+            this.amtTB2 = new System.Windows.Forms.TextBox();
+            this.ingTB2 = new System.Windows.Forms.TextBox();
+            this.unitTB3 = new System.Windows.Forms.TextBox();
+            this.amtTB3 = new System.Windows.Forms.TextBox();
+            this.ingTB3 = new System.Windows.Forms.TextBox();
+            this.unitTB4 = new System.Windows.Forms.TextBox();
+            this.amtTB4 = new System.Windows.Forms.TextBox();
+            this.ingTB4 = new System.Windows.Forms.TextBox();
+            this.unitTB5 = new System.Windows.Forms.TextBox();
+            this.amtTB5 = new System.Windows.Forms.TextBox();
+            this.ingTB5 = new System.Windows.Forms.TextBox();
+            this.unitTB6 = new System.Windows.Forms.TextBox();
+            this.amtTB6 = new System.Windows.Forms.TextBox();
+            this.ingTB6 = new System.Windows.Forms.TextBox();
+            this.unitTB7 = new System.Windows.Forms.TextBox();
+            this.amtTB7 = new System.Windows.Forms.TextBox();
+            this.ingTB7 = new System.Windows.Forms.TextBox();
+            this.unitTB8 = new System.Windows.Forms.TextBox();
+            this.amtTB8 = new System.Windows.Forms.TextBox();
+            this.ingTB8 = new System.Windows.Forms.TextBox();
+            this.unitTB9 = new System.Windows.Forms.TextBox();
+            this.amtTB9 = new System.Windows.Forms.TextBox();
+            this.ingTB9 = new System.Windows.Forms.TextBox();
+            this.unitTB10 = new System.Windows.Forms.TextBox();
+            this.amtTB10 = new System.Windows.Forms.TextBox();
+            this.ingTB10 = new System.Windows.Forms.TextBox();
+            this.unitTB11 = new System.Windows.Forms.TextBox();
+            this.amtTB11 = new System.Windows.Forms.TextBox();
+            this.ingTB11 = new System.Windows.Forms.TextBox();
             this.saveBtn = new System.Windows.Forms.Button();
             this.addPicBtn = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -250,30 +250,31 @@
             this.typeLbl.TabIndex = 15;
             this.typeLbl.Text = "Type of Recipe";
             // 
-            // comboBox1
+            // typeCB
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.typeCB.FormattingEnabled = true;
+            this.typeCB.Items.AddRange(new object[] {
             "Entree",
             "Side Dish",
             "Dessert",
             "Snack"});
-            this.comboBox1.Location = new System.Drawing.Point(172, 80);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 16;
+            this.typeCB.Location = new System.Drawing.Point(172, 80);
+            this.typeCB.Name = "typeCB";
+            this.typeCB.Size = new System.Drawing.Size(121, 21);
+            this.typeCB.TabIndex = 16;
             // 
-            // comboBox2
+            // dietCB
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.dietCB.FormattingEnabled = true;
+            this.dietCB.Items.AddRange(new object[] {
+            "Standard",
             "Keto",
             "South Beach",
             "See Food"});
-            this.comboBox2.Location = new System.Drawing.Point(172, 119);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 18;
+            this.dietCB.Location = new System.Drawing.Point(172, 119);
+            this.dietCB.Name = "dietCB";
+            this.dietCB.Size = new System.Drawing.Size(121, 21);
+            this.dietCB.TabIndex = 18;
             // 
             // dietLbl
             // 
@@ -284,13 +285,13 @@
             this.dietLbl.TabIndex = 17;
             this.dietLbl.Text = "Diet Plan";
             // 
-            // textBox1
+            // dirTB
             // 
-            this.textBox1.Location = new System.Drawing.Point(521, 233);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 276);
-            this.textBox1.TabIndex = 19;
+            this.dirTB.Location = new System.Drawing.Point(521, 233);
+            this.dirTB.Multiline = true;
+            this.dirTB.Name = "dirTB";
+            this.dirTB.Size = new System.Drawing.Size(250, 276);
+            this.dirTB.TabIndex = 22;
             // 
             // directionsLbl
             // 
@@ -310,12 +311,12 @@
             this.servingsLbl.TabIndex = 21;
             this.servingsLbl.Text = "Servings";
             // 
-            // textBox2
+            // servingsTB
             // 
-            this.textBox2.Location = new System.Drawing.Point(172, 156);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 22;
+            this.servingsTB.Location = new System.Drawing.Point(172, 156);
+            this.servingsTB.Name = "servingsTB";
+            this.servingsTB.Size = new System.Drawing.Size(121, 20);
+            this.servingsTB.TabIndex = 20;
             // 
             // IngLbl
             // 
@@ -344,236 +345,269 @@
             this.unitLbl.TabIndex = 25;
             this.unitLbl.Text = "Unit of Measure";
             // 
-            // textBox3
+            // ingTB1
+            // 
+            this.ingTB1.Location = new System.Drawing.Point(33, 236);
+            this.ingTB1.Name = "ingTB1";
+            this.ingTB1.Size = new System.Drawing.Size(100, 20);
+            this.ingTB1.TabIndex = 26;
+            this.ingTB1.Text = "Ingredient";
             // 
-            this.textBox3.Location = new System.Drawing.Point(33, 236);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 26;
+            // amtTB1
+            // 
+            this.amtTB1.Location = new System.Drawing.Point(172, 236);
+            this.amtTB1.Name = "amtTB1";
+            this.amtTB1.Size = new System.Drawing.Size(100, 20);
+            this.amtTB1.TabIndex = 27;
+            this.amtTB1.Text = "0.0";
             // 
-            // textBox4
+            // unitTB1
+            // 
+            this.unitTB1.Location = new System.Drawing.Point(304, 236);
+            this.unitTB1.Name = "unitTB1";
+            this.unitTB1.Size = new System.Drawing.Size(100, 20);
+            this.unitTB1.TabIndex = 28;
+            this.unitTB1.Text = "Units";
             // 
-            this.textBox4.Location = new System.Drawing.Point(172, 236);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 27;
+            // unitTB2
+            // 
+            this.unitTB2.Location = new System.Drawing.Point(304, 262);
+            this.unitTB2.Name = "unitTB2";
+            this.unitTB2.Size = new System.Drawing.Size(100, 20);
+            this.unitTB2.TabIndex = 31;
+            this.unitTB2.Text = "Units";
             // 
-            // textBox5
+            // amtTB2
+            // 
+            this.amtTB2.Location = new System.Drawing.Point(172, 262);
+            this.amtTB2.Name = "amtTB2";
+            this.amtTB2.Size = new System.Drawing.Size(100, 20);
+            this.amtTB2.TabIndex = 30;
+            this.amtTB2.Text = "0.0";
             // 
-            this.textBox5.Location = new System.Drawing.Point(304, 236);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 28;
+            // ingTB2
+            // 
+            this.ingTB2.Location = new System.Drawing.Point(33, 262);
+            this.ingTB2.Name = "ingTB2";
+            this.ingTB2.Size = new System.Drawing.Size(100, 20);
+            this.ingTB2.TabIndex = 29;
+            this.ingTB2.Text = "Ingredient";
             // 
-            // textBox6
+            // unitTB3
+            // 
+            this.unitTB3.Location = new System.Drawing.Point(304, 288);
+            this.unitTB3.Name = "unitTB3";
+            this.unitTB3.Size = new System.Drawing.Size(100, 20);
+            this.unitTB3.TabIndex = 34;
+            this.unitTB3.Text = "Units";
             // 
-            this.textBox6.Location = new System.Drawing.Point(304, 262);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 31;
+            // amtTB3
+            // 
+            this.amtTB3.Location = new System.Drawing.Point(172, 288);
+            this.amtTB3.Name = "amtTB3";
+            this.amtTB3.Size = new System.Drawing.Size(100, 20);
+            this.amtTB3.TabIndex = 33;
+            this.amtTB3.Text = "0.0";
             // 
-            // textBox7
+            // ingTB3
+            // 
+            this.ingTB3.Location = new System.Drawing.Point(33, 288);
+            this.ingTB3.Name = "ingTB3";
+            this.ingTB3.Size = new System.Drawing.Size(100, 20);
+            this.ingTB3.TabIndex = 32;
+            this.ingTB3.Text = "Ingredient";
             // 
-            this.textBox7.Location = new System.Drawing.Point(172, 262);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 30;
+            // unitTB4
+            // 
+            this.unitTB4.Location = new System.Drawing.Point(304, 314);
+            this.unitTB4.Name = "unitTB4";
+            this.unitTB4.Size = new System.Drawing.Size(100, 20);
+            this.unitTB4.TabIndex = 37;
+            this.unitTB4.Text = "Units";
             // 
-            // textBox8
+            // amtTB4
+            // 
+            this.amtTB4.Location = new System.Drawing.Point(172, 314);
+            this.amtTB4.Name = "amtTB4";
+            this.amtTB4.Size = new System.Drawing.Size(100, 20);
+            this.amtTB4.TabIndex = 36;
+            this.amtTB4.Text = "0.0";
             // 
-            this.textBox8.Location = new System.Drawing.Point(33, 262);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 29;
+            // ingTB4
+            // 
+            this.ingTB4.Location = new System.Drawing.Point(33, 314);
+            this.ingTB4.Name = "ingTB4";
+            this.ingTB4.Size = new System.Drawing.Size(100, 20);
+            this.ingTB4.TabIndex = 35;
+            this.ingTB4.Text = "Ingredient";
             // 
-            // textBox9
+            // unitTB5
+            // 
+            this.unitTB5.Location = new System.Drawing.Point(304, 340);
+            this.unitTB5.Name = "unitTB5";
+            this.unitTB5.Size = new System.Drawing.Size(100, 20);
+            this.unitTB5.TabIndex = 40;
+            this.unitTB5.Text = "Units";
             // 
-            this.textBox9.Location = new System.Drawing.Point(304, 288);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 34;
+            // amtTB5
+            // 
+            this.amtTB5.Location = new System.Drawing.Point(172, 340);
+            this.amtTB5.Name = "amtTB5";
+            this.amtTB5.Size = new System.Drawing.Size(100, 20);
+            this.amtTB5.TabIndex = 39;
+            this.amtTB5.Text = "0.0";
             // 
-            // textBox10
+            // ingTB5
+            // 
+            this.ingTB5.Location = new System.Drawing.Point(33, 340);
+            this.ingTB5.Name = "ingTB5";
+            this.ingTB5.Size = new System.Drawing.Size(100, 20);
+            this.ingTB5.TabIndex = 38;
+            this.ingTB5.Text = "Ingredient";
             // 
-            this.textBox10.Location = new System.Drawing.Point(172, 288);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 33;
+            // unitTB6
+            // 
+            this.unitTB6.Location = new System.Drawing.Point(304, 366);
+            this.unitTB6.Name = "unitTB6";
+            this.unitTB6.Size = new System.Drawing.Size(100, 20);
+            this.unitTB6.TabIndex = 43;
+            this.unitTB6.Text = "Units";
             // 
-            // textBox11
+            // amtTB6
+            // 
+            this.amtTB6.Location = new System.Drawing.Point(172, 366);
+            this.amtTB6.Name = "amtTB6";
+            this.amtTB6.Size = new System.Drawing.Size(100, 20);
+            this.amtTB6.TabIndex = 42;
+            this.amtTB6.Text = "0.0";
             // 
-            this.textBox11.Location = new System.Drawing.Point(33, 288);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 32;
+            // ingTB6
+            // 
+            this.ingTB6.Location = new System.Drawing.Point(33, 366);
+            this.ingTB6.Name = "ingTB6";
+            this.ingTB6.Size = new System.Drawing.Size(100, 20);
+            this.ingTB6.TabIndex = 41;
+            this.ingTB6.Text = "Ingredient";
             // 
-            // textBox12
+            // unitTB7
+            // 
+            this.unitTB7.Location = new System.Drawing.Point(304, 392);
+            this.unitTB7.Name = "unitTB7";
+            this.unitTB7.Size = new System.Drawing.Size(100, 20);
+            this.unitTB7.TabIndex = 46;
+            this.unitTB7.Text = "Units";
             // 
-            this.textBox12.Location = new System.Drawing.Point(304, 314);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 37;
+            // amtTB7
+            // 
+            this.amtTB7.Location = new System.Drawing.Point(172, 392);
+            this.amtTB7.Name = "amtTB7";
+            this.amtTB7.Size = new System.Drawing.Size(100, 20);
+            this.amtTB7.TabIndex = 45;
+            this.amtTB7.Text = "0.0";
             // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(172, 314);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 36;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(33, 314);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 35;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(304, 340);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 40;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(172, 340);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 39;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(33, 340);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 38;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(304, 366);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 20);
-            this.textBox18.TabIndex = 43;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(172, 366);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 20);
-            this.textBox19.TabIndex = 42;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(33, 366);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 20);
-            this.textBox20.TabIndex = 41;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(304, 392);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(100, 20);
-            this.textBox21.TabIndex = 46;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(172, 392);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(100, 20);
-            this.textBox22.TabIndex = 45;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(33, 392);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(100, 20);
-            this.textBox23.TabIndex = 44;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(304, 418);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(100, 20);
-            this.textBox24.TabIndex = 49;
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(172, 418);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(100, 20);
-            this.textBox25.TabIndex = 48;
-            // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(33, 418);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(100, 20);
-            this.textBox26.TabIndex = 47;
-            // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(304, 444);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(100, 20);
-            this.textBox27.TabIndex = 52;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(172, 444);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(100, 20);
-            this.textBox28.TabIndex = 51;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(33, 444);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(100, 20);
-            this.textBox29.TabIndex = 50;
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(304, 470);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(100, 20);
-            this.textBox30.TabIndex = 55;
-            // 
-            // textBox31
-            // 
-            this.textBox31.Location = new System.Drawing.Point(172, 470);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(100, 20);
-            this.textBox31.TabIndex = 54;
-            // 
-            // textBox32
-            // 
-            this.textBox32.Location = new System.Drawing.Point(33, 470);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(100, 20);
-            this.textBox32.TabIndex = 53;
-            // 
-            // textBox33
-            // 
-            this.textBox33.Location = new System.Drawing.Point(304, 496);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(100, 20);
-            this.textBox33.TabIndex = 58;
-            // 
-            // textBox34
-            // 
-            this.textBox34.Location = new System.Drawing.Point(172, 496);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(100, 20);
-            this.textBox34.TabIndex = 57;
-            // 
-            // textBox35
-            // 
-            this.textBox35.Location = new System.Drawing.Point(33, 496);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(100, 20);
-            this.textBox35.TabIndex = 56;
+            // ingTB7
+            // 
+            this.ingTB7.Location = new System.Drawing.Point(33, 392);
+            this.ingTB7.Name = "ingTB7";
+            this.ingTB7.Size = new System.Drawing.Size(100, 20);
+            this.ingTB7.TabIndex = 44;
+            this.ingTB7.Text = "Ingredient";
+            // 
+            // unitTB8
+            // 
+            this.unitTB8.Location = new System.Drawing.Point(304, 418);
+            this.unitTB8.Name = "unitTB8";
+            this.unitTB8.Size = new System.Drawing.Size(100, 20);
+            this.unitTB8.TabIndex = 49;
+            this.unitTB8.Text = "Units";
+            // 
+            // amtTB8
+            // 
+            this.amtTB8.Location = new System.Drawing.Point(172, 418);
+            this.amtTB8.Name = "amtTB8";
+            this.amtTB8.Size = new System.Drawing.Size(100, 20);
+            this.amtTB8.TabIndex = 48;
+            this.amtTB8.Text = "0.0";
+            // 
+            // ingTB8
+            // 
+            this.ingTB8.Location = new System.Drawing.Point(33, 418);
+            this.ingTB8.Name = "ingTB8";
+            this.ingTB8.Size = new System.Drawing.Size(100, 20);
+            this.ingTB8.TabIndex = 47;
+            this.ingTB8.Text = "Ingredient";
+            // 
+            // unitTB9
+            // 
+            this.unitTB9.Location = new System.Drawing.Point(304, 444);
+            this.unitTB9.Name = "unitTB9";
+            this.unitTB9.Size = new System.Drawing.Size(100, 20);
+            this.unitTB9.TabIndex = 52;
+            this.unitTB9.Text = "Units";
+            // 
+            // amtTB9
+            // 
+            this.amtTB9.Location = new System.Drawing.Point(172, 444);
+            this.amtTB9.Name = "amtTB9";
+            this.amtTB9.Size = new System.Drawing.Size(100, 20);
+            this.amtTB9.TabIndex = 51;
+            this.amtTB9.Text = "0.0";
+            // 
+            // ingTB9
+            // 
+            this.ingTB9.Location = new System.Drawing.Point(33, 444);
+            this.ingTB9.Name = "ingTB9";
+            this.ingTB9.Size = new System.Drawing.Size(100, 20);
+            this.ingTB9.TabIndex = 50;
+            this.ingTB9.Text = "Ingredient";
+            // 
+            // unitTB10
+            // 
+            this.unitTB10.Location = new System.Drawing.Point(304, 470);
+            this.unitTB10.Name = "unitTB10";
+            this.unitTB10.Size = new System.Drawing.Size(100, 20);
+            this.unitTB10.TabIndex = 55;
+            this.unitTB10.Text = "Units";
+            // 
+            // amtTB10
+            // 
+            this.amtTB10.Location = new System.Drawing.Point(172, 470);
+            this.amtTB10.Name = "amtTB10";
+            this.amtTB10.Size = new System.Drawing.Size(100, 20);
+            this.amtTB10.TabIndex = 54;
+            this.amtTB10.Text = "0.0";
+            // 
+            // ingTB10
+            // 
+            this.ingTB10.Location = new System.Drawing.Point(33, 470);
+            this.ingTB10.Name = "ingTB10";
+            this.ingTB10.Size = new System.Drawing.Size(100, 20);
+            this.ingTB10.TabIndex = 53;
+            this.ingTB10.Text = "Ingredient";
+            // 
+            // unitTB11
+            // 
+            this.unitTB11.Location = new System.Drawing.Point(304, 496);
+            this.unitTB11.Name = "unitTB11";
+            this.unitTB11.Size = new System.Drawing.Size(100, 20);
+            this.unitTB11.TabIndex = 58;
+            this.unitTB11.Text = "Units";
+            // 
+            // amtTB11
+            // 
+            this.amtTB11.Location = new System.Drawing.Point(172, 496);
+            this.amtTB11.Name = "amtTB11";
+            this.amtTB11.Size = new System.Drawing.Size(100, 20);
+            this.amtTB11.TabIndex = 57;
+            this.amtTB11.Text = "0.0";
+            // 
+            // ingTB11
+            // 
+            this.ingTB11.Location = new System.Drawing.Point(33, 496);
+            this.ingTB11.Name = "ingTB11";
+            this.ingTB11.Size = new System.Drawing.Size(100, 20);
+            this.ingTB11.TabIndex = 56;
+            this.ingTB11.Text = "Ingredient";
             // 
             // saveBtn
             // 
@@ -607,49 +641,49 @@
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.addPicBtn);
             this.Controls.Add(this.saveBtn);
-            this.Controls.Add(this.textBox33);
-            this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.textBox35);
-            this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.textBox31);
-            this.Controls.Add(this.textBox32);
-            this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.unitTB11);
+            this.Controls.Add(this.amtTB11);
+            this.Controls.Add(this.ingTB11);
+            this.Controls.Add(this.unitTB10);
+            this.Controls.Add(this.amtTB10);
+            this.Controls.Add(this.ingTB10);
+            this.Controls.Add(this.unitTB9);
+            this.Controls.Add(this.amtTB9);
+            this.Controls.Add(this.ingTB9);
+            this.Controls.Add(this.unitTB8);
+            this.Controls.Add(this.amtTB8);
+            this.Controls.Add(this.ingTB8);
+            this.Controls.Add(this.unitTB7);
+            this.Controls.Add(this.amtTB7);
+            this.Controls.Add(this.ingTB7);
+            this.Controls.Add(this.unitTB6);
+            this.Controls.Add(this.amtTB6);
+            this.Controls.Add(this.ingTB6);
+            this.Controls.Add(this.unitTB5);
+            this.Controls.Add(this.amtTB5);
+            this.Controls.Add(this.ingTB5);
+            this.Controls.Add(this.unitTB4);
+            this.Controls.Add(this.amtTB4);
+            this.Controls.Add(this.ingTB4);
+            this.Controls.Add(this.unitTB3);
+            this.Controls.Add(this.amtTB3);
+            this.Controls.Add(this.ingTB3);
+            this.Controls.Add(this.unitTB2);
+            this.Controls.Add(this.amtTB2);
+            this.Controls.Add(this.ingTB2);
+            this.Controls.Add(this.unitTB1);
+            this.Controls.Add(this.amtTB1);
+            this.Controls.Add(this.ingTB1);
             this.Controls.Add(this.unitLbl);
             this.Controls.Add(this.amntLbl);
             this.Controls.Add(this.IngLbl);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.servingsTB);
             this.Controls.Add(this.servingsLbl);
             this.Controls.Add(this.directionsLbl);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.dirTB);
+            this.Controls.Add(this.dietCB);
             this.Controls.Add(this.dietLbl);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.typeCB);
             this.Controls.Add(this.typeLbl);
             this.Controls.Add(this.nameLbl);
             this.Controls.Add(this.nameTB);
@@ -694,49 +728,49 @@
         private System.Windows.Forms.TextBox nameTB;
         private System.Windows.Forms.Label nameLbl;
         private System.Windows.Forms.Label typeLbl;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox typeCB;
+        private System.Windows.Forms.ComboBox dietCB;
         private System.Windows.Forms.Label dietLbl;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox dirTB;
         private System.Windows.Forms.Label directionsLbl;
         private System.Windows.Forms.Label servingsLbl;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox servingsTB;
         private System.Windows.Forms.Label IngLbl;
         private System.Windows.Forms.Label amntLbl;
         private System.Windows.Forms.Label unitLbl;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.TextBox ingTB1;
+        private System.Windows.Forms.TextBox amtTB1;
+        private System.Windows.Forms.TextBox unitTB1;
+        private System.Windows.Forms.TextBox unitTB2;
+        private System.Windows.Forms.TextBox amtTB2;
+        private System.Windows.Forms.TextBox ingTB2;
+        private System.Windows.Forms.TextBox unitTB3;
+        private System.Windows.Forms.TextBox amtTB3;
+        private System.Windows.Forms.TextBox ingTB3;
+        private System.Windows.Forms.TextBox unitTB4;
+        private System.Windows.Forms.TextBox amtTB4;
+        private System.Windows.Forms.TextBox ingTB4;
+        private System.Windows.Forms.TextBox unitTB5;
+        private System.Windows.Forms.TextBox amtTB5;
+        private System.Windows.Forms.TextBox ingTB5;
+        private System.Windows.Forms.TextBox unitTB6;
+        private System.Windows.Forms.TextBox amtTB6;
+        private System.Windows.Forms.TextBox ingTB6;
+        private System.Windows.Forms.TextBox unitTB7;
+        private System.Windows.Forms.TextBox amtTB7;
+        private System.Windows.Forms.TextBox ingTB7;
+        private System.Windows.Forms.TextBox unitTB8;
+        private System.Windows.Forms.TextBox amtTB8;
+        private System.Windows.Forms.TextBox ingTB8;
+        private System.Windows.Forms.TextBox unitTB9;
+        private System.Windows.Forms.TextBox amtTB9;
+        private System.Windows.Forms.TextBox ingTB9;
+        private System.Windows.Forms.TextBox unitTB10;
+        private System.Windows.Forms.TextBox amtTB10;
+        private System.Windows.Forms.TextBox ingTB10;
+        private System.Windows.Forms.TextBox unitTB11;
+        private System.Windows.Forms.TextBox amtTB11;
+        private System.Windows.Forms.TextBox ingTB11;
         private System.Windows.Forms.Button saveBtn;
         private System.Windows.Forms.Button addPicBtn;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;

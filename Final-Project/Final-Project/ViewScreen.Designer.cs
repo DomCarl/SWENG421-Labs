@@ -45,6 +45,9 @@
             this.vsLbl = new System.Windows.Forms.Label();
             this.quitBtn = new System.Windows.Forms.Button();
             this.mainMenuBtn = new System.Windows.Forms.Button();
+            this.typeLbl = new System.Windows.Forms.Label();
+            this.dietLbl = new System.Windows.Forms.Label();
+            this.servingsLbl = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -148,7 +151,7 @@
             // 
             this.vsLbl.AutoSize = true;
             this.vsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vsLbl.Location = new System.Drawing.Point(228, 253);
+            this.vsLbl.Location = new System.Drawing.Point(211, 33);
             this.vsLbl.Name = "vsLbl";
             this.vsLbl.Size = new System.Drawing.Size(329, 55);
             this.vsLbl.TabIndex = 10;
@@ -175,12 +178,42 @@
             this.mainMenuBtn.UseVisualStyleBackColor = true;
             this.mainMenuBtn.Click += new System.EventHandler(this.mainMenuBtn_Click);
             // 
+            // typeLbl
+            // 
+            this.typeLbl.AutoSize = true;
+            this.typeLbl.Location = new System.Drawing.Point(178, 98);
+            this.typeLbl.Name = "typeLbl";
+            this.typeLbl.Size = new System.Drawing.Size(35, 13);
+            this.typeLbl.TabIndex = 14;
+            this.typeLbl.Text = "label1";
+            // 
+            // dietLbl
+            // 
+            this.dietLbl.AutoSize = true;
+            this.dietLbl.Location = new System.Drawing.Point(354, 98);
+            this.dietLbl.Name = "dietLbl";
+            this.dietLbl.Size = new System.Drawing.Size(35, 13);
+            this.dietLbl.TabIndex = 15;
+            this.dietLbl.Text = "label2";
+            // 
+            // servingsLbl
+            // 
+            this.servingsLbl.AutoSize = true;
+            this.servingsLbl.Location = new System.Drawing.Point(535, 98);
+            this.servingsLbl.Name = "servingsLbl";
+            this.servingsLbl.Size = new System.Drawing.Size(35, 13);
+            this.servingsLbl.TabIndex = 16;
+            this.servingsLbl.Text = "label3";
+            // 
             // ViewScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.servingsLbl);
+            this.Controls.Add(this.dietLbl);
+            this.Controls.Add(this.typeLbl);
             this.Controls.Add(this.quitBtn);
             this.Controls.Add(this.mainMenuBtn);
             this.Controls.Add(this.vsLbl);
@@ -218,5 +251,8 @@
         private System.Windows.Forms.Button quitBtn;
         private System.Windows.Forms.Button mainMenuBtn;
         public System.Windows.Forms.Label vsLbl;
+        public System.Windows.Forms.Label typeLbl;
+        public System.Windows.Forms.Label dietLbl;
+        public System.Windows.Forms.Label servingsLbl;
     }
 }

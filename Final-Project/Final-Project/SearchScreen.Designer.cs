@@ -45,7 +45,7 @@
             this.mainMenuBtn = new System.Windows.Forms.Button();
             this.quitBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.searchTB = new System.Windows.Forms.TextBox();
             this.searchBtn = new System.Windows.Forms.Button();
             this.surpriseBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -186,12 +186,12 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "What can we please your palate with today?";
             // 
-            // textBox1
+            // searchTB
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 265);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(537, 20);
-            this.textBox1.TabIndex = 9;
+            this.searchTB.Location = new System.Drawing.Point(130, 265);
+            this.searchTB.Name = "searchTB";
+            this.searchTB.Size = new System.Drawing.Size(537, 20);
+            this.searchTB.TabIndex = 9;
             // 
             // searchBtn
             // 
@@ -201,6 +201,7 @@
             this.searchBtn.TabIndex = 10;
             this.searchBtn.Text = "Search";
             this.searchBtn.UseVisualStyleBackColor = true;
+            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             // 
             // surpriseBtn
             // 
@@ -210,6 +211,7 @@
             this.surpriseBtn.TabIndex = 11;
             this.surpriseBtn.Text = "Surprise Me";
             this.surpriseBtn.UseVisualStyleBackColor = true;
+            this.surpriseBtn.Click += new System.EventHandler(this.surpriseBtn_Click);
             // 
             // SearchScreen
             // 
@@ -219,7 +221,7 @@
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.surpriseBtn);
             this.Controls.Add(this.searchBtn);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.searchTB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.quitBtn);
             this.Controls.Add(this.mainMenuBtn);
@@ -257,7 +259,7 @@
         private System.Windows.Forms.Button mainMenuBtn;
         private System.Windows.Forms.Button quitBtn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox searchTB;
         private System.Windows.Forms.Button searchBtn;
         private System.Windows.Forms.Button surpriseBtn;
     }
