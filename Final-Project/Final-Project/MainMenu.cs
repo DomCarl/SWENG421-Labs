@@ -13,14 +13,10 @@ namespace Final_Project
 {
     public partial class mainMenu : Form
     {
-        public List<Recipe> entreeList = new List<Recipe>();
-        public List<Recipe> sideList = new List<Recipe>();
-        public List<Recipe> dessertList = new List<Recipe>();
-        public List<Recipe> snackList = new List<Recipe>();
-
         public mainMenu()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            ListManager.DeserializeLists();
         }
 
         private void newItemMI_Click(object sender, EventArgs e)
@@ -48,8 +44,7 @@ namespace Final_Project
         private void searchBtn_Click(object sender, EventArgs e)
         {
             Hide();
-            FormManager.ss.Show();
-            //MessageBox.Show("HELLO");
+            FormManager.ss.Show();            
         }
 
         private void catBtn_Click(object sender, EventArgs e)
@@ -118,23 +113,8 @@ namespace Final_Project
 
         private void saveCBMI_Click(object sender, EventArgs e)
         {
-            var xmlSerializer = new XmlSerializer(typeof(List<Recipe>));
-            using (var s = System.IO.File.Create("Entrees.xml"))
-            {
-                xmlSerializer.Serialize(s, FormManager.mm.entreeList);
-            }
-            using (var s = System.IO.File.Create("Sides.xml"))
-            {
-                xmlSerializer.Serialize(s, FormManager.mm.sideList);
-            }
-            using (var s = System.IO.File.Create("Desserts.xml"))
-            {
-                xmlSerializer.Serialize(s, FormManager.mm.dessertList);
-            }
-            using (var s = System.IO.File.Create("Snacks.xml"))
-            {
-                xmlSerializer.Serialize(s, FormManager.mm.snackList);
-            }
+            ListManager.SerializeLists();
+            MessageBox.Show("Cookbook saved!");
         }
     }
 }

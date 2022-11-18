@@ -12,8 +12,8 @@ namespace Final_Project
 {
     public partial class AddScreen : Form
     {
-        string fileName;
-        
+        string fileName;        
+
         public AddScreen()
         {
             InitializeComponent();
@@ -55,16 +55,16 @@ namespace Final_Project
             switch(r.category)
             {
                 case "Entree":
-                    FormManager.mm.entreeList.Add(r);
+                    ListManager.entreeList.Add(r);
                     break;
-                case "Side":
-                    FormManager.mm.sideList.Add(r);
+                case "Side Dish":
+                    ListManager.sideList.Add(r);
                     break;
                 case "Dessert":
-                    FormManager.mm.dessertList.Add(r);
+                    ListManager.dessertList.Add(r);
                     break;
                 case "Snack":
-                    FormManager.mm.snackList.Add(r);
+                    ListManager.snackList.Add(r);
                     break;
                 default:
                     break;
@@ -91,6 +91,86 @@ namespace Final_Project
         private void AddScreen_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        public void displayRecipe(Recipe r)
+        {
+            FormManager.vs.Hide();
+            FormManager.adds.Show();
+            nameTB.Text = r.name;
+            typeCB.SelectedItem = r.category;
+            dietCB.SelectedItem = r.diet;
+            servingsTB.Text = r.servings.ToString();
+            dirTB.Text = r.instructions;
+            fileName = r.image;
+            pb1.Image = Image.FromFile(fileName);
+
+            for (int i = 0; i < r.ingredients.Count; i++)
+            {
+                if (r.ingredients[i] != null)
+                {
+                    switch (i)
+                    {
+                        case 0:
+                            ingTB1.Text = r.ingredients[i];
+                            amtTB1.Text = r.amounts[i].ToString();
+                            unitTB1.Text = r.units[i];
+                            break;
+                        case 1:
+                            ingTB2.Text = r.ingredients[i];
+                            amtTB2.Text = r.amounts[i].ToString();
+                            unitTB2.Text = r.units[i];
+                            break;
+                        case 2:
+                            ingTB3.Text = r.ingredients[i];
+                            amtTB3.Text = r.amounts[i].ToString();
+                            unitTB3.Text = r.units[i];
+                            break;
+                        case 3:
+                            ingTB4.Text = r.ingredients[i];
+                            amtTB4.Text = r.amounts[i].ToString();
+                            unitTB4.Text = r.units[i];
+                            break;
+                        case 4:
+                            ingTB5.Text = r.ingredients[i];
+                            amtTB5.Text = r.amounts[i].ToString();
+                            unitTB5.Text = r.units[i];
+                            break;
+                        case 5:
+                            ingTB6.Text = r.ingredients[i];
+                            amtTB6.Text = r.amounts[i].ToString();
+                            unitTB6.Text = r.units[i];
+                            break;
+                        case 6:
+                            ingTB7.Text = r.ingredients[i];
+                            amtTB7.Text = r.amounts[i].ToString();
+                            unitTB7.Text = r.units[i];
+                            break;
+                        case 7:
+                            ingTB8.Text = r.ingredients[i];
+                            amtTB8.Text = r.amounts[i].ToString();
+                            unitTB8.Text = r.units[i];
+                            break;
+                        case 8:
+                            ingTB9.Text = r.ingredients[i];
+                            amtTB9.Text = r.amounts[i].ToString();
+                            unitTB9.Text = r.units[i];
+                            break;
+                        case 9:
+                            ingTB10.Text = r.ingredients[i];
+                            amtTB10.Text = r.amounts[i].ToString();
+                            unitTB10.Text = r.units[i];
+                            break;
+                        case 10:
+                            ingTB11.Text = r.ingredients[i];
+                            amtTB11.Text = r.amounts[i].ToString();
+                            unitTB11.Text = r.units[i];
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
         }
     }
 }

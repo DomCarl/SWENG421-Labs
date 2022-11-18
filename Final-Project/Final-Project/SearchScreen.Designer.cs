@@ -327,10 +327,10 @@
         private System.Windows.Forms.TextBox searchTB;
         private System.Windows.Forms.Button searchBtn;
         private System.Windows.Forms.Button surpriseBtn;
-        private System.Windows.Forms.RadioButton entreeRB;
-        private System.Windows.Forms.RadioButton sideRB;
-        private System.Windows.Forms.RadioButton dessertRB;
-        private System.Windows.Forms.RadioButton snacksRB;
-        private System.Windows.Forms.RadioButton allRB;
+        public System.Windows.Forms.RadioButton entreeRB;
+        public System.Windows.Forms.RadioButton sideRB;
+        public System.Windows.Forms.RadioButton dessertRB;
+        public System.Windows.Forms.RadioButton snacksRB;
+        public System.Windows.Forms.RadioButton allRB;
     }
 }

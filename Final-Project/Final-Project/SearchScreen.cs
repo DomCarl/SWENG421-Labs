@@ -90,6 +90,8 @@ namespace Final_Project
         {
             if (entreeRB.Checked)
             {
+                List<Recipe> results = ListManager.entreeList.FindAll(x => x.name.Contains(searchTB.Text));
+
                 Hide();
                 FormManager.vs.Show();
                 FormManager.vs.vsLbl.Text = "Entrees";
@@ -121,73 +123,101 @@ namespace Final_Project
             else
             {
                 MessageBox.Show("Please select a category to search.");
-            }           
-            
-            //var searchRecipe = FormManager.mm.entreeList.FirstOrDefault(x => x.name == searchTB.Text);
-            //FormManager.vs.Show();
-            //FormManager.vs.vsLbl.Text = searchRecipe.name;
-            //FormManager.vs.typeLbl.Text = searchRecipe.category;
-            //FormManager.vs.dietLbl.Text = searchRecipe.diet;
-            //FormManager.vs.servingsLbl.Text = searchRecipe.servings.ToString();            
+            }                        
         }
 
         private void surpriseBtn_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            int randEntree = rnd.Next(0, FormManager.mm.entreeList.Count);
-            int randSide = rnd.Next(0, FormManager.mm.entreeList.Count);
-            int randDessert = rnd.Next(0, FormManager.mm.entreeList.Count);
-            int randSnack = rnd.Next(0, FormManager.mm.entreeList.Count);
+            int randEntree = rnd.Next(0, ListManager.entreeList.Count);
+            int randSide = rnd.Next(0, ListManager.sideList.Count);
+            int randDessert = rnd.Next(0, ListManager.dessertList.Count);
+            int randSnack = rnd.Next(0, ListManager.snackList.Count);
             
             if (entreeRB.Checked)
             {
                 Hide();
                 FormManager.vs.Show();
                 FormManager.vs.vsLbl.Text = "Entrees";
-                FormManager.vs.linkLabel1.Text = FormManager.mm.entreeList[randEntree].name;
+                FormManager.vs.linkLabel1.Text = ListManager.entreeList[randEntree].name;
+                FormManager.vs.linkLabel2.Hide();
+                FormManager.vs.linkLabel3.Hide();
+                FormManager.vs.linkLabel4.Hide();
+                FormManager.vs.linkLabel5.Hide();
+                FormManager.vs.linkLabel6.Hide();
+                FormManager.vs.linkLabel7.Hide();
+                FormManager.vs.linkLabel8.Hide();
+                FormManager.vs.linkLabel9.Hide();
+                FormManager.vs.linkLabel10.Hide();
             }
             else if (sideRB.Checked)
             {
                 Hide();
                 FormManager.vs.Show();
                 FormManager.vs.vsLbl.Text = "Side Dishes";
-                FormManager.vs.linkLabel1.Text = FormManager.mm.sideList[randSide].name;
+                FormManager.vs.linkLabel1.Text = ListManager.sideList[randSide].name;
+                FormManager.vs.linkLabel2.Hide();
+                FormManager.vs.linkLabel3.Hide();
+                FormManager.vs.linkLabel4.Hide();
+                FormManager.vs.linkLabel5.Hide();
+                FormManager.vs.linkLabel6.Hide();
+                FormManager.vs.linkLabel7.Hide();
+                FormManager.vs.linkLabel8.Hide();
+                FormManager.vs.linkLabel9.Hide();
+                FormManager.vs.linkLabel10.Hide();
             }
             else if (dessertRB.Checked)
             {
                 Hide();
                 FormManager.vs.Show();
                 FormManager.vs.vsLbl.Text = "Desserts";
-                FormManager.vs.linkLabel1.Text = FormManager.mm.dessertList[randDessert].name;
+                FormManager.vs.linkLabel1.Text = ListManager.dessertList[randDessert].name;
+                FormManager.vs.linkLabel2.Hide();
+                FormManager.vs.linkLabel3.Hide();
+                FormManager.vs.linkLabel4.Hide();
+                FormManager.vs.linkLabel5.Hide();
+                FormManager.vs.linkLabel6.Hide();
+                FormManager.vs.linkLabel7.Hide();
+                FormManager.vs.linkLabel8.Hide();
+                FormManager.vs.linkLabel9.Hide();
+                FormManager.vs.linkLabel10.Hide();
             }
             else if (snacksRB.Checked)
             {
                 Hide();
                 FormManager.vs.Show();
                 FormManager.vs.vsLbl.Text = "Snacks";
-                FormManager.vs.linkLabel1.Text = FormManager.mm.snackList[randSnack].name;
+                FormManager.vs.linkLabel1.Text = ListManager.snackList[randSnack].name;
+                FormManager.vs.linkLabel2.Hide();
+                FormManager.vs.linkLabel3.Hide();
+                FormManager.vs.linkLabel4.Hide();
+                FormManager.vs.linkLabel5.Hide();
+                FormManager.vs.linkLabel6.Hide();
+                FormManager.vs.linkLabel7.Hide();
+                FormManager.vs.linkLabel8.Hide();
+                FormManager.vs.linkLabel9.Hide();
+                FormManager.vs.linkLabel10.Hide();
             }
             else if (allRB.Checked)
             {
                 Hide();
                 FormManager.vs.Show();
                 FormManager.vs.vsLbl.Text = "All Recipes";
-                FormManager.vs.linkLabel1.Text = FormManager.mm.entreeList[randEntree].name;
-                FormManager.vs.linkLabel2.Text = FormManager.mm.sideList[randSide].name;
-                FormManager.vs.linkLabel3.Text = FormManager.mm.dessertList[randDessert].name;
-                FormManager.vs.linkLabel4.Text = FormManager.mm.snackList[randSnack].name;
+                FormManager.vs.linkLabel1.Text = ListManager.entreeList[randEntree].name;
+                FormManager.vs.linkLabel2.Text = ListManager.sideList[randSide].name;
+                FormManager.vs.linkLabel3.Text = ListManager.dessertList[randDessert].name;
+                FormManager.vs.linkLabel4.Text = ListManager.snackList[randSnack].name;
+                FormManager.vs.linkLabel5.Hide();
+                FormManager.vs.linkLabel6.Hide();
+                FormManager.vs.linkLabel7.Hide();
+                FormManager.vs.linkLabel8.Hide();
+                FormManager.vs.linkLabel9.Hide();
+                FormManager.vs.linkLabel10.Hide();
             }
             else
             {
                 MessageBox.Show("Please select a category to search.");
-            }
-
-            //this.Hide();
-            //FormManager.vs.Show();
-            //FormManager.vs.vsLbl.Text = FormManager.mm.entreeList[randEntree].name;
-            //FormManager.vs.typeLbl.Text = FormManager.mm.entreeList[r].category;
-            //FormManager.vs.dietLbl.Text = FormManager.mm.entreeList[r].diet;
-            //FormManager.vs.servingsLbl.Text = FormManager.mm.entreeList[r].servings.ToString();
+            }            
         }
     }
 }

@@ -205,6 +205,7 @@
             this.linkLabel2.TabIndex = 15;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "linkLabel2";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel3
             // 
@@ -215,6 +216,7 @@
             this.linkLabel3.TabIndex = 16;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "linkLabel3";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // linkLabel4
             // 
@@ -225,6 +227,7 @@
             this.linkLabel4.TabIndex = 17;
             this.linkLabel4.TabStop = true;
             this.linkLabel4.Text = "linkLabel4";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // linkLabel5
             // 
@@ -235,6 +238,7 @@
             this.linkLabel5.TabIndex = 18;
             this.linkLabel5.TabStop = true;
             this.linkLabel5.Text = "linkLabel5";
+            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
             // 
             // linkLabel6
             // 
@@ -245,6 +249,7 @@
             this.linkLabel6.TabIndex = 19;
             this.linkLabel6.TabStop = true;
             this.linkLabel6.Text = "linkLabel6";
+            this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
             // 
             // linkLabel7
             // 
@@ -255,6 +260,7 @@
             this.linkLabel7.TabIndex = 20;
             this.linkLabel7.TabStop = true;
             this.linkLabel7.Text = "linkLabel7";
+            this.linkLabel7.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel7_LinkClicked);
             // 
             // linkLabel8
             // 
@@ -265,6 +271,7 @@
             this.linkLabel8.TabIndex = 21;
             this.linkLabel8.TabStop = true;
             this.linkLabel8.Text = "linkLabel8";
+            this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
             // 
             // linkLabel9
             // 
@@ -275,6 +282,7 @@
             this.linkLabel9.TabIndex = 22;
             this.linkLabel9.TabStop = true;
             this.linkLabel9.Text = "linkLabel9";
+            this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked);
             // 
             // linkLabel10
             // 
@@ -285,6 +293,7 @@
             this.linkLabel10.TabIndex = 23;
             this.linkLabel10.TabStop = true;
             this.linkLabel10.Text = "linkLabel10";
+            this.linkLabel10.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel10_LinkClicked);
             // 
             // ViewScreen
             // 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Final_Project
 {
@@ -14,6 +15,6 @@ namespace Final_Project
         public static Categories cs = new Categories();
         public static DietPlans dp = new DietPlans();
         public static MakeAMeal mam = new MakeAMeal();
-        public static ViewScreen vs = new ViewScreen();
+        public static ViewScreen vs = new ViewScreen();        
     }
 }
