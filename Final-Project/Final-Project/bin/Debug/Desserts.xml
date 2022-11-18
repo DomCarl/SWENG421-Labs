@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfRecipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Recipe>
+    <name>Test Dessert</name>
+    <category>Dessert</category>
+    <diet>South Beach</diet>
+    <servings>3</servings>
+    <ingredients>
+      <string>Dessert ing</string>
+    </ingredients>
+    <amounts>
+      <double>3</double>
+    </amounts>
+    <units>
+      <string>oz</string>
+    </units>
+    <image>C:\Users\Jason\OneDrive\Pictures\Althalena.jpg</image>
+    <instructions>Dessert Do it.</instructions>
+    <recipeCount>1</recipeCount>
+  </Recipe>
+</ArrayOfRecipe>

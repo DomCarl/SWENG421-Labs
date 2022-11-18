@@ -19,18 +19,23 @@ namespace Final_Project
 
         private void mainMenuBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.mm.Show();
         }
 
         private void quitBtn_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Application.Exit();
         }
 
         private void ViewScreen_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

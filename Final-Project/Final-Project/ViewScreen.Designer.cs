@@ -45,9 +45,16 @@
             this.vsLbl = new System.Windows.Forms.Label();
             this.quitBtn = new System.Windows.Forms.Button();
             this.mainMenuBtn = new System.Windows.Forms.Button();
-            this.typeLbl = new System.Windows.Forms.Label();
-            this.dietLbl = new System.Windows.Forms.Label();
-            this.servingsLbl = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel6 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel10 = new System.Windows.Forms.LinkLabel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -151,11 +158,11 @@
             // 
             this.vsLbl.AutoSize = true;
             this.vsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vsLbl.Location = new System.Drawing.Point(211, 33);
+            this.vsLbl.Location = new System.Drawing.Point(228, 33);
             this.vsLbl.Name = "vsLbl";
-            this.vsLbl.Size = new System.Drawing.Size(329, 55);
+            this.vsLbl.Size = new System.Drawing.Size(294, 55);
             this.vsLbl.TabIndex = 10;
-            this.vsLbl.Text = "Coming Soon!";
+            this.vsLbl.Text = "View Screen";
             this.vsLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // quitBtn
@@ -178,32 +185,106 @@
             this.mainMenuBtn.UseVisualStyleBackColor = true;
             this.mainMenuBtn.Click += new System.EventHandler(this.mainMenuBtn_Click);
             // 
-            // typeLbl
+            // linkLabel1
             // 
-            this.typeLbl.AutoSize = true;
-            this.typeLbl.Location = new System.Drawing.Point(178, 98);
-            this.typeLbl.Name = "typeLbl";
-            this.typeLbl.Size = new System.Drawing.Size(35, 13);
-            this.typeLbl.TabIndex = 14;
-            this.typeLbl.Text = "label1";
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(32, 100);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel1.TabIndex = 14;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "linkLabel1";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // dietLbl
+            // linkLabel2
             // 
-            this.dietLbl.AutoSize = true;
-            this.dietLbl.Location = new System.Drawing.Point(354, 98);
-            this.dietLbl.Name = "dietLbl";
-            this.dietLbl.Size = new System.Drawing.Size(35, 13);
-            this.dietLbl.TabIndex = 15;
-            this.dietLbl.Text = "label2";
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(32, 140);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel2.TabIndex = 15;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "linkLabel2";
             // 
-            // servingsLbl
+            // linkLabel3
             // 
-            this.servingsLbl.AutoSize = true;
-            this.servingsLbl.Location = new System.Drawing.Point(535, 98);
-            this.servingsLbl.Name = "servingsLbl";
-            this.servingsLbl.Size = new System.Drawing.Size(35, 13);
-            this.servingsLbl.TabIndex = 16;
-            this.servingsLbl.Text = "label3";
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Location = new System.Drawing.Point(32, 180);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel3.TabIndex = 16;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "linkLabel3";
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Location = new System.Drawing.Point(32, 220);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel4.TabIndex = 17;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "linkLabel4";
+            // 
+            // linkLabel5
+            // 
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.Location = new System.Drawing.Point(32, 260);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel5.TabIndex = 18;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Text = "linkLabel5";
+            // 
+            // linkLabel6
+            // 
+            this.linkLabel6.AutoSize = true;
+            this.linkLabel6.Location = new System.Drawing.Point(32, 300);
+            this.linkLabel6.Name = "linkLabel6";
+            this.linkLabel6.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel6.TabIndex = 19;
+            this.linkLabel6.TabStop = true;
+            this.linkLabel6.Text = "linkLabel6";
+            // 
+            // linkLabel7
+            // 
+            this.linkLabel7.AutoSize = true;
+            this.linkLabel7.Location = new System.Drawing.Point(32, 340);
+            this.linkLabel7.Name = "linkLabel7";
+            this.linkLabel7.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel7.TabIndex = 20;
+            this.linkLabel7.TabStop = true;
+            this.linkLabel7.Text = "linkLabel7";
+            // 
+            // linkLabel8
+            // 
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.Location = new System.Drawing.Point(32, 380);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel8.TabIndex = 21;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "linkLabel8";
+            // 
+            // linkLabel9
+            // 
+            this.linkLabel9.AutoSize = true;
+            this.linkLabel9.Location = new System.Drawing.Point(32, 420);
+            this.linkLabel9.Name = "linkLabel9";
+            this.linkLabel9.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel9.TabIndex = 22;
+            this.linkLabel9.TabStop = true;
+            this.linkLabel9.Text = "linkLabel9";
+            // 
+            // linkLabel10
+            // 
+            this.linkLabel10.AutoSize = true;
+            this.linkLabel10.Location = new System.Drawing.Point(32, 460);
+            this.linkLabel10.Name = "linkLabel10";
+            this.linkLabel10.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel10.TabIndex = 23;
+            this.linkLabel10.TabStop = true;
+            this.linkLabel10.Text = "linkLabel10";
             // 
             // ViewScreen
             // 
@@ -211,9 +292,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.servingsLbl);
-            this.Controls.Add(this.dietLbl);
-            this.Controls.Add(this.typeLbl);
+            this.Controls.Add(this.linkLabel10);
+            this.Controls.Add(this.linkLabel9);
+            this.Controls.Add(this.linkLabel8);
+            this.Controls.Add(this.linkLabel7);
+            this.Controls.Add(this.linkLabel6);
+            this.Controls.Add(this.linkLabel5);
+            this.Controls.Add(this.linkLabel4);
+            this.Controls.Add(this.linkLabel3);
+            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.quitBtn);
             this.Controls.Add(this.mainMenuBtn);
             this.Controls.Add(this.vsLbl);
@@ -251,8 +339,15 @@
         private System.Windows.Forms.Button quitBtn;
         private System.Windows.Forms.Button mainMenuBtn;
         public System.Windows.Forms.Label vsLbl;
-        public System.Windows.Forms.Label typeLbl;
-        public System.Windows.Forms.Label dietLbl;
-        public System.Windows.Forms.Label servingsLbl;
+        public System.Windows.Forms.LinkLabel linkLabel1;
+        public System.Windows.Forms.LinkLabel linkLabel2;
+        public System.Windows.Forms.LinkLabel linkLabel3;
+        public System.Windows.Forms.LinkLabel linkLabel4;
+        public System.Windows.Forms.LinkLabel linkLabel5;
+        public System.Windows.Forms.LinkLabel linkLabel6;
+        public System.Windows.Forms.LinkLabel linkLabel7;
+        public System.Windows.Forms.LinkLabel linkLabel8;
+        public System.Windows.Forms.LinkLabel linkLabel9;
+        public System.Windows.Forms.LinkLabel linkLabel10;
     }
 }

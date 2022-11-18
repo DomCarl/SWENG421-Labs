@@ -21,62 +21,62 @@ namespace Final_Project
 
         private void mainMenuBtn_Click(object sender, EventArgs e)
         {            
-            this.Hide();
+            Hide();
             FormManager.mm.Show();
         }
 
         private void quitBtn_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Application.Exit();
         }
 
         private void closeMI_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Application.Exit();
         }
 
         private void newItemMI_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.adds.Show();
         }
 
         private void makeAMealToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.mam.Show();
         }
 
         private void dietPlansToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.dp.Show();
         }
 
         private void entreesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.vs.Show();
             FormManager.vs.vsLbl.Text = "Entrees";
         }
 
         private void sideDishesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.vs.Show();
             FormManager.vs.vsLbl.Text = "Side Dishes";
         }
 
         private void dessertsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.vs.Show();
             FormManager.vs.vsLbl.Text = "Desserts";
         }
 
         private void snacksToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.vs.Show();
             FormManager.vs.vsLbl.Text = "Snacks";
         }
@@ -88,25 +88,106 @@ namespace Final_Project
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var searchRecipe = FormManager.mm.recipes.FirstOrDefault(x => x.name == searchTB.Text);
-            FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = searchRecipe.name;
-            FormManager.vs.typeLbl.Text = searchRecipe.category;
-            FormManager.vs.dietLbl.Text = searchRecipe.diet;
-            FormManager.vs.servingsLbl.Text = searchRecipe.servings.ToString();            
+            if (entreeRB.Checked)
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Entrees";
+            }
+            else if (sideRB.Checked)
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Side Dishes";
+            }
+            else if (dessertRB.Checked)
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Desserts";
+            }
+            else if (snacksRB.Checked)
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Snacks";
+            }
+            else if (allRB.Checked)
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "All Recipes";
+            }
+            else
+            {
+                MessageBox.Show("Please select a category to search.");
+            }           
+            
+            //var searchRecipe = FormManager.mm.entreeList.FirstOrDefault(x => x.name == searchTB.Text);
+            //FormManager.vs.Show();
+            //FormManager.vs.vsLbl.Text = searchRecipe.name;
+            //FormManager.vs.typeLbl.Text = searchRecipe.category;
+            //FormManager.vs.dietLbl.Text = searchRecipe.diet;
+            //FormManager.vs.servingsLbl.Text = searchRecipe.servings.ToString();            
         }
 
         private void surpriseBtn_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            int r = rnd.Next(0, FormManager.mm.recipes.Count);
-            this.Hide();
-            FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = FormManager.mm.recipes[r].name;
-            FormManager.vs.typeLbl.Text = FormManager.mm.recipes[r].category;
-            FormManager.vs.dietLbl.Text = FormManager.mm.recipes[r].diet;
-            FormManager.vs.servingsLbl.Text = FormManager.mm.recipes[r].servings.ToString();
+            int randEntree = rnd.Next(0, FormManager.mm.entreeList.Count);
+            int randSide = rnd.Next(0, FormManager.mm.entreeList.Count);
+            int randDessert = rnd.Next(0, FormManager.mm.entreeList.Count);
+            int randSnack = rnd.Next(0, FormManager.mm.entreeList.Count);
+            
+            if (entreeRB.Checked)
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Entrees";
+                FormManager.vs.linkLabel1.Text = FormManager.mm.entreeList[randEntree].name;
+            }
+            else if (sideRB.Checked)
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Side Dishes";
+                FormManager.vs.linkLabel1.Text = FormManager.mm.sideList[randSide].name;
+            }
+            else if (dessertRB.Checked)
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Desserts";
+                FormManager.vs.linkLabel1.Text = FormManager.mm.dessertList[randDessert].name;
+            }
+            else if (snacksRB.Checked)
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Snacks";
+                FormManager.vs.linkLabel1.Text = FormManager.mm.snackList[randSnack].name;
+            }
+            else if (allRB.Checked)
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "All Recipes";
+                FormManager.vs.linkLabel1.Text = FormManager.mm.entreeList[randEntree].name;
+                FormManager.vs.linkLabel2.Text = FormManager.mm.sideList[randSide].name;
+                FormManager.vs.linkLabel3.Text = FormManager.mm.dessertList[randDessert].name;
+                FormManager.vs.linkLabel4.Text = FormManager.mm.snackList[randSnack].name;
+            }
+            else
+            {
+                MessageBox.Show("Please select a category to search.");
+            }
+
+            //this.Hide();
+            //FormManager.vs.Show();
+            //FormManager.vs.vsLbl.Text = FormManager.mm.entreeList[randEntree].name;
+            //FormManager.vs.typeLbl.Text = FormManager.mm.entreeList[r].category;
+            //FormManager.vs.dietLbl.Text = FormManager.mm.entreeList[r].diet;
+            //FormManager.vs.servingsLbl.Text = FormManager.mm.entreeList[r].servings.ToString();
         }
     }
 }

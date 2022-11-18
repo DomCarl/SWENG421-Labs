@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfRecipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Recipe>
+    <name>Test Entree</name>
+    <category>Entree</category>
+    <diet>Standard</diet>
+    <servings>1</servings>
+    <ingredients>
+      <string>Entree ing</string>
+    </ingredients>
+    <amounts>
+      <double>1</double>
+    </amounts>
+    <units>
+      <string>lb</string>
+    </units>
+    <image>C:\Users\Jason\OneDrive\Pictures\Jason Avatar.jpg</image>
+    <instructions>Entree Do it.</instructions>
+    <recipeCount>1</recipeCount>
+  </Recipe>
+</ArrayOfRecipe>

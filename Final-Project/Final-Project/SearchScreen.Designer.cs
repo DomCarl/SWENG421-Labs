@@ -48,6 +48,11 @@
             this.searchTB = new System.Windows.Forms.TextBox();
             this.searchBtn = new System.Windows.Forms.Button();
             this.surpriseBtn = new System.Windows.Forms.Button();
+            this.entreeRB = new System.Windows.Forms.RadioButton();
+            this.sideRB = new System.Windows.Forms.RadioButton();
+            this.dessertRB = new System.Windows.Forms.RadioButton();
+            this.snacksRB = new System.Windows.Forms.RadioButton();
+            this.allRB = new System.Windows.Forms.RadioButton();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -180,7 +185,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(124, 203);
+            this.label1.Location = new System.Drawing.Point(124, 154);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(543, 31);
             this.label1.TabIndex = 8;
@@ -213,12 +218,72 @@
             this.surpriseBtn.UseVisualStyleBackColor = true;
             this.surpriseBtn.Click += new System.EventHandler(this.surpriseBtn_Click);
             // 
+            // entreeRB
+            // 
+            this.entreeRB.AutoSize = true;
+            this.entreeRB.Location = new System.Drawing.Point(152, 217);
+            this.entreeRB.Name = "entreeRB";
+            this.entreeRB.Size = new System.Drawing.Size(56, 17);
+            this.entreeRB.TabIndex = 12;
+            this.entreeRB.TabStop = true;
+            this.entreeRB.Text = "Entree";
+            this.entreeRB.UseVisualStyleBackColor = true;
+            // 
+            // sideRB
+            // 
+            this.sideRB.AutoSize = true;
+            this.sideRB.Location = new System.Drawing.Point(265, 217);
+            this.sideRB.Name = "sideRB";
+            this.sideRB.Size = new System.Drawing.Size(51, 17);
+            this.sideRB.TabIndex = 13;
+            this.sideRB.TabStop = true;
+            this.sideRB.Text = "Sides";
+            this.sideRB.UseVisualStyleBackColor = true;
+            // 
+            // dessertRB
+            // 
+            this.dessertRB.AutoSize = true;
+            this.dessertRB.Location = new System.Drawing.Point(378, 217);
+            this.dessertRB.Name = "dessertRB";
+            this.dessertRB.Size = new System.Drawing.Size(66, 17);
+            this.dessertRB.TabIndex = 14;
+            this.dessertRB.TabStop = true;
+            this.dessertRB.Text = "Desserts";
+            this.dessertRB.UseVisualStyleBackColor = true;
+            // 
+            // snacksRB
+            // 
+            this.snacksRB.AutoSize = true;
+            this.snacksRB.Location = new System.Drawing.Point(491, 217);
+            this.snacksRB.Name = "snacksRB";
+            this.snacksRB.Size = new System.Drawing.Size(61, 17);
+            this.snacksRB.TabIndex = 15;
+            this.snacksRB.TabStop = true;
+            this.snacksRB.Text = "Snacks";
+            this.snacksRB.UseVisualStyleBackColor = true;
+            // 
+            // allRB
+            // 
+            this.allRB.AutoSize = true;
+            this.allRB.Location = new System.Drawing.Point(604, 217);
+            this.allRB.Name = "allRB";
+            this.allRB.Size = new System.Drawing.Size(36, 17);
+            this.allRB.TabIndex = 16;
+            this.allRB.TabStop = true;
+            this.allRB.Text = "All";
+            this.allRB.UseVisualStyleBackColor = true;
+            // 
             // SearchScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.allRB);
+            this.Controls.Add(this.snacksRB);
+            this.Controls.Add(this.dessertRB);
+            this.Controls.Add(this.sideRB);
+            this.Controls.Add(this.entreeRB);
             this.Controls.Add(this.surpriseBtn);
             this.Controls.Add(this.searchBtn);
             this.Controls.Add(this.searchTB);
@@ -262,5 +327,10 @@
         private System.Windows.Forms.TextBox searchTB;
         private System.Windows.Forms.Button searchBtn;
         private System.Windows.Forms.Button surpriseBtn;
+        private System.Windows.Forms.RadioButton entreeRB;
+        private System.Windows.Forms.RadioButton sideRB;
+        private System.Windows.Forms.RadioButton dessertRB;
+        private System.Windows.Forms.RadioButton snacksRB;
+        private System.Windows.Forms.RadioButton allRB;
     }
 }

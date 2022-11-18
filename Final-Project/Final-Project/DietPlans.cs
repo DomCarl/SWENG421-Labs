@@ -19,7 +19,7 @@ namespace Final_Project
 
         private void mainMenuBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.mm.Show();
         }
 

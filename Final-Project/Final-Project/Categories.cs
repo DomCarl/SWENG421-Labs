@@ -19,69 +19,69 @@ namespace Final_Project
 
         private void quitBtn_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Application.Exit();
         }
 
         private void mainMenuBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.mm.Show();
         }
 
         private void closeMI_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Application.Exit();
         }
 
         private void newItemMI_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.adds.Show();
         }
 
         private void entreeBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.vs.Show();
             FormManager.vs.vsLbl.Text = "Barking up the wrong Entrees";
         }
 
         private void sidesBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.vs.Show();
             FormManager.vs.vsLbl.Text = "Side Dishes, bishes!";
         }
 
         private void dessertBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.vs.Show();
             FormManager.vs.vsLbl.Text = "No sand in these Desserts!";
         }
 
         private void snackBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.vs.Show();
             FormManager.vs.vsLbl.Text = "Snack attack!";
         }
 
         private void searchMI_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.ss.Show();
         }
 
         private void makeAMealToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.mam.Show();
         }
 
         private void dietPlansToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.dp.Show();
         }
 

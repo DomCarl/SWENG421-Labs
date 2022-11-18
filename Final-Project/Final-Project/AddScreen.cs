@@ -21,24 +21,24 @@ namespace Final_Project
 
         private void closeMI_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Application.Exit();
         }
 
         private void mainMenuBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             FormManager.mm.Show();
         }
 
         private void quitBtn_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Application.Exit();
         }
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
             Recipe r = new Recipe();
-            r.setValues(nameTB.Text, typeCB.SelectedItem.ToString(), dietCB.SelectedItem.ToString(), Convert.ToDouble(servingsTB.Text), new Dictionary<string, double>(), new List<string>(), fileName, dirTB.Text);
+            r.setValues(nameTB.Text, typeCB.SelectedItem.ToString(), dietCB.SelectedItem.ToString(), Convert.ToDouble(servingsTB.Text), new List<string>(), new List<double>(), new List<string>(), fileName, dirTB.Text);
 
             r.addIngredients(ingTB1.Text, Convert.ToDouble(amtTB1.Text), unitTB1.Text);
             r.addIngredients(ingTB2.Text, Convert.ToDouble(amtTB2.Text), unitTB2.Text);
@@ -50,10 +50,26 @@ namespace Final_Project
             r.addIngredients(ingTB8.Text, Convert.ToDouble(amtTB8.Text), unitTB8.Text);
             r.addIngredients(ingTB9.Text, Convert.ToDouble(amtTB9.Text), unitTB9.Text);
             r.addIngredients(ingTB10.Text, Convert.ToDouble(amtTB10.Text), unitTB10.Text);
-            r.addIngredients(ingTB11.Text, Convert.ToDouble(amtTB11.Text), unitTB11.Text);
+            r.addIngredients(ingTB11.Text, Convert.ToDouble(amtTB11.Text), unitTB11.Text);            
             
-            r.recipeCount++;
-            FormManager.mm.recipes.Add(r);
+            switch(r.category)
+            {
+                case "Entree":
+                    FormManager.mm.entreeList.Add(r);
+                    break;
+                case "Side":
+                    FormManager.mm.sideList.Add(r);
+                    break;
+                case "Dessert":
+                    FormManager.mm.dessertList.Add(r);
+                    break;
+                case "Snack":
+                    FormManager.mm.snackList.Add(r);
+                    break;
+                default:
+                    break;
+            }                
+            
             MessageBox.Show("Saved!");
         }
         
