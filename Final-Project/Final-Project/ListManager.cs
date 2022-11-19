@@ -13,8 +13,7 @@ namespace Final_Project
         public static List<Recipe> entreeList = new List<Recipe>();
         public static List<Recipe> sideList = new List<Recipe>();
         public static List<Recipe> dessertList = new List<Recipe>();
-        public static List<Recipe> snackList = new List<Recipe>();
-        //public static List<string> vsLinkList = new List<string>();
+        public static List<Recipe> snackList = new List<Recipe>();        
         public static List<string> addsIngList = new List<string>();
         public static List<string> addsAmtList = new List<string>();
         public static List<string> addsUnitList = new List<string>();
