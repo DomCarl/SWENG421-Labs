@@ -95,5 +95,37 @@ namespace Final_Project
             About ab = new About();
             ab.Show();
         }
+
+        private void standardBtn_Click(object sender, EventArgs e)
+        {
+            List<Recipe> resultsEntree = ListManager.entreeList.FindAll(x => x.category.Contains("Standard"));
+            List<Recipe> resultsSides = ListManager.sideList.FindAll(x => x.category.Contains("Standard"));
+            List<Recipe> resultsDesserts = ListManager.dessertList.FindAll(x => x.category.Contains("Standard"));
+            List<Recipe> resultsSnacks = ListManager.snackList.FindAll(x => x.category.Contains("Standard"));
+        }
+
+        private void ketoBtn_Click(object sender, EventArgs e)
+        {
+            List<Recipe> resultsEntree = ListManager.entreeList.FindAll(x => x.category.Contains("Keto"));
+            List<Recipe> resultsSides = ListManager.sideList.FindAll(x => x.category.Contains("Keto"));
+            List<Recipe> resultsDesserts = ListManager.dessertList.FindAll(x => x.category.Contains("Keto"));
+            List<Recipe> resultsSnacks = ListManager.snackList.FindAll(x => x.category.Contains("Keto"));
+        }
+
+        private void sbBtn_Click(object sender, EventArgs e)
+        {
+            List<Recipe> resultsEntree = ListManager.entreeList.FindAll(x => x.category.Contains("South Beach"));
+            List<Recipe> resultsSides = ListManager.sideList.FindAll(x => x.category.Contains("South Beach"));
+            List<Recipe> resultsDesserts = ListManager.dessertList.FindAll(x => x.category.Contains("South Beach"));
+            List<Recipe> resultsSnacks = ListManager.snackList.FindAll(x => x.category.Contains("South Beach"));
+        }
+
+        private void sfBtn_Click(object sender, EventArgs e)
+        {
+            List<Recipe> resultsEntree = ListManager.entreeList.FindAll(x => x.category.Contains("See Food"));
+            List<Recipe> resultsSides = ListManager.sideList.FindAll(x => x.category.Contains("See Food"));
+            List<Recipe> resultsDesserts = ListManager.dessertList.FindAll(x => x.category.Contains("See Food"));
+            List<Recipe> resultsSnacks = ListManager.snackList.FindAll(x => x.category.Contains("See Food"));
+        }
     }
 }

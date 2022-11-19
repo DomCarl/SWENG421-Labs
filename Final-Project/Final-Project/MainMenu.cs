@@ -16,7 +16,7 @@ namespace Final_Project
         public mainMenu()
         {
             InitializeComponent();
-            ListManager.DeserializeLists();
+            ListManager.DeserializeLists();            
         }
 
         private void newItemMI_Click(object sender, EventArgs e)

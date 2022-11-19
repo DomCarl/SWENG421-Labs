@@ -12,6 +12,11 @@ namespace Final_Project
 {
     public partial class ViewScreen : Form
     {
+        public List<LinkLabel> entreelinks = ListManager.entreeLinkLabels;
+        public List<LinkLabel> sidelinks = ListManager.sideLinkLabels;
+        public List<LinkLabel> dessertlinks = ListManager.dessertLinkLabels;
+        public List<LinkLabel> snacklinks = ListManager.snackLinkLabels;
+
         public ViewScreen()
         {
             InitializeComponent();
@@ -37,39 +42,46 @@ namespace Final_Project
         {
             if (FormManager.ss.entreeRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
                 var rec = ListManager.entreeList.Find(x => x.name == linkLabel1.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.sideRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
                 var rec = ListManager.sideList.Find(x => x.name == linkLabel1.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.dessertRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
                 var rec = ListManager.dessertList.Find(x => x.name == linkLabel1.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.snacksRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
                 var rec = ListManager.snackList.Find(x => x.name == linkLabel1.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.allRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
-                FormManager.vs.vsLbl.Text = "All Recipes";
-                var rec = ListManager.entreeList.Find(x => x.name == linkLabel1.Text);
-                FormManager.adds.displayRecipe(rec);
+                if (ListManager.entreeList.Exists(x => x.name == linkLabel1.Text))
+                {
+                    var rec = ListManager.entreeList.Find(x => x.name == linkLabel1.Text);
+                    FormManager.adds.displayRecipe(rec);
+                }
+                else if (ListManager.sideList.Exists(x => x.name == linkLabel1.Text))
+                {
+                    var rec = ListManager.sideList.Find(x => x.name == linkLabel1.Text);
+                    FormManager.adds.displayRecipe(rec);
+                }
+                else if (ListManager.dessertList.Exists(x => x.name == linkLabel1.Text))
+                {
+                    var rec = ListManager.dessertList.Find(x => x.name == linkLabel1.Text);
+                    FormManager.adds.displayRecipe(rec);
+                }
+                else if (ListManager.snackList.Exists(x => x.name == linkLabel1.Text))
+                {
+                    var rec = ListManager.snackList.Find(x => x.name == linkLabel1.Text);
+                    FormManager.adds.displayRecipe(rec);
+                }                
             }
             else
             {
@@ -81,39 +93,46 @@ namespace Final_Project
         {
             if (FormManager.ss.entreeRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
-                var rec = ListManager.entreeList.Find(x => x.name == linkLabel1.Text);
+                var rec = ListManager.entreeList.Find(x => x.name == linkLabel2.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.sideRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
-                var rec = ListManager.sideList.Find(x => x.name == linkLabel1.Text);
+                var rec = ListManager.sideList.Find(x => x.name == linkLabel2.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.dessertRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
-                var rec = ListManager.dessertList.Find(x => x.name == linkLabel1.Text);
+                var rec = ListManager.dessertList.Find(x => x.name == linkLabel2.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.snacksRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
-                var rec = ListManager.snackList.Find(x => x.name == linkLabel1.Text);
+                var rec = ListManager.snackList.Find(x => x.name == linkLabel2.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.allRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
-                FormManager.vs.vsLbl.Text = "All Recipes";
-                var rec = ListManager.sideList.Find(x => x.name == linkLabel1.Text);
-                FormManager.adds.displayRecipe(rec);
+                if (ListManager.entreeList.Exists(x => x.name == linkLabel2.Text))
+                {
+                    var rec = ListManager.entreeList.Find(x => x.name == linkLabel2.Text);
+                    FormManager.adds.displayRecipe(rec);
+                }
+                else if (ListManager.sideList.Exists(x => x.name == linkLabel2.Text))
+                {
+                    var rec = ListManager.sideList.Find(x => x.name == linkLabel2.Text);
+                    FormManager.adds.displayRecipe(rec);
+                }
+                else if (ListManager.dessertList.Exists(x => x.name == linkLabel2.Text))
+                {
+                    var rec = ListManager.dessertList.Find(x => x.name == linkLabel2.Text);
+                    FormManager.adds.displayRecipe(rec);
+                }
+                else if (ListManager.snackList.Exists(x => x.name == linkLabel2.Text))
+                {
+                    var rec = ListManager.snackList.Find(x => x.name == linkLabel2.Text);
+                    FormManager.adds.displayRecipe(rec);
+                }
             }
             else
             {
@@ -125,39 +144,46 @@ namespace Final_Project
         {
             if (FormManager.ss.entreeRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
-                var rec = ListManager.entreeList.Find(x => x.name == linkLabel1.Text);
+                var rec = ListManager.entreeList.Find(x => x.name == linkLabel3.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.sideRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
-                var rec = ListManager.sideList.Find(x => x.name == linkLabel1.Text);
+                var rec = ListManager.sideList.Find(x => x.name == linkLabel3.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.dessertRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
-                var rec = ListManager.dessertList.Find(x => x.name == linkLabel1.Text);
+                var rec = ListManager.dessertList.Find(x => x.name == linkLabel3.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.snacksRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
-                var rec = ListManager.snackList.Find(x => x.name == linkLabel1.Text);
+                var rec = ListManager.snackList.Find(x => x.name == linkLabel3.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.allRB.Checked)
             {
-                Hide();
-                FormManager.vs.Show();
-                FormManager.vs.vsLbl.Text = "All Recipes";
-                var rec = ListManager.dessertList.Find(x => x.name == linkLabel1.Text);
-                FormManager.adds.displayRecipe(rec);
+                if (ListManager.entreeList.Exists(x => x.name == linkLabel3.Text))
+                {
+                    var rec = ListManager.entreeList.Find(x => x.name == linkLabel3.Text);
+                    FormManager.adds.displayRecipe(rec);
+                }
+                else if (ListManager.sideList.Exists(x => x.name == linkLabel3.Text))
+                {
+                    var rec = ListManager.sideList.Find(x => x.name == linkLabel3.Text);
+                    FormManager.adds.displayRecipe(rec);
+                }
+                else if (ListManager.dessertList.Exists(x => x.name == linkLabel3.Text))
+                {
+                    var rec = ListManager.dessertList.Find(x => x.name == linkLabel3.Text);
+                    FormManager.adds.displayRecipe(rec);
+                }
+                else if (ListManager.snackList.Exists(x => x.name == linkLabel3.Text))
+                {
+                    var rec = ListManager.snackList.Find(x => x.name == linkLabel3.Text);
+                    FormManager.adds.displayRecipe(rec);
+                }
             }
             else
             {
@@ -171,28 +197,28 @@ namespace Final_Project
             {
                 Hide();
                 FormManager.vs.Show();
-                var rec = ListManager.entreeList.Find(x => x.name == linkLabel1.Text);
+                var rec = ListManager.entreeList.Find(x => x.name == linkLabel4.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.sideRB.Checked)
             {
                 Hide();
                 FormManager.vs.Show();
-                var rec = ListManager.sideList.Find(x => x.name == linkLabel1.Text);
+                var rec = ListManager.sideList.Find(x => x.name == linkLabel4.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.dessertRB.Checked)
             {
                 Hide();
                 FormManager.vs.Show();
-                var rec = ListManager.dessertList.Find(x => x.name == linkLabel1.Text);
+                var rec = ListManager.dessertList.Find(x => x.name == linkLabel4.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.snacksRB.Checked)
             {
                 Hide();
                 FormManager.vs.Show();
-                var rec = ListManager.snackList.Find(x => x.name == linkLabel1.Text);
+                var rec = ListManager.snackList.Find(x => x.name == linkLabel4.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else if (FormManager.ss.allRB.Checked)
@@ -200,7 +226,7 @@ namespace Final_Project
                 Hide();
                 FormManager.vs.Show();
                 FormManager.vs.vsLbl.Text = "All Recipes";
-                var rec = ListManager.snackList.Find(x => x.name == linkLabel1.Text);
+                var rec = ListManager.snackList.Find(x => x.name == linkLabel4.Text);
                 FormManager.adds.displayRecipe(rec);
             }
             else

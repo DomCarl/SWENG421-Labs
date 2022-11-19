@@ -32,6 +32,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileMI = new System.Windows.Forms.ToolStripMenuItem();
             this.newItemMI = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveCBMI = new System.Windows.Forms.ToolStripMenuItem();
             this.closeMI = new System.Windows.Forms.ToolStripMenuItem();
             this.lookupMI = new System.Windows.Forms.ToolStripMenuItem();
             this.searchMI = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,6 +43,7 @@
             this.sideDishesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dessertsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.snacksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutMI = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.quitBtn = new System.Windows.Forms.Button();
             this.mainMenuBtn = new System.Windows.Forms.Button();
@@ -49,8 +51,6 @@
             this.ketoBtn = new System.Windows.Forms.Button();
             this.sbBtn = new System.Windows.Forms.Button();
             this.sfBtn = new System.Windows.Forms.Button();
-            this.saveCBMI = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutMI = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,14 +80,21 @@
             // newItemMI
             // 
             this.newItemMI.Name = "newItemMI";
-            this.newItemMI.Size = new System.Drawing.Size(180, 22);
+            this.newItemMI.Size = new System.Drawing.Size(156, 22);
             this.newItemMI.Text = "Add A Recipe";
             this.newItemMI.Click += new System.EventHandler(this.newItemMI_Click);
+            // 
+            // saveCBMI
+            // 
+            this.saveCBMI.Name = "saveCBMI";
+            this.saveCBMI.Size = new System.Drawing.Size(156, 22);
+            this.saveCBMI.Text = "Save Cookbook";
+            this.saveCBMI.Click += new System.EventHandler(this.saveCBMI_Click);
             // 
             // closeMI
             // 
             this.closeMI.Name = "closeMI";
-            this.closeMI.Size = new System.Drawing.Size(180, 22);
+            this.closeMI.Size = new System.Drawing.Size(156, 22);
             this.closeMI.Text = "Close";
             this.closeMI.Click += new System.EventHandler(this.closeMI_Click);
             // 
@@ -104,14 +111,14 @@
             // searchMI
             // 
             this.searchMI.Name = "searchMI";
-            this.searchMI.Size = new System.Drawing.Size(180, 22);
+            this.searchMI.Size = new System.Drawing.Size(143, 22);
             this.searchMI.Text = "Search";
             this.searchMI.Click += new System.EventHandler(this.searchMI_Click);
             // 
             // makeAMealToolStripMenuItem
             // 
             this.makeAMealToolStripMenuItem.Name = "makeAMealToolStripMenuItem";
-            this.makeAMealToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.makeAMealToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.makeAMealToolStripMenuItem.Text = "Make A Meal";
             this.makeAMealToolStripMenuItem.Click += new System.EventHandler(this.makeAMealToolStripMenuItem_Click);
             // 
@@ -119,7 +126,7 @@
             // 
             this.dietPlansToolStripMenuItem.Enabled = false;
             this.dietPlansToolStripMenuItem.Name = "dietPlansToolStripMenuItem";
-            this.dietPlansToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dietPlansToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.dietPlansToolStripMenuItem.Text = "Diet Plans";
             // 
             // categoriesToolStripMenuItem
@@ -136,30 +143,37 @@
             // entreesToolStripMenuItem
             // 
             this.entreesToolStripMenuItem.Name = "entreesToolStripMenuItem";
-            this.entreesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.entreesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.entreesToolStripMenuItem.Text = "Entrees";
             this.entreesToolStripMenuItem.Click += new System.EventHandler(this.entreesToolStripMenuItem_Click);
             // 
             // sideDishesToolStripMenuItem
             // 
             this.sideDishesToolStripMenuItem.Name = "sideDishesToolStripMenuItem";
-            this.sideDishesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sideDishesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.sideDishesToolStripMenuItem.Text = "Side Dishes";
             this.sideDishesToolStripMenuItem.Click += new System.EventHandler(this.sideDishesToolStripMenuItem_Click);
             // 
             // dessertsToolStripMenuItem
             // 
             this.dessertsToolStripMenuItem.Name = "dessertsToolStripMenuItem";
-            this.dessertsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dessertsToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.dessertsToolStripMenuItem.Text = "Desserts";
             this.dessertsToolStripMenuItem.Click += new System.EventHandler(this.dessertsToolStripMenuItem_Click);
             // 
             // snacksToolStripMenuItem
             // 
             this.snacksToolStripMenuItem.Name = "snacksToolStripMenuItem";
-            this.snacksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.snacksToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.snacksToolStripMenuItem.Text = "Snacks";
             this.snacksToolStripMenuItem.Click += new System.EventHandler(this.snacksToolStripMenuItem_Click);
+            // 
+            // aboutMI
+            // 
+            this.aboutMI.Name = "aboutMI";
+            this.aboutMI.Size = new System.Drawing.Size(52, 20);
+            this.aboutMI.Text = "About";
+            this.aboutMI.Click += new System.EventHandler(this.aboutMI_Click);
             // 
             // label1
             // 
@@ -168,7 +182,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(784, 55);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Coming Soon!";
+            this.label1.Text = "Diet Plans";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // quitBtn
@@ -200,6 +214,7 @@
             this.standardBtn.TabIndex = 12;
             this.standardBtn.Text = "Standard";
             this.standardBtn.UseVisualStyleBackColor = true;
+            this.standardBtn.Click += new System.EventHandler(this.standardBtn_Click);
             // 
             // ketoBtn
             // 
@@ -210,6 +225,7 @@
             this.ketoBtn.TabIndex = 13;
             this.ketoBtn.Text = "Keto";
             this.ketoBtn.UseVisualStyleBackColor = true;
+            this.ketoBtn.Click += new System.EventHandler(this.ketoBtn_Click);
             // 
             // sbBtn
             // 
@@ -220,6 +236,7 @@
             this.sbBtn.TabIndex = 14;
             this.sbBtn.Text = "South Beach";
             this.sbBtn.UseVisualStyleBackColor = true;
+            this.sbBtn.Click += new System.EventHandler(this.sbBtn_Click);
             // 
             // sfBtn
             // 
@@ -230,20 +247,7 @@
             this.sfBtn.TabIndex = 15;
             this.sfBtn.Text = "See Food";
             this.sfBtn.UseVisualStyleBackColor = true;
-            // 
-            // saveCBMI
-            // 
-            this.saveCBMI.Name = "saveCBMI";
-            this.saveCBMI.Size = new System.Drawing.Size(180, 22);
-            this.saveCBMI.Text = "Save Cookbook";
-            this.saveCBMI.Click += new System.EventHandler(this.saveCBMI_Click);
-            // 
-            // aboutMI
-            // 
-            this.aboutMI.Name = "aboutMI";
-            this.aboutMI.Size = new System.Drawing.Size(52, 20);
-            this.aboutMI.Text = "About";
-            this.aboutMI.Click += new System.EventHandler(this.aboutMI_Click);
+            this.sfBtn.Click += new System.EventHandler(this.sfBtn_Click);
             // 
             // DietPlans
             // 

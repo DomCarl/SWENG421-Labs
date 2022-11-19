@@ -105,19 +105,7 @@ namespace Final_Project
                 if (ingTB11.Text != "" && amtTB11.Text != "" && unitTB11.Text != "")
                 {
                     r.addIngredients(ingTB11.Text, Convert.ToDouble(amtTB11.Text), unitTB11.Text);
-                }
-
-                //r.addIngredients(ingTB1.Text, Convert.ToDouble(amtTB1.Text), unitTB1.Text);
-                //r.addIngredients(ingTB2.Text, Convert.ToDouble(amtTB2.Text), unitTB2.Text);
-                //r.addIngredients(ingTB3.Text, Convert.ToDouble(amtTB3.Text), unitTB3.Text);
-                //r.addIngredients(ingTB4.Text, Convert.ToDouble(amtTB4.Text), unitTB4.Text);
-                //r.addIngredients(ingTB5.Text, Convert.ToDouble(amtTB5.Text), unitTB5.Text);
-                //r.addIngredients(ingTB6.Text, Convert.ToDouble(amtTB6.Text), unitTB6.Text);
-                //r.addIngredients(ingTB7.Text, Convert.ToDouble(amtTB7.Text), unitTB7.Text);
-                //r.addIngredients(ingTB8.Text, Convert.ToDouble(amtTB8.Text), unitTB8.Text);
-                //r.addIngredients(ingTB9.Text, Convert.ToDouble(amtTB9.Text), unitTB9.Text);
-                //r.addIngredients(ingTB10.Text, Convert.ToDouble(amtTB10.Text), unitTB10.Text);
-                //r.addIngredients(ingTB11.Text, Convert.ToDouble(amtTB11.Text), unitTB11.Text);            
+                }                            
 
                 switch (r.category)
                 {

@@ -55,6 +55,40 @@
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
             this.linkLabel9 = new System.Windows.Forms.LinkLabel();
             this.linkLabel10 = new System.Windows.Forms.LinkLabel();
+            this.entreeLbl = new System.Windows.Forms.Label();
+            this.sideLbl = new System.Windows.Forms.Label();
+            this.linkLabel20 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel19 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel18 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel17 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel16 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel15 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel14 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel13 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel12 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel11 = new System.Windows.Forms.LinkLabel();
+            this.dessertLbl = new System.Windows.Forms.Label();
+            this.linkLabel30 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel29 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel28 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel27 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel26 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel25 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel24 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel23 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel22 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel21 = new System.Windows.Forms.LinkLabel();
+            this.snackLbl = new System.Windows.Forms.Label();
+            this.linkLabel40 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel39 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel38 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel37 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel36 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel35 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel34 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel33 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel32 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel31 = new System.Windows.Forms.LinkLabel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -157,7 +191,7 @@
             // vsLbl
             // 
             this.vsLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vsLbl.Location = new System.Drawing.Point(0, 33);
+            this.vsLbl.Location = new System.Drawing.Point(0, 24);
             this.vsLbl.Name = "vsLbl";
             this.vsLbl.Size = new System.Drawing.Size(784, 55);
             this.vsLbl.TabIndex = 10;
@@ -187,7 +221,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(32, 100);
+            this.linkLabel1.Location = new System.Drawing.Point(32, 127);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(55, 13);
             this.linkLabel1.TabIndex = 14;
@@ -199,7 +233,7 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(32, 140);
+            this.linkLabel2.Location = new System.Drawing.Point(32, 167);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(55, 13);
             this.linkLabel2.TabIndex = 15;
@@ -211,7 +245,7 @@
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(32, 180);
+            this.linkLabel3.Location = new System.Drawing.Point(32, 207);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(55, 13);
             this.linkLabel3.TabIndex = 16;
@@ -223,7 +257,7 @@
             // linkLabel4
             // 
             this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Location = new System.Drawing.Point(32, 220);
+            this.linkLabel4.Location = new System.Drawing.Point(32, 247);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(55, 13);
             this.linkLabel4.TabIndex = 17;
@@ -235,7 +269,7 @@
             // linkLabel5
             // 
             this.linkLabel5.AutoSize = true;
-            this.linkLabel5.Location = new System.Drawing.Point(32, 260);
+            this.linkLabel5.Location = new System.Drawing.Point(32, 287);
             this.linkLabel5.Name = "linkLabel5";
             this.linkLabel5.Size = new System.Drawing.Size(55, 13);
             this.linkLabel5.TabIndex = 18;
@@ -247,7 +281,7 @@
             // linkLabel6
             // 
             this.linkLabel6.AutoSize = true;
-            this.linkLabel6.Location = new System.Drawing.Point(32, 300);
+            this.linkLabel6.Location = new System.Drawing.Point(32, 327);
             this.linkLabel6.Name = "linkLabel6";
             this.linkLabel6.Size = new System.Drawing.Size(55, 13);
             this.linkLabel6.TabIndex = 19;
@@ -259,7 +293,7 @@
             // linkLabel7
             // 
             this.linkLabel7.AutoSize = true;
-            this.linkLabel7.Location = new System.Drawing.Point(32, 340);
+            this.linkLabel7.Location = new System.Drawing.Point(32, 367);
             this.linkLabel7.Name = "linkLabel7";
             this.linkLabel7.Size = new System.Drawing.Size(55, 13);
             this.linkLabel7.TabIndex = 20;
@@ -271,7 +305,7 @@
             // linkLabel8
             // 
             this.linkLabel8.AutoSize = true;
-            this.linkLabel8.Location = new System.Drawing.Point(32, 380);
+            this.linkLabel8.Location = new System.Drawing.Point(32, 407);
             this.linkLabel8.Name = "linkLabel8";
             this.linkLabel8.Size = new System.Drawing.Size(55, 13);
             this.linkLabel8.TabIndex = 21;
@@ -283,7 +317,7 @@
             // linkLabel9
             // 
             this.linkLabel9.AutoSize = true;
-            this.linkLabel9.Location = new System.Drawing.Point(32, 420);
+            this.linkLabel9.Location = new System.Drawing.Point(32, 447);
             this.linkLabel9.Name = "linkLabel9";
             this.linkLabel9.Size = new System.Drawing.Size(55, 13);
             this.linkLabel9.TabIndex = 22;
@@ -295,7 +329,7 @@
             // linkLabel10
             // 
             this.linkLabel10.AutoSize = true;
-            this.linkLabel10.Location = new System.Drawing.Point(32, 460);
+            this.linkLabel10.Location = new System.Drawing.Point(32, 487);
             this.linkLabel10.Name = "linkLabel10";
             this.linkLabel10.Size = new System.Drawing.Size(61, 13);
             this.linkLabel10.TabIndex = 23;
@@ -304,12 +338,420 @@
             this.linkLabel10.Visible = false;
             this.linkLabel10.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel10_LinkClicked);
             // 
+            // entreeLbl
+            // 
+            this.entreeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entreeLbl.Location = new System.Drawing.Point(12, 90);
+            this.entreeLbl.Name = "entreeLbl";
+            this.entreeLbl.Size = new System.Drawing.Size(100, 23);
+            this.entreeLbl.TabIndex = 24;
+            this.entreeLbl.Text = "Entrees";
+            this.entreeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.entreeLbl.Visible = false;
+            // 
+            // sideLbl
+            // 
+            this.sideLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sideLbl.Location = new System.Drawing.Point(236, 90);
+            this.sideLbl.Name = "sideLbl";
+            this.sideLbl.Size = new System.Drawing.Size(100, 23);
+            this.sideLbl.TabIndex = 35;
+            this.sideLbl.Text = "Side Dishes";
+            this.sideLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.sideLbl.Visible = false;
+            // 
+            // linkLabel20
+            // 
+            this.linkLabel20.AutoSize = true;
+            this.linkLabel20.Location = new System.Drawing.Point(240, 487);
+            this.linkLabel20.Name = "linkLabel20";
+            this.linkLabel20.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel20.TabIndex = 34;
+            this.linkLabel20.TabStop = true;
+            this.linkLabel20.Text = "linkLabel20";
+            this.linkLabel20.Visible = false;
+            // 
+            // linkLabel19
+            // 
+            this.linkLabel19.AutoSize = true;
+            this.linkLabel19.Location = new System.Drawing.Point(240, 447);
+            this.linkLabel19.Name = "linkLabel19";
+            this.linkLabel19.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel19.TabIndex = 33;
+            this.linkLabel19.TabStop = true;
+            this.linkLabel19.Text = "linkLabel19";
+            this.linkLabel19.Visible = false;
+            // 
+            // linkLabel18
+            // 
+            this.linkLabel18.AutoSize = true;
+            this.linkLabel18.Location = new System.Drawing.Point(240, 407);
+            this.linkLabel18.Name = "linkLabel18";
+            this.linkLabel18.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel18.TabIndex = 32;
+            this.linkLabel18.TabStop = true;
+            this.linkLabel18.Text = "linkLabel18";
+            this.linkLabel18.Visible = false;
+            // 
+            // linkLabel17
+            // 
+            this.linkLabel17.AutoSize = true;
+            this.linkLabel17.Location = new System.Drawing.Point(240, 367);
+            this.linkLabel17.Name = "linkLabel17";
+            this.linkLabel17.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel17.TabIndex = 31;
+            this.linkLabel17.TabStop = true;
+            this.linkLabel17.Text = "linkLabel17";
+            this.linkLabel17.Visible = false;
+            // 
+            // linkLabel16
+            // 
+            this.linkLabel16.AutoSize = true;
+            this.linkLabel16.Location = new System.Drawing.Point(240, 327);
+            this.linkLabel16.Name = "linkLabel16";
+            this.linkLabel16.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel16.TabIndex = 30;
+            this.linkLabel16.TabStop = true;
+            this.linkLabel16.Text = "linkLabel16";
+            this.linkLabel16.Visible = false;
+            // 
+            // linkLabel15
+            // 
+            this.linkLabel15.AutoSize = true;
+            this.linkLabel15.Location = new System.Drawing.Point(240, 287);
+            this.linkLabel15.Name = "linkLabel15";
+            this.linkLabel15.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel15.TabIndex = 29;
+            this.linkLabel15.TabStop = true;
+            this.linkLabel15.Text = "linkLabel15";
+            this.linkLabel15.Visible = false;
+            // 
+            // linkLabel14
+            // 
+            this.linkLabel14.AutoSize = true;
+            this.linkLabel14.Location = new System.Drawing.Point(240, 247);
+            this.linkLabel14.Name = "linkLabel14";
+            this.linkLabel14.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel14.TabIndex = 28;
+            this.linkLabel14.TabStop = true;
+            this.linkLabel14.Text = "linkLabel14";
+            this.linkLabel14.Visible = false;
+            // 
+            // linkLabel13
+            // 
+            this.linkLabel13.AutoSize = true;
+            this.linkLabel13.Location = new System.Drawing.Point(240, 207);
+            this.linkLabel13.Name = "linkLabel13";
+            this.linkLabel13.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel13.TabIndex = 27;
+            this.linkLabel13.TabStop = true;
+            this.linkLabel13.Text = "linkLabel13";
+            this.linkLabel13.Visible = false;
+            // 
+            // linkLabel12
+            // 
+            this.linkLabel12.AutoSize = true;
+            this.linkLabel12.Location = new System.Drawing.Point(240, 167);
+            this.linkLabel12.Name = "linkLabel12";
+            this.linkLabel12.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel12.TabIndex = 26;
+            this.linkLabel12.TabStop = true;
+            this.linkLabel12.Text = "linkLabel12";
+            this.linkLabel12.Visible = false;
+            // 
+            // linkLabel11
+            // 
+            this.linkLabel11.AutoSize = true;
+            this.linkLabel11.Location = new System.Drawing.Point(240, 127);
+            this.linkLabel11.Name = "linkLabel11";
+            this.linkLabel11.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel11.TabIndex = 25;
+            this.linkLabel11.TabStop = true;
+            this.linkLabel11.Text = "linkLabel11";
+            this.linkLabel11.Visible = false;
+            // 
+            // dessertLbl
+            // 
+            this.dessertLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dessertLbl.Location = new System.Drawing.Point(441, 90);
+            this.dessertLbl.Name = "dessertLbl";
+            this.dessertLbl.Size = new System.Drawing.Size(100, 23);
+            this.dessertLbl.TabIndex = 46;
+            this.dessertLbl.Text = "Desserts";
+            this.dessertLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dessertLbl.Visible = false;
+            // 
+            // linkLabel30
+            // 
+            this.linkLabel30.AutoSize = true;
+            this.linkLabel30.Location = new System.Drawing.Point(457, 487);
+            this.linkLabel30.Name = "linkLabel30";
+            this.linkLabel30.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel30.TabIndex = 45;
+            this.linkLabel30.TabStop = true;
+            this.linkLabel30.Text = "linkLabel30";
+            this.linkLabel30.Visible = false;
+            // 
+            // linkLabel29
+            // 
+            this.linkLabel29.AutoSize = true;
+            this.linkLabel29.Location = new System.Drawing.Point(457, 447);
+            this.linkLabel29.Name = "linkLabel29";
+            this.linkLabel29.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel29.TabIndex = 44;
+            this.linkLabel29.TabStop = true;
+            this.linkLabel29.Text = "linkLabel29";
+            this.linkLabel29.Visible = false;
+            // 
+            // linkLabel28
+            // 
+            this.linkLabel28.AutoSize = true;
+            this.linkLabel28.Location = new System.Drawing.Point(457, 407);
+            this.linkLabel28.Name = "linkLabel28";
+            this.linkLabel28.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel28.TabIndex = 43;
+            this.linkLabel28.TabStop = true;
+            this.linkLabel28.Text = "linkLabel28";
+            this.linkLabel28.Visible = false;
+            // 
+            // linkLabel27
+            // 
+            this.linkLabel27.AutoSize = true;
+            this.linkLabel27.Location = new System.Drawing.Point(457, 367);
+            this.linkLabel27.Name = "linkLabel27";
+            this.linkLabel27.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel27.TabIndex = 42;
+            this.linkLabel27.TabStop = true;
+            this.linkLabel27.Text = "linkLabel27";
+            this.linkLabel27.Visible = false;
+            // 
+            // linkLabel26
+            // 
+            this.linkLabel26.AutoSize = true;
+            this.linkLabel26.Location = new System.Drawing.Point(457, 327);
+            this.linkLabel26.Name = "linkLabel26";
+            this.linkLabel26.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel26.TabIndex = 41;
+            this.linkLabel26.TabStop = true;
+            this.linkLabel26.Text = "linkLabel26";
+            this.linkLabel26.Visible = false;
+            // 
+            // linkLabel25
+            // 
+            this.linkLabel25.AutoSize = true;
+            this.linkLabel25.Location = new System.Drawing.Point(457, 287);
+            this.linkLabel25.Name = "linkLabel25";
+            this.linkLabel25.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel25.TabIndex = 40;
+            this.linkLabel25.TabStop = true;
+            this.linkLabel25.Text = "linkLabel25";
+            this.linkLabel25.Visible = false;
+            // 
+            // linkLabel24
+            // 
+            this.linkLabel24.AutoSize = true;
+            this.linkLabel24.Location = new System.Drawing.Point(457, 247);
+            this.linkLabel24.Name = "linkLabel24";
+            this.linkLabel24.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel24.TabIndex = 39;
+            this.linkLabel24.TabStop = true;
+            this.linkLabel24.Text = "linkLabel24";
+            this.linkLabel24.Visible = false;
+            // 
+            // linkLabel23
+            // 
+            this.linkLabel23.AutoSize = true;
+            this.linkLabel23.Location = new System.Drawing.Point(457, 207);
+            this.linkLabel23.Name = "linkLabel23";
+            this.linkLabel23.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel23.TabIndex = 38;
+            this.linkLabel23.TabStop = true;
+            this.linkLabel23.Text = "linkLabel23";
+            this.linkLabel23.Visible = false;
+            // 
+            // linkLabel22
+            // 
+            this.linkLabel22.AutoSize = true;
+            this.linkLabel22.Location = new System.Drawing.Point(457, 167);
+            this.linkLabel22.Name = "linkLabel22";
+            this.linkLabel22.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel22.TabIndex = 37;
+            this.linkLabel22.TabStop = true;
+            this.linkLabel22.Text = "linkLabel22";
+            this.linkLabel22.Visible = false;
+            // 
+            // linkLabel21
+            // 
+            this.linkLabel21.AutoSize = true;
+            this.linkLabel21.Location = new System.Drawing.Point(457, 127);
+            this.linkLabel21.Name = "linkLabel21";
+            this.linkLabel21.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel21.TabIndex = 36;
+            this.linkLabel21.TabStop = true;
+            this.linkLabel21.Text = "linkLabel21";
+            this.linkLabel21.Visible = false;
+            // 
+            // snackLbl
+            // 
+            this.snackLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.snackLbl.Location = new System.Drawing.Point(653, 90);
+            this.snackLbl.Name = "snackLbl";
+            this.snackLbl.Size = new System.Drawing.Size(100, 23);
+            this.snackLbl.TabIndex = 57;
+            this.snackLbl.Text = "Snacks";
+            this.snackLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.snackLbl.Visible = false;
+            // 
+            // linkLabel40
+            // 
+            this.linkLabel40.AutoSize = true;
+            this.linkLabel40.Location = new System.Drawing.Point(675, 487);
+            this.linkLabel40.Name = "linkLabel40";
+            this.linkLabel40.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel40.TabIndex = 56;
+            this.linkLabel40.TabStop = true;
+            this.linkLabel40.Text = "linkLabel40";
+            this.linkLabel40.Visible = false;
+            // 
+            // linkLabel39
+            // 
+            this.linkLabel39.AutoSize = true;
+            this.linkLabel39.Location = new System.Drawing.Point(675, 447);
+            this.linkLabel39.Name = "linkLabel39";
+            this.linkLabel39.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel39.TabIndex = 55;
+            this.linkLabel39.TabStop = true;
+            this.linkLabel39.Text = "linkLabel39";
+            this.linkLabel39.Visible = false;
+            // 
+            // linkLabel38
+            // 
+            this.linkLabel38.AutoSize = true;
+            this.linkLabel38.Location = new System.Drawing.Point(675, 407);
+            this.linkLabel38.Name = "linkLabel38";
+            this.linkLabel38.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel38.TabIndex = 54;
+            this.linkLabel38.TabStop = true;
+            this.linkLabel38.Text = "linkLabel38";
+            this.linkLabel38.Visible = false;
+            // 
+            // linkLabel37
+            // 
+            this.linkLabel37.AutoSize = true;
+            this.linkLabel37.Location = new System.Drawing.Point(675, 367);
+            this.linkLabel37.Name = "linkLabel37";
+            this.linkLabel37.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel37.TabIndex = 53;
+            this.linkLabel37.TabStop = true;
+            this.linkLabel37.Text = "linkLabel37";
+            this.linkLabel37.Visible = false;
+            // 
+            // linkLabel36
+            // 
+            this.linkLabel36.AutoSize = true;
+            this.linkLabel36.Location = new System.Drawing.Point(675, 327);
+            this.linkLabel36.Name = "linkLabel36";
+            this.linkLabel36.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel36.TabIndex = 52;
+            this.linkLabel36.TabStop = true;
+            this.linkLabel36.Text = "linkLabel36";
+            this.linkLabel36.Visible = false;
+            // 
+            // linkLabel35
+            // 
+            this.linkLabel35.AutoSize = true;
+            this.linkLabel35.Location = new System.Drawing.Point(675, 287);
+            this.linkLabel35.Name = "linkLabel35";
+            this.linkLabel35.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel35.TabIndex = 51;
+            this.linkLabel35.TabStop = true;
+            this.linkLabel35.Text = "linkLabel35";
+            this.linkLabel35.Visible = false;
+            // 
+            // linkLabel34
+            // 
+            this.linkLabel34.AutoSize = true;
+            this.linkLabel34.Location = new System.Drawing.Point(675, 247);
+            this.linkLabel34.Name = "linkLabel34";
+            this.linkLabel34.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel34.TabIndex = 50;
+            this.linkLabel34.TabStop = true;
+            this.linkLabel34.Text = "linkLabel34";
+            this.linkLabel34.Visible = false;
+            // 
+            // linkLabel33
+            // 
+            this.linkLabel33.AutoSize = true;
+            this.linkLabel33.Location = new System.Drawing.Point(675, 207);
+            this.linkLabel33.Name = "linkLabel33";
+            this.linkLabel33.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel33.TabIndex = 49;
+            this.linkLabel33.TabStop = true;
+            this.linkLabel33.Text = "linkLabel33";
+            this.linkLabel33.Visible = false;
+            // 
+            // linkLabel32
+            // 
+            this.linkLabel32.AutoSize = true;
+            this.linkLabel32.Location = new System.Drawing.Point(675, 167);
+            this.linkLabel32.Name = "linkLabel32";
+            this.linkLabel32.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel32.TabIndex = 48;
+            this.linkLabel32.TabStop = true;
+            this.linkLabel32.Text = "linkLabel32";
+            this.linkLabel32.Visible = false;
+            // 
+            // linkLabel31
+            // 
+            this.linkLabel31.AutoSize = true;
+            this.linkLabel31.Location = new System.Drawing.Point(674, 127);
+            this.linkLabel31.Name = "linkLabel31";
+            this.linkLabel31.Size = new System.Drawing.Size(61, 13);
+            this.linkLabel31.TabIndex = 47;
+            this.linkLabel31.TabStop = true;
+            this.linkLabel31.Text = "linkLabel31";
+            this.linkLabel31.Visible = false;
+            // 
             // ViewScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.snackLbl);
+            this.Controls.Add(this.linkLabel40);
+            this.Controls.Add(this.linkLabel39);
+            this.Controls.Add(this.linkLabel38);
+            this.Controls.Add(this.linkLabel37);
+            this.Controls.Add(this.linkLabel36);
+            this.Controls.Add(this.linkLabel35);
+            this.Controls.Add(this.linkLabel34);
+            this.Controls.Add(this.linkLabel33);
+            this.Controls.Add(this.linkLabel32);
+            this.Controls.Add(this.linkLabel31);
+            this.Controls.Add(this.dessertLbl);
+            this.Controls.Add(this.linkLabel30);
+            this.Controls.Add(this.linkLabel29);
+            this.Controls.Add(this.linkLabel28);
+            this.Controls.Add(this.linkLabel27);
+            this.Controls.Add(this.linkLabel26);
+            this.Controls.Add(this.linkLabel25);
+            this.Controls.Add(this.linkLabel24);
+            this.Controls.Add(this.linkLabel23);
+            this.Controls.Add(this.linkLabel22);
+            this.Controls.Add(this.linkLabel21);
+            this.Controls.Add(this.sideLbl);
+            this.Controls.Add(this.linkLabel20);
+            this.Controls.Add(this.linkLabel19);
+            this.Controls.Add(this.linkLabel18);
+            this.Controls.Add(this.linkLabel17);
+            this.Controls.Add(this.linkLabel16);
+            this.Controls.Add(this.linkLabel15);
+            this.Controls.Add(this.linkLabel14);
+            this.Controls.Add(this.linkLabel13);
+            this.Controls.Add(this.linkLabel12);
+            this.Controls.Add(this.linkLabel11);
+            this.Controls.Add(this.entreeLbl);
             this.Controls.Add(this.linkLabel10);
             this.Controls.Add(this.linkLabel9);
             this.Controls.Add(this.linkLabel8);
@@ -336,7 +778,6 @@
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -367,5 +808,39 @@
         public System.Windows.Forms.LinkLabel linkLabel8;
         public System.Windows.Forms.LinkLabel linkLabel9;
         public System.Windows.Forms.LinkLabel linkLabel10;
+        public System.Windows.Forms.Label entreeLbl;
+        public System.Windows.Forms.Label sideLbl;
+        public System.Windows.Forms.LinkLabel linkLabel20;
+        public System.Windows.Forms.LinkLabel linkLabel19;
+        public System.Windows.Forms.LinkLabel linkLabel18;
+        public System.Windows.Forms.LinkLabel linkLabel17;
+        public System.Windows.Forms.LinkLabel linkLabel16;
+        public System.Windows.Forms.LinkLabel linkLabel15;
+        public System.Windows.Forms.LinkLabel linkLabel14;
+        public System.Windows.Forms.LinkLabel linkLabel13;
+        public System.Windows.Forms.LinkLabel linkLabel12;
+        public System.Windows.Forms.LinkLabel linkLabel11;
+        public System.Windows.Forms.Label dessertLbl;
+        public System.Windows.Forms.LinkLabel linkLabel30;
+        public System.Windows.Forms.LinkLabel linkLabel29;
+        public System.Windows.Forms.LinkLabel linkLabel28;
+        public System.Windows.Forms.LinkLabel linkLabel27;
+        public System.Windows.Forms.LinkLabel linkLabel26;
+        public System.Windows.Forms.LinkLabel linkLabel25;
+        public System.Windows.Forms.LinkLabel linkLabel24;
+        public System.Windows.Forms.LinkLabel linkLabel23;
+        public System.Windows.Forms.LinkLabel linkLabel22;
+        public System.Windows.Forms.LinkLabel linkLabel21;
+        public System.Windows.Forms.Label snackLbl;
+        public System.Windows.Forms.LinkLabel linkLabel40;
+        public System.Windows.Forms.LinkLabel linkLabel39;
+        public System.Windows.Forms.LinkLabel linkLabel38;
+        public System.Windows.Forms.LinkLabel linkLabel37;
+        public System.Windows.Forms.LinkLabel linkLabel36;
+        public System.Windows.Forms.LinkLabel linkLabel35;
+        public System.Windows.Forms.LinkLabel linkLabel34;
+        public System.Windows.Forms.LinkLabel linkLabel33;
+        public System.Windows.Forms.LinkLabel linkLabel32;
+        public System.Windows.Forms.LinkLabel linkLabel31;
     }
 }

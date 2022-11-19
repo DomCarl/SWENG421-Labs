@@ -34,4 +34,21 @@
     <image>C:\Users\Jason\OneDrive\Pictures\20200601_202659 (2).jpg</image>
     <instructions>Cook 'em.</instructions>
   </Recipe>
+  <Recipe>
+    <name>Chicken and Dumplings</name>
+    <category>Entree</category>
+    <diet>Standard</diet>
+    <servings>5</servings>
+    <ingredients>
+      <string>chicken</string>
+    </ingredients>
+    <amounts>
+      <double>2</double>
+    </amounts>
+    <units>
+      <string>lbs</string>
+    </units>
+    <image>C:\Users\Jason\OneDrive\Pictures\index.jpg</image>
+    <instructions>Cook it.</instructions>
+  </Recipe>
 </ArrayOfRecipe>
