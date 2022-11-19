@@ -19,3 +19,4 @@ C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Fi
 C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Final-Project\Final-Project\bin\Debug\Final-Project.application
 C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Final-Project\Final-Project\obj\Debug\Final-Project.exe.manifest
 C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Final-Project\Final-Project\obj\Debug\Final-Project.application
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Final-Project\Final-Project\obj\Debug\Final_Project.About.resources

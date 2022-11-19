@@ -116,5 +116,11 @@ namespace Final_Project
             ListManager.SerializeLists();
             MessageBox.Show("Cookbook saved!");
         }
+
+        private void aboutMI_Click(object sender, EventArgs e)
+        {
+            About ab = new About();
+            ab.Show();
+        }
     }
 }

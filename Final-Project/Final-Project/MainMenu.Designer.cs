@@ -32,6 +32,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileMI = new System.Windows.Forms.ToolStripMenuItem();
             this.addItemMI = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveCBMI = new System.Windows.Forms.ToolStripMenuItem();
             this.closeMI = new System.Windows.Forms.ToolStripMenuItem();
             this.lookupMI = new System.Windows.Forms.ToolStripMenuItem();
             this.searchMI = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,7 +50,7 @@
             this.catBtn = new System.Windows.Forms.Button();
             this.quitBtn = new System.Windows.Forms.Button();
             this.makeBtn = new System.Windows.Forms.Button();
-            this.saveCBMI = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutMI = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +60,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileMI,
             this.lookupMI,
-            this.categoriesToolStripMenuItem});
+            this.categoriesToolStripMenuItem,
+            this.aboutMI});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(784, 24);
@@ -81,6 +83,13 @@
             this.addItemMI.Name = "addItemMI";
             this.addItemMI.Size = new System.Drawing.Size(180, 22);
             this.addItemMI.Text = "Add A Recipe";
+            // 
+            // saveCBMI
+            // 
+            this.saveCBMI.Name = "saveCBMI";
+            this.saveCBMI.Size = new System.Drawing.Size(180, 22);
+            this.saveCBMI.Text = "Save Cookbook";
+            this.saveCBMI.Click += new System.EventHandler(this.saveCBMI_Click);
             // 
             // closeMI
             // 
@@ -241,12 +250,12 @@
             this.makeBtn.UseVisualStyleBackColor = false;
             this.makeBtn.Click += new System.EventHandler(this.makeBtn_Click);
             // 
-            // saveCBMI
+            // aboutMI
             // 
-            this.saveCBMI.Name = "saveCBMI";
-            this.saveCBMI.Size = new System.Drawing.Size(180, 22);
-            this.saveCBMI.Text = "Save Cookbook";
-            this.saveCBMI.Click += new System.EventHandler(this.saveCBMI_Click);
+            this.aboutMI.Name = "aboutMI";
+            this.aboutMI.Size = new System.Drawing.Size(52, 20);
+            this.aboutMI.Text = "About";
+            this.aboutMI.Click += new System.EventHandler(this.aboutMI_Click);
             // 
             // mainMenu
             // 
@@ -301,6 +310,7 @@
         private System.Windows.Forms.ToolStripMenuItem dessertsMI;
         private System.Windows.Forms.ToolStripMenuItem snacksMI;
         private System.Windows.Forms.ToolStripMenuItem saveCBMI;
+        private System.Windows.Forms.ToolStripMenuItem aboutMI;
     }
 }
 
