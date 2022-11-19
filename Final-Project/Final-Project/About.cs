@@ -19,7 +19,7 @@ namespace Final_Project
 
         private void abtOK_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Dispose();
         }
     }
 }

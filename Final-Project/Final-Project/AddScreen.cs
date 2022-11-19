@@ -35,42 +35,110 @@ namespace Final_Project
             Application.Exit();
         }
 
-        private void saveBtn_Click(object sender, EventArgs e)
+        private void saveBtn_Click(object sender, EventArgs e)        
         {
-            Recipe r = new Recipe();
-            r.setValues(nameTB.Text, typeCB.SelectedItem.ToString(), dietCB.SelectedItem.ToString(), Convert.ToDouble(servingsTB.Text), new List<string>(), new List<double>(), new List<string>(), fileName, dirTB.Text);
-
-            r.addIngredients(ingTB1.Text, Convert.ToDouble(amtTB1.Text), unitTB1.Text);
-            r.addIngredients(ingTB2.Text, Convert.ToDouble(amtTB2.Text), unitTB2.Text);
-            r.addIngredients(ingTB3.Text, Convert.ToDouble(amtTB3.Text), unitTB3.Text);
-            r.addIngredients(ingTB4.Text, Convert.ToDouble(amtTB4.Text), unitTB4.Text);
-            r.addIngredients(ingTB5.Text, Convert.ToDouble(amtTB5.Text), unitTB5.Text);
-            r.addIngredients(ingTB6.Text, Convert.ToDouble(amtTB6.Text), unitTB6.Text);
-            r.addIngredients(ingTB7.Text, Convert.ToDouble(amtTB7.Text), unitTB7.Text);
-            r.addIngredients(ingTB8.Text, Convert.ToDouble(amtTB8.Text), unitTB8.Text);
-            r.addIngredients(ingTB9.Text, Convert.ToDouble(amtTB9.Text), unitTB9.Text);
-            r.addIngredients(ingTB10.Text, Convert.ToDouble(amtTB10.Text), unitTB10.Text);
-            r.addIngredients(ingTB11.Text, Convert.ToDouble(amtTB11.Text), unitTB11.Text);            
             
-            switch(r.category)
+            if (ingTB1.Text == "" || amtTB1.Text == "" || unitTB1.Text == "")
             {
-                case "Entree":
-                    ListManager.entreeList.Add(r);
-                    break;
-                case "Side Dish":
-                    ListManager.sideList.Add(r);
-                    break;
-                case "Dessert":
-                    ListManager.dessertList.Add(r);
-                    break;
-                case "Snack":
-                    ListManager.snackList.Add(r);
-                    break;
-                default:
-                    break;
-            }                
-            
-            MessageBox.Show("Saved!");
+                MessageBox.Show("Please fill out fields for recipe.");
+            }
+            else
+            {
+                Recipe r = new Recipe();
+                r.setValues(nameTB.Text, typeCB.SelectedItem.ToString(), dietCB.SelectedItem.ToString(), Convert.ToDouble(servingsTB.Text), new List<string>(), new List<double>(), new List<string>(), fileName, dirTB.Text);
+
+
+                if (ingTB1.Text != "" && amtTB1.Text != "" && unitTB1.Text != "")
+                {
+                    r.addIngredients(ingTB1.Text, Convert.ToDouble(amtTB1.Text), unitTB1.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Please enter an ingredient, amount, and unit.");
+                }
+
+                if (ingTB2.Text != "" && amtTB2.Text != "" && unitTB2.Text != "")
+                {
+                    r.addIngredients(ingTB2.Text, Convert.ToDouble(amtTB2.Text), unitTB2.Text);
+                }
+
+                if (ingTB3.Text != "" && amtTB3.Text != "" && unitTB3.Text != "")
+                {
+                    r.addIngredients(ingTB3.Text, Convert.ToDouble(amtTB3.Text), unitTB3.Text);
+                }
+
+                if (ingTB4.Text != "" && amtTB4.Text != "" && unitTB4.Text != "")
+                {
+                    r.addIngredients(ingTB4.Text, Convert.ToDouble(amtTB4.Text), unitTB4.Text);
+                }
+
+                if (ingTB5.Text != "" && amtTB5.Text != "" && unitTB5.Text != "")
+                {
+                    r.addIngredients(ingTB5.Text, Convert.ToDouble(amtTB5.Text), unitTB5.Text);
+                }
+
+                if (ingTB6.Text != "" && amtTB6.Text != "" && unitTB6.Text != "")
+                {
+                    r.addIngredients(ingTB6.Text, Convert.ToDouble(amtTB6.Text), unitTB6.Text);
+                }
+
+                if (ingTB7.Text != "" && amtTB7.Text != "" && unitTB7.Text != "")
+                {
+                    r.addIngredients(ingTB7.Text, Convert.ToDouble(amtTB7.Text), unitTB7.Text);
+                }
+
+                if (ingTB8.Text != "" && amtTB8.Text != "" && unitTB8.Text != "")
+                {
+                    r.addIngredients(ingTB8.Text, Convert.ToDouble(amtTB8.Text), unitTB8.Text);
+                }
+
+                if (ingTB9.Text != "" && amtTB9.Text != "" && unitTB9.Text != "")
+                {
+                    r.addIngredients(ingTB9.Text, Convert.ToDouble(amtTB9.Text), unitTB9.Text);
+                }
+
+                if (ingTB10.Text != "" && amtTB10.Text != "" && unitTB10.Text != "")
+                {
+                    r.addIngredients(ingTB10.Text, Convert.ToDouble(amtTB10.Text), unitTB10.Text);
+                }
+
+                if (ingTB11.Text != "" && amtTB11.Text != "" && unitTB11.Text != "")
+                {
+                    r.addIngredients(ingTB11.Text, Convert.ToDouble(amtTB11.Text), unitTB11.Text);
+                }
+
+                //r.addIngredients(ingTB1.Text, Convert.ToDouble(amtTB1.Text), unitTB1.Text);
+                //r.addIngredients(ingTB2.Text, Convert.ToDouble(amtTB2.Text), unitTB2.Text);
+                //r.addIngredients(ingTB3.Text, Convert.ToDouble(amtTB3.Text), unitTB3.Text);
+                //r.addIngredients(ingTB4.Text, Convert.ToDouble(amtTB4.Text), unitTB4.Text);
+                //r.addIngredients(ingTB5.Text, Convert.ToDouble(amtTB5.Text), unitTB5.Text);
+                //r.addIngredients(ingTB6.Text, Convert.ToDouble(amtTB6.Text), unitTB6.Text);
+                //r.addIngredients(ingTB7.Text, Convert.ToDouble(amtTB7.Text), unitTB7.Text);
+                //r.addIngredients(ingTB8.Text, Convert.ToDouble(amtTB8.Text), unitTB8.Text);
+                //r.addIngredients(ingTB9.Text, Convert.ToDouble(amtTB9.Text), unitTB9.Text);
+                //r.addIngredients(ingTB10.Text, Convert.ToDouble(amtTB10.Text), unitTB10.Text);
+                //r.addIngredients(ingTB11.Text, Convert.ToDouble(amtTB11.Text), unitTB11.Text);            
+
+                switch (r.category)
+                {
+                    case "Entree":
+                        ListManager.entreeList.Add(r);
+                        break;
+                    case "Side Dish":
+                        ListManager.sideList.Add(r);
+                        break;
+                    case "Dessert":
+                        ListManager.dessertList.Add(r);
+                        break;
+                    case "Snack":
+                        ListManager.snackList.Add(r);
+                        break;
+                    default:
+                        break;
+                }
+
+                MessageBox.Show("Saved!");
+            }
         }
         
         private void addPicBtn_Click(object sender, EventArgs e)
@@ -171,6 +239,140 @@ namespace Final_Project
                     }
                 }
             }
+        }
+
+        private void aboutMI_Click(object sender, EventArgs e)
+        {
+            About ab = new About();
+            ab.Show();
+        }
+
+        private void addIng1_Click(object sender, EventArgs e)
+        {
+            addIng1.Visible = false;
+            ingTB4.Visible = true;
+            amtTB4.Visible = true;
+            unitTB4.Visible = true;
+            addIng2.Visible = true;
+        }
+
+        private void addIng2_Click(object sender, EventArgs e)
+        {
+            addIng2.Visible = false;
+            ingTB5.Visible = true;
+            amtTB5.Visible = true;
+            unitTB5.Visible = true;
+            addIng3.Visible = true;
+        }
+
+        private void addIng3_Click(object sender, EventArgs e)
+        {
+            addIng3.Visible = false;
+            ingTB6.Visible = true;
+            amtTB6.Visible = true;
+            unitTB6.Visible = true;
+            addIng4.Visible = true;
+        }
+
+        private void addIng4_Click(object sender, EventArgs e)
+        {
+            addIng4.Visible = false;
+            ingTB7.Visible = true;
+            amtTB7.Visible = true;
+            unitTB7.Visible = true;
+            addIng5.Visible = true;
+        }
+
+        private void addIng5_Click(object sender, EventArgs e)
+        {
+            addIng5.Visible = false;
+            ingTB8.Visible = true;
+            amtTB8.Visible = true;
+            unitTB8.Visible = true;
+            addIng6.Visible = true;
+        }
+
+        private void addIng6_Click(object sender, EventArgs e)
+        {
+            addIng6.Visible = false;
+            ingTB9.Visible = true;
+            amtTB9.Visible = true;
+            unitTB9.Visible = true;
+            addIng7.Visible = true;
+        }
+
+        private void addIng7_Click(object sender, EventArgs e)
+        {
+            addIng7.Visible = false;
+            ingTB10.Visible = true;
+            amtTB10.Visible = true;
+            unitTB10.Visible = true;
+            addIng8.Visible = true;
+        }
+
+        private void addIng8_Click(object sender, EventArgs e)
+        {
+            addIng8.Visible = false;
+            ingTB11.Visible = true;
+            amtTB11.Visible = true;
+            unitTB11.Visible = true;
+        }
+
+        private void saveCBMI_Click(object sender, EventArgs e)
+        {
+            ListManager.SerializeLists();
+            MessageBox.Show("Cookbook saved!");
+        }
+
+        private void printMI_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchMI_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormManager.ss.Show();
+        }
+
+        private void makeAMealToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormManager.mam.Show();
+        }
+
+        private void dietPlansToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormManager.dp.Show();
+        }
+
+        private void entreesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormManager.vs.Show();
+            FormManager.vs.vsLbl.Text = "Entrees";
+        }
+
+        private void sideDishesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormManager.vs.Show();
+            FormManager.vs.vsLbl.Text = "Side Dishes";
+        }
+
+        private void dessertsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormManager.vs.Show();
+            FormManager.vs.vsLbl.Text = "Desserts";
+        }
+
+        private void snacksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormManager.vs.Show();
+            FormManager.vs.vsLbl.Text = "Snacks";
         }
     }
 }

@@ -40,17 +40,16 @@ namespace Final_Project
 
         public void addIngredients(string ingredient, double? amount, string unit)
         {
-            if (ingredient == "Ingredient")
-            {
-                goto end;
-            }
-            else
+            if (ingredient != "")
             {
                 ingredients.Add(ingredient);
                 amounts.Add(amount.Value);
                 units.Add(unit);
             }
-        end:;
+            else
+            {
+                return;
+            }        
         }
     }
 }

@@ -43,28 +43,28 @@ namespace Final_Project
         {
             Hide();
             FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = "Barking up the wrong Entrees";
+            FormManager.vs.vsLbl.Text = "Entrees";
         }
 
         private void sidesBtn_Click(object sender, EventArgs e)
         {
             Hide();
             FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = "Side Dishes, bishes!";
+            FormManager.vs.vsLbl.Text = "Side Dishes";
         }
 
         private void dessertBtn_Click(object sender, EventArgs e)
         {
             Hide();
             FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = "No sand in these Desserts!";
+            FormManager.vs.vsLbl.Text = "Desserts!";
         }
 
         private void snackBtn_Click(object sender, EventArgs e)
         {
             Hide();
             FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = "Snack attack!";
+            FormManager.vs.vsLbl.Text = "Snacks";
         }
 
         private void searchMI_Click(object sender, EventArgs e)
@@ -88,6 +88,18 @@ namespace Final_Project
         private void Categories_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void saveCBMI_Click(object sender, EventArgs e)
+        {
+            ListManager.SerializeLists();
+            MessageBox.Show("Cookbook saved!");
+        }
+
+        private void aboutMI_Click(object sender, EventArgs e)
+        {
+            About ab = new About();
+            ab.Show();
         }
     }
 }

@@ -32,6 +32,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileMI = new System.Windows.Forms.ToolStripMenuItem();
             this.newItemMI = new System.Windows.Forms.ToolStripMenuItem();
+            this.printMI = new System.Windows.Forms.ToolStripMenuItem();
             this.closeMI = new System.Windows.Forms.ToolStripMenuItem();
             this.lookupMI = new System.Windows.Forms.ToolStripMenuItem();
             this.searchMI = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,6 +43,7 @@
             this.sideDishesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dessertsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.snacksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutMI = new System.Windows.Forms.ToolStripMenuItem();
             this.quitBtn = new System.Windows.Forms.Button();
             this.mainMenuBtn = new System.Windows.Forms.Button();
             this.pb1 = new System.Windows.Forms.PictureBox();
@@ -94,6 +96,15 @@
             this.saveBtn = new System.Windows.Forms.Button();
             this.addPicBtn = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.addIng1 = new System.Windows.Forms.Button();
+            this.addIng2 = new System.Windows.Forms.Button();
+            this.addIng3 = new System.Windows.Forms.Button();
+            this.addIng4 = new System.Windows.Forms.Button();
+            this.addIng5 = new System.Windows.Forms.Button();
+            this.addIng6 = new System.Windows.Forms.Button();
+            this.addIng7 = new System.Windows.Forms.Button();
+            this.addIng8 = new System.Windows.Forms.Button();
+            this.saveCBMI = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.SuspendLayout();
@@ -103,7 +114,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileMI,
             this.lookupMI,
-            this.categoriesToolStripMenuItem});
+            this.categoriesToolStripMenuItem,
+            this.aboutMI});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(784, 24);
@@ -114,6 +126,8 @@
             // 
             this.fileMI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newItemMI,
+            this.printMI,
+            this.saveCBMI,
             this.closeMI});
             this.fileMI.Name = "fileMI";
             this.fileMI.Size = new System.Drawing.Size(37, 20);
@@ -123,13 +137,20 @@
             // 
             this.newItemMI.Enabled = false;
             this.newItemMI.Name = "newItemMI";
-            this.newItemMI.Size = new System.Drawing.Size(145, 22);
+            this.newItemMI.Size = new System.Drawing.Size(180, 22);
             this.newItemMI.Text = "Add A Recipe";
+            // 
+            // printMI
+            // 
+            this.printMI.Name = "printMI";
+            this.printMI.Size = new System.Drawing.Size(180, 22);
+            this.printMI.Text = "Print Recipe";
+            this.printMI.Click += new System.EventHandler(this.printMI_Click);
             // 
             // closeMI
             // 
             this.closeMI.Name = "closeMI";
-            this.closeMI.Size = new System.Drawing.Size(145, 22);
+            this.closeMI.Size = new System.Drawing.Size(180, 22);
             this.closeMI.Text = "Close";
             this.closeMI.Click += new System.EventHandler(this.closeMI_Click);
             // 
@@ -146,20 +167,23 @@
             // searchMI
             // 
             this.searchMI.Name = "searchMI";
-            this.searchMI.Size = new System.Drawing.Size(143, 22);
+            this.searchMI.Size = new System.Drawing.Size(180, 22);
             this.searchMI.Text = "Search";
+            this.searchMI.Click += new System.EventHandler(this.searchMI_Click);
             // 
             // makeAMealToolStripMenuItem
             // 
             this.makeAMealToolStripMenuItem.Name = "makeAMealToolStripMenuItem";
-            this.makeAMealToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.makeAMealToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.makeAMealToolStripMenuItem.Text = "Make A Meal";
+            this.makeAMealToolStripMenuItem.Click += new System.EventHandler(this.makeAMealToolStripMenuItem_Click);
             // 
             // dietPlansToolStripMenuItem
             // 
             this.dietPlansToolStripMenuItem.Name = "dietPlansToolStripMenuItem";
-            this.dietPlansToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.dietPlansToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dietPlansToolStripMenuItem.Text = "Diet Plans";
+            this.dietPlansToolStripMenuItem.Click += new System.EventHandler(this.dietPlansToolStripMenuItem_Click);
             // 
             // categoriesToolStripMenuItem
             // 
@@ -175,26 +199,37 @@
             // entreesToolStripMenuItem
             // 
             this.entreesToolStripMenuItem.Name = "entreesToolStripMenuItem";
-            this.entreesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.entreesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.entreesToolStripMenuItem.Text = "Entrees";
+            this.entreesToolStripMenuItem.Click += new System.EventHandler(this.entreesToolStripMenuItem_Click);
             // 
             // sideDishesToolStripMenuItem
             // 
             this.sideDishesToolStripMenuItem.Name = "sideDishesToolStripMenuItem";
-            this.sideDishesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.sideDishesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sideDishesToolStripMenuItem.Text = "Side Dishes";
+            this.sideDishesToolStripMenuItem.Click += new System.EventHandler(this.sideDishesToolStripMenuItem_Click);
             // 
             // dessertsToolStripMenuItem
             // 
             this.dessertsToolStripMenuItem.Name = "dessertsToolStripMenuItem";
-            this.dessertsToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.dessertsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dessertsToolStripMenuItem.Text = "Desserts";
+            this.dessertsToolStripMenuItem.Click += new System.EventHandler(this.dessertsToolStripMenuItem_Click);
             // 
             // snacksToolStripMenuItem
             // 
             this.snacksToolStripMenuItem.Name = "snacksToolStripMenuItem";
-            this.snacksToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.snacksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.snacksToolStripMenuItem.Text = "Snacks";
+            this.snacksToolStripMenuItem.Click += new System.EventHandler(this.snacksToolStripMenuItem_Click);
+            // 
+            // aboutMI
+            // 
+            this.aboutMI.Name = "aboutMI";
+            this.aboutMI.Size = new System.Drawing.Size(52, 20);
+            this.aboutMI.Text = "About";
+            this.aboutMI.Click += new System.EventHandler(this.aboutMI_Click);
             // 
             // quitBtn
             // 
@@ -321,7 +356,7 @@
             // IngLbl
             // 
             this.IngLbl.AutoSize = true;
-            this.IngLbl.Location = new System.Drawing.Point(56, 206);
+            this.IngLbl.Location = new System.Drawing.Point(102, 195);
             this.IngLbl.Name = "IngLbl";
             this.IngLbl.Size = new System.Drawing.Size(54, 13);
             this.IngLbl.TabIndex = 23;
@@ -330,7 +365,7 @@
             // amntLbl
             // 
             this.amntLbl.AutoSize = true;
-            this.amntLbl.Location = new System.Drawing.Point(199, 206);
+            this.amntLbl.Location = new System.Drawing.Point(240, 193);
             this.amntLbl.Name = "amntLbl";
             this.amntLbl.Size = new System.Drawing.Size(43, 13);
             this.amntLbl.TabIndex = 24;
@@ -339,7 +374,7 @@
             // unitLbl
             // 
             this.unitLbl.AutoSize = true;
-            this.unitLbl.Location = new System.Drawing.Point(312, 206);
+            this.unitLbl.Location = new System.Drawing.Point(358, 195);
             this.unitLbl.Name = "unitLbl";
             this.unitLbl.Size = new System.Drawing.Size(82, 13);
             this.unitLbl.TabIndex = 25;
@@ -347,267 +382,258 @@
             // 
             // ingTB1
             // 
-            this.ingTB1.Location = new System.Drawing.Point(33, 236);
+            this.ingTB1.Location = new System.Drawing.Point(79, 225);
             this.ingTB1.Name = "ingTB1";
             this.ingTB1.Size = new System.Drawing.Size(100, 20);
             this.ingTB1.TabIndex = 26;
-            this.ingTB1.Text = "Ingredient";
             // 
             // amtTB1
             // 
-            this.amtTB1.Location = new System.Drawing.Point(172, 236);
+            this.amtTB1.Location = new System.Drawing.Point(213, 223);
             this.amtTB1.Name = "amtTB1";
             this.amtTB1.Size = new System.Drawing.Size(100, 20);
             this.amtTB1.TabIndex = 27;
-            this.amtTB1.Text = "0.0";
             // 
             // unitTB1
             // 
-            this.unitTB1.Location = new System.Drawing.Point(304, 236);
+            this.unitTB1.Location = new System.Drawing.Point(350, 225);
             this.unitTB1.Name = "unitTB1";
             this.unitTB1.Size = new System.Drawing.Size(100, 20);
             this.unitTB1.TabIndex = 28;
-            this.unitTB1.Text = "Units";
             // 
             // unitTB2
             // 
-            this.unitTB2.Location = new System.Drawing.Point(304, 262);
+            this.unitTB2.Location = new System.Drawing.Point(350, 251);
             this.unitTB2.Name = "unitTB2";
             this.unitTB2.Size = new System.Drawing.Size(100, 20);
             this.unitTB2.TabIndex = 31;
-            this.unitTB2.Text = "Units";
             // 
             // amtTB2
             // 
-            this.amtTB2.Location = new System.Drawing.Point(172, 262);
+            this.amtTB2.Location = new System.Drawing.Point(213, 249);
             this.amtTB2.Name = "amtTB2";
             this.amtTB2.Size = new System.Drawing.Size(100, 20);
             this.amtTB2.TabIndex = 30;
-            this.amtTB2.Text = "0.0";
             // 
             // ingTB2
             // 
-            this.ingTB2.Location = new System.Drawing.Point(33, 262);
+            this.ingTB2.Location = new System.Drawing.Point(79, 251);
             this.ingTB2.Name = "ingTB2";
             this.ingTB2.Size = new System.Drawing.Size(100, 20);
             this.ingTB2.TabIndex = 29;
-            this.ingTB2.Text = "Ingredient";
             // 
             // unitTB3
             // 
-            this.unitTB3.Location = new System.Drawing.Point(304, 288);
+            this.unitTB3.Location = new System.Drawing.Point(350, 277);
             this.unitTB3.Name = "unitTB3";
             this.unitTB3.Size = new System.Drawing.Size(100, 20);
             this.unitTB3.TabIndex = 34;
-            this.unitTB3.Text = "Units";
             // 
             // amtTB3
             // 
-            this.amtTB3.Location = new System.Drawing.Point(172, 288);
+            this.amtTB3.Location = new System.Drawing.Point(213, 275);
             this.amtTB3.Name = "amtTB3";
             this.amtTB3.Size = new System.Drawing.Size(100, 20);
             this.amtTB3.TabIndex = 33;
-            this.amtTB3.Text = "0.0";
             // 
             // ingTB3
             // 
-            this.ingTB3.Location = new System.Drawing.Point(33, 288);
+            this.ingTB3.Location = new System.Drawing.Point(79, 277);
             this.ingTB3.Name = "ingTB3";
             this.ingTB3.Size = new System.Drawing.Size(100, 20);
             this.ingTB3.TabIndex = 32;
-            this.ingTB3.Text = "Ingredient";
             // 
             // unitTB4
             // 
-            this.unitTB4.Location = new System.Drawing.Point(304, 314);
+            this.unitTB4.Location = new System.Drawing.Point(350, 303);
             this.unitTB4.Name = "unitTB4";
             this.unitTB4.Size = new System.Drawing.Size(100, 20);
             this.unitTB4.TabIndex = 37;
-            this.unitTB4.Text = "Units";
+            this.unitTB4.Visible = false;
             // 
             // amtTB4
             // 
-            this.amtTB4.Location = new System.Drawing.Point(172, 314);
+            this.amtTB4.Location = new System.Drawing.Point(213, 301);
             this.amtTB4.Name = "amtTB4";
             this.amtTB4.Size = new System.Drawing.Size(100, 20);
             this.amtTB4.TabIndex = 36;
-            this.amtTB4.Text = "0.0";
+            this.amtTB4.Visible = false;
             // 
             // ingTB4
             // 
-            this.ingTB4.Location = new System.Drawing.Point(33, 314);
+            this.ingTB4.Location = new System.Drawing.Point(79, 303);
             this.ingTB4.Name = "ingTB4";
             this.ingTB4.Size = new System.Drawing.Size(100, 20);
             this.ingTB4.TabIndex = 35;
-            this.ingTB4.Text = "Ingredient";
+            this.ingTB4.Visible = false;
             // 
             // unitTB5
             // 
-            this.unitTB5.Location = new System.Drawing.Point(304, 340);
+            this.unitTB5.Location = new System.Drawing.Point(350, 329);
             this.unitTB5.Name = "unitTB5";
             this.unitTB5.Size = new System.Drawing.Size(100, 20);
             this.unitTB5.TabIndex = 40;
-            this.unitTB5.Text = "Units";
+            this.unitTB5.Visible = false;
             // 
             // amtTB5
             // 
-            this.amtTB5.Location = new System.Drawing.Point(172, 340);
+            this.amtTB5.Location = new System.Drawing.Point(213, 327);
             this.amtTB5.Name = "amtTB5";
             this.amtTB5.Size = new System.Drawing.Size(100, 20);
             this.amtTB5.TabIndex = 39;
-            this.amtTB5.Text = "0.0";
+            this.amtTB5.Visible = false;
             // 
             // ingTB5
             // 
-            this.ingTB5.Location = new System.Drawing.Point(33, 340);
+            this.ingTB5.Location = new System.Drawing.Point(79, 329);
             this.ingTB5.Name = "ingTB5";
             this.ingTB5.Size = new System.Drawing.Size(100, 20);
             this.ingTB5.TabIndex = 38;
-            this.ingTB5.Text = "Ingredient";
+            this.ingTB5.Visible = false;
             // 
             // unitTB6
             // 
-            this.unitTB6.Location = new System.Drawing.Point(304, 366);
+            this.unitTB6.Location = new System.Drawing.Point(350, 355);
             this.unitTB6.Name = "unitTB6";
             this.unitTB6.Size = new System.Drawing.Size(100, 20);
             this.unitTB6.TabIndex = 43;
-            this.unitTB6.Text = "Units";
+            this.unitTB6.Visible = false;
             // 
             // amtTB6
             // 
-            this.amtTB6.Location = new System.Drawing.Point(172, 366);
+            this.amtTB6.Location = new System.Drawing.Point(213, 353);
             this.amtTB6.Name = "amtTB6";
             this.amtTB6.Size = new System.Drawing.Size(100, 20);
             this.amtTB6.TabIndex = 42;
-            this.amtTB6.Text = "0.0";
+            this.amtTB6.Visible = false;
             // 
             // ingTB6
             // 
-            this.ingTB6.Location = new System.Drawing.Point(33, 366);
+            this.ingTB6.Location = new System.Drawing.Point(79, 355);
             this.ingTB6.Name = "ingTB6";
             this.ingTB6.Size = new System.Drawing.Size(100, 20);
             this.ingTB6.TabIndex = 41;
-            this.ingTB6.Text = "Ingredient";
+            this.ingTB6.Visible = false;
             // 
             // unitTB7
             // 
-            this.unitTB7.Location = new System.Drawing.Point(304, 392);
+            this.unitTB7.Location = new System.Drawing.Point(350, 381);
             this.unitTB7.Name = "unitTB7";
             this.unitTB7.Size = new System.Drawing.Size(100, 20);
             this.unitTB7.TabIndex = 46;
-            this.unitTB7.Text = "Units";
+            this.unitTB7.Visible = false;
             // 
             // amtTB7
             // 
-            this.amtTB7.Location = new System.Drawing.Point(172, 392);
+            this.amtTB7.Location = new System.Drawing.Point(213, 379);
             this.amtTB7.Name = "amtTB7";
             this.amtTB7.Size = new System.Drawing.Size(100, 20);
             this.amtTB7.TabIndex = 45;
-            this.amtTB7.Text = "0.0";
+            this.amtTB7.Visible = false;
             // 
             // ingTB7
             // 
-            this.ingTB7.Location = new System.Drawing.Point(33, 392);
+            this.ingTB7.Location = new System.Drawing.Point(79, 381);
             this.ingTB7.Name = "ingTB7";
             this.ingTB7.Size = new System.Drawing.Size(100, 20);
             this.ingTB7.TabIndex = 44;
-            this.ingTB7.Text = "Ingredient";
+            this.ingTB7.Visible = false;
             // 
             // unitTB8
             // 
-            this.unitTB8.Location = new System.Drawing.Point(304, 418);
+            this.unitTB8.Location = new System.Drawing.Point(350, 407);
             this.unitTB8.Name = "unitTB8";
             this.unitTB8.Size = new System.Drawing.Size(100, 20);
             this.unitTB8.TabIndex = 49;
-            this.unitTB8.Text = "Units";
+            this.unitTB8.Visible = false;
             // 
             // amtTB8
             // 
-            this.amtTB8.Location = new System.Drawing.Point(172, 418);
+            this.amtTB8.Location = new System.Drawing.Point(213, 405);
             this.amtTB8.Name = "amtTB8";
             this.amtTB8.Size = new System.Drawing.Size(100, 20);
             this.amtTB8.TabIndex = 48;
-            this.amtTB8.Text = "0.0";
+            this.amtTB8.Visible = false;
             // 
             // ingTB8
             // 
-            this.ingTB8.Location = new System.Drawing.Point(33, 418);
+            this.ingTB8.Location = new System.Drawing.Point(79, 407);
             this.ingTB8.Name = "ingTB8";
             this.ingTB8.Size = new System.Drawing.Size(100, 20);
             this.ingTB8.TabIndex = 47;
-            this.ingTB8.Text = "Ingredient";
+            this.ingTB8.Visible = false;
             // 
             // unitTB9
             // 
-            this.unitTB9.Location = new System.Drawing.Point(304, 444);
+            this.unitTB9.Location = new System.Drawing.Point(350, 433);
             this.unitTB9.Name = "unitTB9";
             this.unitTB9.Size = new System.Drawing.Size(100, 20);
             this.unitTB9.TabIndex = 52;
-            this.unitTB9.Text = "Units";
+            this.unitTB9.Visible = false;
             // 
             // amtTB9
             // 
-            this.amtTB9.Location = new System.Drawing.Point(172, 444);
+            this.amtTB9.Location = new System.Drawing.Point(213, 431);
             this.amtTB9.Name = "amtTB9";
             this.amtTB9.Size = new System.Drawing.Size(100, 20);
             this.amtTB9.TabIndex = 51;
-            this.amtTB9.Text = "0.0";
+            this.amtTB9.Visible = false;
             // 
             // ingTB9
             // 
-            this.ingTB9.Location = new System.Drawing.Point(33, 444);
+            this.ingTB9.Location = new System.Drawing.Point(79, 433);
             this.ingTB9.Name = "ingTB9";
             this.ingTB9.Size = new System.Drawing.Size(100, 20);
             this.ingTB9.TabIndex = 50;
-            this.ingTB9.Text = "Ingredient";
+            this.ingTB9.Visible = false;
             // 
             // unitTB10
             // 
-            this.unitTB10.Location = new System.Drawing.Point(304, 470);
+            this.unitTB10.Location = new System.Drawing.Point(350, 459);
             this.unitTB10.Name = "unitTB10";
             this.unitTB10.Size = new System.Drawing.Size(100, 20);
             this.unitTB10.TabIndex = 55;
-            this.unitTB10.Text = "Units";
+            this.unitTB10.Visible = false;
             // 
             // amtTB10
             // 
-            this.amtTB10.Location = new System.Drawing.Point(172, 470);
+            this.amtTB10.Location = new System.Drawing.Point(213, 457);
             this.amtTB10.Name = "amtTB10";
             this.amtTB10.Size = new System.Drawing.Size(100, 20);
             this.amtTB10.TabIndex = 54;
-            this.amtTB10.Text = "0.0";
+            this.amtTB10.Visible = false;
             // 
             // ingTB10
             // 
-            this.ingTB10.Location = new System.Drawing.Point(33, 470);
+            this.ingTB10.Location = new System.Drawing.Point(79, 459);
             this.ingTB10.Name = "ingTB10";
             this.ingTB10.Size = new System.Drawing.Size(100, 20);
             this.ingTB10.TabIndex = 53;
-            this.ingTB10.Text = "Ingredient";
+            this.ingTB10.Visible = false;
             // 
             // unitTB11
             // 
-            this.unitTB11.Location = new System.Drawing.Point(304, 496);
+            this.unitTB11.Location = new System.Drawing.Point(350, 485);
             this.unitTB11.Name = "unitTB11";
             this.unitTB11.Size = new System.Drawing.Size(100, 20);
             this.unitTB11.TabIndex = 58;
-            this.unitTB11.Text = "Units";
+            this.unitTB11.Visible = false;
             // 
             // amtTB11
             // 
-            this.amtTB11.Location = new System.Drawing.Point(172, 496);
+            this.amtTB11.Location = new System.Drawing.Point(213, 483);
             this.amtTB11.Name = "amtTB11";
             this.amtTB11.Size = new System.Drawing.Size(100, 20);
             this.amtTB11.TabIndex = 57;
-            this.amtTB11.Text = "0.0";
+            this.amtTB11.Visible = false;
             // 
             // ingTB11
             // 
-            this.ingTB11.Location = new System.Drawing.Point(33, 496);
+            this.ingTB11.Location = new System.Drawing.Point(79, 485);
             this.ingTB11.Name = "ingTB11";
             this.ingTB11.Size = new System.Drawing.Size(100, 20);
             this.ingTB11.TabIndex = 56;
-            this.ingTB11.Text = "Ingredient";
+            this.ingTB11.Visible = false;
             // 
             // saveBtn
             // 
@@ -633,12 +659,114 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // addIng1
+            // 
+            this.addIng1.Location = new System.Drawing.Point(36, 302);
+            this.addIng1.Name = "addIng1";
+            this.addIng1.Size = new System.Drawing.Size(27, 23);
+            this.addIng1.TabIndex = 61;
+            this.addIng1.Text = "+";
+            this.addIng1.UseVisualStyleBackColor = true;
+            this.addIng1.Click += new System.EventHandler(this.addIng1_Click);
+            // 
+            // addIng2
+            // 
+            this.addIng2.Location = new System.Drawing.Point(36, 328);
+            this.addIng2.Name = "addIng2";
+            this.addIng2.Size = new System.Drawing.Size(27, 23);
+            this.addIng2.TabIndex = 62;
+            this.addIng2.Text = "+";
+            this.addIng2.UseVisualStyleBackColor = true;
+            this.addIng2.Visible = false;
+            this.addIng2.Click += new System.EventHandler(this.addIng2_Click);
+            // 
+            // addIng3
+            // 
+            this.addIng3.Location = new System.Drawing.Point(36, 354);
+            this.addIng3.Name = "addIng3";
+            this.addIng3.Size = new System.Drawing.Size(27, 23);
+            this.addIng3.TabIndex = 63;
+            this.addIng3.Text = "+";
+            this.addIng3.UseVisualStyleBackColor = true;
+            this.addIng3.Visible = false;
+            this.addIng3.Click += new System.EventHandler(this.addIng3_Click);
+            // 
+            // addIng4
+            // 
+            this.addIng4.Location = new System.Drawing.Point(36, 380);
+            this.addIng4.Name = "addIng4";
+            this.addIng4.Size = new System.Drawing.Size(27, 23);
+            this.addIng4.TabIndex = 64;
+            this.addIng4.Text = "+";
+            this.addIng4.UseVisualStyleBackColor = true;
+            this.addIng4.Visible = false;
+            this.addIng4.Click += new System.EventHandler(this.addIng4_Click);
+            // 
+            // addIng5
+            // 
+            this.addIng5.Location = new System.Drawing.Point(36, 406);
+            this.addIng5.Name = "addIng5";
+            this.addIng5.Size = new System.Drawing.Size(27, 23);
+            this.addIng5.TabIndex = 65;
+            this.addIng5.Text = "+";
+            this.addIng5.UseVisualStyleBackColor = true;
+            this.addIng5.Visible = false;
+            this.addIng5.Click += new System.EventHandler(this.addIng5_Click);
+            // 
+            // addIng6
+            // 
+            this.addIng6.Location = new System.Drawing.Point(36, 433);
+            this.addIng6.Name = "addIng6";
+            this.addIng6.Size = new System.Drawing.Size(27, 23);
+            this.addIng6.TabIndex = 66;
+            this.addIng6.Text = "+";
+            this.addIng6.UseVisualStyleBackColor = true;
+            this.addIng6.Visible = false;
+            this.addIng6.Click += new System.EventHandler(this.addIng6_Click);
+            // 
+            // addIng7
+            // 
+            this.addIng7.Location = new System.Drawing.Point(36, 459);
+            this.addIng7.Name = "addIng7";
+            this.addIng7.Size = new System.Drawing.Size(27, 23);
+            this.addIng7.TabIndex = 67;
+            this.addIng7.Text = "+";
+            this.addIng7.UseVisualStyleBackColor = true;
+            this.addIng7.Visible = false;
+            this.addIng7.Click += new System.EventHandler(this.addIng7_Click);
+            // 
+            // addIng8
+            // 
+            this.addIng8.Location = new System.Drawing.Point(36, 484);
+            this.addIng8.Name = "addIng8";
+            this.addIng8.Size = new System.Drawing.Size(27, 23);
+            this.addIng8.TabIndex = 68;
+            this.addIng8.Text = "+";
+            this.addIng8.UseVisualStyleBackColor = true;
+            this.addIng8.Visible = false;
+            this.addIng8.Click += new System.EventHandler(this.addIng8_Click);
+            // 
+            // saveCBMI
+            // 
+            this.saveCBMI.Name = "saveCBMI";
+            this.saveCBMI.Size = new System.Drawing.Size(180, 22);
+            this.saveCBMI.Text = "Save Cookbook";
+            this.saveCBMI.Click += new System.EventHandler(this.saveCBMI_Click);
+            // 
             // AddScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.addIng8);
+            this.Controls.Add(this.addIng7);
+            this.Controls.Add(this.addIng6);
+            this.Controls.Add(this.addIng5);
+            this.Controls.Add(this.addIng4);
+            this.Controls.Add(this.addIng3);
+            this.Controls.Add(this.addIng2);
+            this.Controls.Add(this.addIng1);
             this.Controls.Add(this.addPicBtn);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.unitTB11);
@@ -774,5 +902,16 @@
         private System.Windows.Forms.Button saveBtn;
         private System.Windows.Forms.Button addPicBtn;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem printMI;
+        private System.Windows.Forms.ToolStripMenuItem aboutMI;
+        private System.Windows.Forms.Button addIng1;
+        private System.Windows.Forms.Button addIng2;
+        private System.Windows.Forms.Button addIng3;
+        private System.Windows.Forms.Button addIng4;
+        private System.Windows.Forms.Button addIng5;
+        private System.Windows.Forms.Button addIng6;
+        private System.Windows.Forms.Button addIng7;
+        private System.Windows.Forms.Button addIng8;
+        private System.Windows.Forms.ToolStripMenuItem saveCBMI;
     }
 }

@@ -139,80 +139,46 @@ namespace Final_Project
                 Hide();
                 FormManager.vs.Show();
                 FormManager.vs.vsLbl.Text = "Entrees";
-                FormManager.vs.linkLabel1.Text = ListManager.entreeList[randEntree].name;
-                FormManager.vs.linkLabel2.Hide();
-                FormManager.vs.linkLabel3.Hide();
-                FormManager.vs.linkLabel4.Hide();
-                FormManager.vs.linkLabel5.Hide();
-                FormManager.vs.linkLabel6.Hide();
-                FormManager.vs.linkLabel7.Hide();
-                FormManager.vs.linkLabel8.Hide();
-                FormManager.vs.linkLabel9.Hide();
-                FormManager.vs.linkLabel10.Hide();
+                FormManager.vs.linkLabel1.Visible = true;
+                FormManager.vs.linkLabel1.Text = ListManager.entreeList[randEntree].name;                
             }
             else if (sideRB.Checked)
             {
                 Hide();
                 FormManager.vs.Show();
                 FormManager.vs.vsLbl.Text = "Side Dishes";
-                FormManager.vs.linkLabel1.Text = ListManager.sideList[randSide].name;
-                FormManager.vs.linkLabel2.Hide();
-                FormManager.vs.linkLabel3.Hide();
-                FormManager.vs.linkLabel4.Hide();
-                FormManager.vs.linkLabel5.Hide();
-                FormManager.vs.linkLabel6.Hide();
-                FormManager.vs.linkLabel7.Hide();
-                FormManager.vs.linkLabel8.Hide();
-                FormManager.vs.linkLabel9.Hide();
-                FormManager.vs.linkLabel10.Hide();
+                FormManager.vs.linkLabel1.Visible = true;
+                FormManager.vs.linkLabel1.Text = ListManager.sideList[randSide].name;                
             }
             else if (dessertRB.Checked)
             {
                 Hide();
                 FormManager.vs.Show();
                 FormManager.vs.vsLbl.Text = "Desserts";
-                FormManager.vs.linkLabel1.Text = ListManager.dessertList[randDessert].name;
-                FormManager.vs.linkLabel2.Hide();
-                FormManager.vs.linkLabel3.Hide();
-                FormManager.vs.linkLabel4.Hide();
-                FormManager.vs.linkLabel5.Hide();
-                FormManager.vs.linkLabel6.Hide();
-                FormManager.vs.linkLabel7.Hide();
-                FormManager.vs.linkLabel8.Hide();
-                FormManager.vs.linkLabel9.Hide();
-                FormManager.vs.linkLabel10.Hide();
+                FormManager.vs.linkLabel1.Visible = true;
+                FormManager.vs.linkLabel1.Text = ListManager.dessertList[randDessert].name;                
             }
             else if (snacksRB.Checked)
             {
                 Hide();
                 FormManager.vs.Show();
                 FormManager.vs.vsLbl.Text = "Snacks";
-                FormManager.vs.linkLabel1.Text = ListManager.snackList[randSnack].name;
-                FormManager.vs.linkLabel2.Hide();
-                FormManager.vs.linkLabel3.Hide();
-                FormManager.vs.linkLabel4.Hide();
-                FormManager.vs.linkLabel5.Hide();
-                FormManager.vs.linkLabel6.Hide();
-                FormManager.vs.linkLabel7.Hide();
-                FormManager.vs.linkLabel8.Hide();
-                FormManager.vs.linkLabel9.Hide();
-                FormManager.vs.linkLabel10.Hide();
+                FormManager.vs.linkLabel1.Visible = true;
+                FormManager.vs.linkLabel1.Text = ListManager.snackList[randSnack].name;                
             }
             else if (allRB.Checked)
             {
                 Hide();
                 FormManager.vs.Show();
                 FormManager.vs.vsLbl.Text = "All Recipes";
+                FormManager.vs.linkLabel1.Visible = true;
+                FormManager.vs.linkLabel2.Visible = true;
+                FormManager.vs.linkLabel3.Visible = true;
+                FormManager.vs.linkLabel4.Visible = true;
                 FormManager.vs.linkLabel1.Text = ListManager.entreeList[randEntree].name;
                 FormManager.vs.linkLabel2.Text = ListManager.sideList[randSide].name;
                 FormManager.vs.linkLabel3.Text = ListManager.dessertList[randDessert].name;
-                FormManager.vs.linkLabel4.Text = ListManager.snackList[randSnack].name;
-                FormManager.vs.linkLabel5.Hide();
-                FormManager.vs.linkLabel6.Hide();
-                FormManager.vs.linkLabel7.Hide();
-                FormManager.vs.linkLabel8.Hide();
-                FormManager.vs.linkLabel9.Hide();
-                FormManager.vs.linkLabel10.Hide();
+                FormManager.vs.linkLabel4.Text = ListManager.snackList[randSnack].name;                
             }
             else
             {

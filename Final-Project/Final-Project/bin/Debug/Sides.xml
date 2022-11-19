@@ -16,4 +16,21 @@
     </units>
     <instructions>Do it.</instructions>
   </Recipe>
+  <Recipe>
+    <name>Stuff</name>
+    <category>Side Dish</category>
+    <diet>South Beach</diet>
+    <servings>1</servings>
+    <ingredients>
+      <string>test</string>
+    </ingredients>
+    <amounts>
+      <double>1</double>
+    </amounts>
+    <units>
+      <string>lb</string>
+    </units>
+    <image>C:\Users\Jason\OneDrive\Pictures\BG.jpg</image>
+    <instructions>Make it.</instructions>
+  </Recipe>
 </ArrayOfRecipe>

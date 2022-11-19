@@ -45,6 +45,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.quitBtn = new System.Windows.Forms.Button();
             this.mainMenuBtn = new System.Windows.Forms.Button();
+            this.standardBtn = new System.Windows.Forms.Button();
+            this.ketoBtn = new System.Windows.Forms.Button();
+            this.sbBtn = new System.Windows.Forms.Button();
+            this.sfBtn = new System.Windows.Forms.Button();
+            this.saveCBMI = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutMI = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +59,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileMI,
             this.lookupMI,
-            this.categoriesToolStripMenuItem});
+            this.categoriesToolStripMenuItem,
+            this.aboutMI});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(784, 24);
@@ -64,6 +71,7 @@
             // 
             this.fileMI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newItemMI,
+            this.saveCBMI,
             this.closeMI});
             this.fileMI.Name = "fileMI";
             this.fileMI.Size = new System.Drawing.Size(37, 20);
@@ -72,14 +80,16 @@
             // newItemMI
             // 
             this.newItemMI.Name = "newItemMI";
-            this.newItemMI.Size = new System.Drawing.Size(145, 22);
+            this.newItemMI.Size = new System.Drawing.Size(180, 22);
             this.newItemMI.Text = "Add A Recipe";
+            this.newItemMI.Click += new System.EventHandler(this.newItemMI_Click);
             // 
             // closeMI
             // 
             this.closeMI.Name = "closeMI";
-            this.closeMI.Size = new System.Drawing.Size(145, 22);
+            this.closeMI.Size = new System.Drawing.Size(180, 22);
             this.closeMI.Text = "Close";
+            this.closeMI.Click += new System.EventHandler(this.closeMI_Click);
             // 
             // lookupMI
             // 
@@ -94,19 +104,22 @@
             // searchMI
             // 
             this.searchMI.Name = "searchMI";
-            this.searchMI.Size = new System.Drawing.Size(143, 22);
+            this.searchMI.Size = new System.Drawing.Size(180, 22);
             this.searchMI.Text = "Search";
+            this.searchMI.Click += new System.EventHandler(this.searchMI_Click);
             // 
             // makeAMealToolStripMenuItem
             // 
             this.makeAMealToolStripMenuItem.Name = "makeAMealToolStripMenuItem";
-            this.makeAMealToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.makeAMealToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.makeAMealToolStripMenuItem.Text = "Make A Meal";
+            this.makeAMealToolStripMenuItem.Click += new System.EventHandler(this.makeAMealToolStripMenuItem_Click);
             // 
             // dietPlansToolStripMenuItem
             // 
+            this.dietPlansToolStripMenuItem.Enabled = false;
             this.dietPlansToolStripMenuItem.Name = "dietPlansToolStripMenuItem";
-            this.dietPlansToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.dietPlansToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dietPlansToolStripMenuItem.Text = "Diet Plans";
             // 
             // categoriesToolStripMenuItem
@@ -123,36 +136,40 @@
             // entreesToolStripMenuItem
             // 
             this.entreesToolStripMenuItem.Name = "entreesToolStripMenuItem";
-            this.entreesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.entreesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.entreesToolStripMenuItem.Text = "Entrees";
+            this.entreesToolStripMenuItem.Click += new System.EventHandler(this.entreesToolStripMenuItem_Click);
             // 
             // sideDishesToolStripMenuItem
             // 
             this.sideDishesToolStripMenuItem.Name = "sideDishesToolStripMenuItem";
-            this.sideDishesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.sideDishesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sideDishesToolStripMenuItem.Text = "Side Dishes";
+            this.sideDishesToolStripMenuItem.Click += new System.EventHandler(this.sideDishesToolStripMenuItem_Click);
             // 
             // dessertsToolStripMenuItem
             // 
             this.dessertsToolStripMenuItem.Name = "dessertsToolStripMenuItem";
-            this.dessertsToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.dessertsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dessertsToolStripMenuItem.Text = "Desserts";
+            this.dessertsToolStripMenuItem.Click += new System.EventHandler(this.dessertsToolStripMenuItem_Click);
             // 
             // snacksToolStripMenuItem
             // 
             this.snacksToolStripMenuItem.Name = "snacksToolStripMenuItem";
-            this.snacksToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.snacksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.snacksToolStripMenuItem.Text = "Snacks";
+            this.snacksToolStripMenuItem.Click += new System.EventHandler(this.snacksToolStripMenuItem_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(220, 233);
+            this.label1.Location = new System.Drawing.Point(0, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 55);
+            this.label1.Size = new System.Drawing.Size(784, 55);
             this.label1.TabIndex = 11;
             this.label1.Text = "Coming Soon!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // quitBtn
             // 
@@ -174,12 +191,70 @@
             this.mainMenuBtn.UseVisualStyleBackColor = true;
             this.mainMenuBtn.Click += new System.EventHandler(this.mainMenuBtn_Click);
             // 
+            // standardBtn
+            // 
+            this.standardBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.standardBtn.Location = new System.Drawing.Point(203, 100);
+            this.standardBtn.Name = "standardBtn";
+            this.standardBtn.Size = new System.Drawing.Size(389, 102);
+            this.standardBtn.TabIndex = 12;
+            this.standardBtn.Text = "Standard";
+            this.standardBtn.UseVisualStyleBackColor = true;
+            // 
+            // ketoBtn
+            // 
+            this.ketoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ketoBtn.Location = new System.Drawing.Point(203, 208);
+            this.ketoBtn.Name = "ketoBtn";
+            this.ketoBtn.Size = new System.Drawing.Size(389, 102);
+            this.ketoBtn.TabIndex = 13;
+            this.ketoBtn.Text = "Keto";
+            this.ketoBtn.UseVisualStyleBackColor = true;
+            // 
+            // sbBtn
+            // 
+            this.sbBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sbBtn.Location = new System.Drawing.Point(203, 316);
+            this.sbBtn.Name = "sbBtn";
+            this.sbBtn.Size = new System.Drawing.Size(389, 102);
+            this.sbBtn.TabIndex = 14;
+            this.sbBtn.Text = "South Beach";
+            this.sbBtn.UseVisualStyleBackColor = true;
+            // 
+            // sfBtn
+            // 
+            this.sfBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sfBtn.Location = new System.Drawing.Point(203, 424);
+            this.sfBtn.Name = "sfBtn";
+            this.sfBtn.Size = new System.Drawing.Size(389, 102);
+            this.sfBtn.TabIndex = 15;
+            this.sfBtn.Text = "See Food";
+            this.sfBtn.UseVisualStyleBackColor = true;
+            // 
+            // saveCBMI
+            // 
+            this.saveCBMI.Name = "saveCBMI";
+            this.saveCBMI.Size = new System.Drawing.Size(180, 22);
+            this.saveCBMI.Text = "Save Cookbook";
+            this.saveCBMI.Click += new System.EventHandler(this.saveCBMI_Click);
+            // 
+            // aboutMI
+            // 
+            this.aboutMI.Name = "aboutMI";
+            this.aboutMI.Size = new System.Drawing.Size(52, 20);
+            this.aboutMI.Text = "About";
+            this.aboutMI.Click += new System.EventHandler(this.aboutMI_Click);
+            // 
             // DietPlans
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.sfBtn);
+            this.Controls.Add(this.sbBtn);
+            this.Controls.Add(this.ketoBtn);
+            this.Controls.Add(this.standardBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.quitBtn);
             this.Controls.Add(this.mainMenuBtn);
@@ -217,5 +292,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button quitBtn;
         private System.Windows.Forms.Button mainMenuBtn;
+        private System.Windows.Forms.Button standardBtn;
+        private System.Windows.Forms.Button ketoBtn;
+        private System.Windows.Forms.Button sbBtn;
+        private System.Windows.Forms.Button sfBtn;
+        private System.Windows.Forms.ToolStripMenuItem saveCBMI;
+        private System.Windows.Forms.ToolStripMenuItem aboutMI;
     }
 }
