@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Final-Project", "Final-Project\Final-Project.csproj", "{727B37A2-B4E4-4866-93AC-BA5C7F45D597}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DigitalCookbookSetup", "DigitalCookbookSetup\DigitalCookbookSetup.vdproj", "{FAA74CA0-9036-4B1D-8094-8F20CA83A9C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{727B37A2-B4E4-4866-93AC-BA5C7F45D597}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{727B37A2-B4E4-4866-93AC-BA5C7F45D597}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{727B37A2-B4E4-4866-93AC-BA5C7F45D597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAA74CA0-9036-4B1D-8094-8F20CA83A9C4}.Debug|Any CPU.ActiveCfg = Debug
+		{FAA74CA0-9036-4B1D-8094-8F20CA83A9C4}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

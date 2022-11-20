@@ -159,7 +159,14 @@ namespace Final_Project
             servingsTB.Text = r.servings.ToString();
             dirTB.Text = r.instructions;
             fileName = r.image;
-            pb1.Image = Image.FromFile(fileName);
+            if (fileName != null)
+            {
+                pb1.Image = Image.FromFile(fileName);
+            }
+            else
+            {
+                pb1.Image = null;
+            }            
 
             for (int i = 0; i < r.ingredients.Count; i++)
             {

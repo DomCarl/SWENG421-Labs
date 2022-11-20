@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ArrayOfRecipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Recipe>
+    <name>Cookies</name>
+    <category>Dessert</category>
+    <diet>South Beach</diet>
+    <servings>3</servings>
+    <ingredients>
+      <string>Cookies</string>
+    </ingredients>
+    <amounts>
+      <double>12</double>
+    </amounts>
+    <units>
+      <string>cookies</string>
+    </units>
+    <image>C:\Users\Jason\OneDrive\Pictures\Althalena.jpg</image>
+    <instructions>Do it.</instructions>
+  </Recipe>
+</ArrayOfRecipe>

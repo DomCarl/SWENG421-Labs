@@ -63,9 +63,9 @@ namespace Final_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Nylon_American_Flag_closeup_1 {
+        internal static System.Drawing.Bitmap Nylon_American_Flag_closeup_1_copy {
             get {
-                object obj = ResourceManager.GetObject("Nylon-American-Flag-closeup-1", resourceCulture);
+                object obj = ResourceManager.GetObject("Nylon-American-Flag-closeup-1 copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

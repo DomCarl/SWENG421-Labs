@@ -12,8 +12,6 @@ namespace Final_Project
 {
     public partial class SearchScreen : Form
     {
-        Recipe r;
-        
         public SearchScreen()
         {
             InitializeComponent();
@@ -87,7 +85,9 @@ namespace Final_Project
         }
 
         private void searchBtn_Click(object sender, EventArgs e)
-        {                      
+        {
+            ListManager.createLinkLabelsLists();
+
             if (searchTB.Text == "")
             {
                 MessageBox.Show("Please enter a search term.");
@@ -321,7 +321,7 @@ namespace Final_Project
 
         private void searchTB_TextChanged(object sender, EventArgs e)
         {
-            ListManager.createLinkLabelsLists();
+            //ListManager.createLinkLabelsLists();
         }
 
         private void searchTB_KeyDown(object sender, KeyEventArgs e)

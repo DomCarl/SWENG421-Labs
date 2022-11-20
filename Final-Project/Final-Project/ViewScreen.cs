@@ -40,6 +40,14 @@ namespace Final_Project
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            for (int i = 1; i < 10; i++)
+            {
+                entreelinks[i].Visible = false;
+                sidelinks[i].Visible = false;
+                dessertlinks[i].Visible = false;
+                snacklinks[i].Visible = false;
+            }
+            
             if (FormManager.ss.entreeRB.Checked)
             {
                 var rec = ListManager.entreeList.Find(x => x.name == linkLabel1.Text);
