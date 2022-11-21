@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Printing;
 
 namespace Final_Project
 {
     public partial class AddScreen : Form
     {
-        string fileName;        
+        string fileName;
+        Bitmap image;
 
         public AddScreen()
         {
@@ -321,8 +323,16 @@ namespace Final_Project
 
         private void printMI_Click(object sender, EventArgs e)
         {
+            Graphics myGraphics = this.CreateGraphics();
+            Size s = this.Size;
+            image = new Bitmap(s.Width, s.Height, myGraphics);
+            Graphics memoryGraphics = Graphics.FromImage(image);
+            memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
 
+            printDocument1.Print();
         }
+
+        
 
         private void searchMI_Click(object sender, EventArgs e)
         {
@@ -368,6 +378,11 @@ namespace Final_Project
             Hide();
             FormManager.vs.Show();
             FormManager.vs.vsLbl.Text = "Snacks";
+        }
+
+        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {           
+            e.Graphics.DrawImage(image, 0, 0);            
         }
     }
 }

@@ -321,7 +321,7 @@ namespace Final_Project
 
         private void searchTB_TextChanged(object sender, EventArgs e)
         {
-            //ListManager.createLinkLabelsLists();
+            ListManager.createLinkLabelsLists();
         }
 
         private void searchTB_KeyDown(object sender, KeyEventArgs e)
