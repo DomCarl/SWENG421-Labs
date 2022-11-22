@@ -106,6 +106,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Recipe.cs" />
+    <Compile Include="RecipeCalc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecipeCalc.Designer.cs">
+      <DependentUpon>RecipeCalc.cs</DependentUpon>
+    </Compile>
     <Compile Include="SearchScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecipeCalc.resx">
+      <DependentUpon>RecipeCalc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SearchScreen.resx">
       <DependentUpon>SearchScreen.cs</DependentUpon>

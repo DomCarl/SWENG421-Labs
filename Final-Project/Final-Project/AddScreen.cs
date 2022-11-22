@@ -19,6 +19,7 @@ namespace Final_Project
         public AddScreen()
         {
             InitializeComponent();
+            ListManager.createLinkLabelsLists();
         }
 
         private void closeMI_Click(object sender, EventArgs e)
@@ -383,6 +384,12 @@ namespace Final_Project
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {           
             e.Graphics.DrawImage(image, 0, 0);            
+        }
+
+        private void recipeCalcMI_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FormManager.rc.Show();
         }
     }
 }

@@ -19,8 +19,8 @@ namespace Final_Project
             ListManager.DeserializeLists();            
         }
 
-        private void newItemMI_Click(object sender, EventArgs e)
-        {            
+        private void addItemMI_Click(object sender, EventArgs e)
+        {
             Hide();
             FormManager.adds.Show();
         }
@@ -122,5 +122,7 @@ namespace Final_Project
             About ab = new About();
             ab.Show();
         }
+
+        
     }
 }

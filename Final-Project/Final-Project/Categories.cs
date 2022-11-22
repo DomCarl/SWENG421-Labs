@@ -41,16 +41,52 @@ namespace Final_Project
 
         private void entreeBtn_Click(object sender, EventArgs e)
         {
-            Hide();
-            FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = "Entrees";
+            List<Recipe> results = new List<Recipe>();
+            results = ListManager.entreeList.FindAll(x => x.category.ToLower().Contains("entree"));
+            List<LinkLabel> links = new List<LinkLabel>();
+            links = ListManager.entreeLinkLabels;
+
+            if (results.Count == 0)
+            {
+                MessageBox.Show("No results found.");
+            }
+            else
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Entrees";
+
+                for (int i = 0; i < results.Count; i++)
+                {
+                    FormManager.vs.entreelinks[i].Visible = true;
+                    FormManager.vs.entreelinks[i].Text = results[i].name;
+                }
+            }
         }
 
         private void sidesBtn_Click(object sender, EventArgs e)
         {
-            Hide();
-            FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = "Side Dishes";
+            List<Recipe> results = new List<Recipe>();
+            results = ListManager.sideList.FindAll(x => x.category.ToLower().Contains("side dish"));
+            List<LinkLabel> links = new List<LinkLabel>();
+            links = ListManager.entreeLinkLabels;
+
+            if (results.Count == 0)
+            {
+                MessageBox.Show("No results found.");
+            }
+            else
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Side Dishes";
+
+                for (int i = 0; i < results.Count; i++)
+                {
+                    FormManager.vs.entreelinks[i].Visible = true;
+                    FormManager.vs.entreelinks[i].Text = results[i].name;
+                }
+            }
         }
 
         private void dessertBtn_Click(object sender, EventArgs e)

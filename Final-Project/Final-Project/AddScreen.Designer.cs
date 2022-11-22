@@ -107,6 +107,8 @@
             this.addIng8 = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.toolsMI = new System.Windows.Forms.ToolStripMenuItem();
+            this.recipeCalcMI = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.SuspendLayout();
@@ -117,6 +119,7 @@
             this.fileMI,
             this.lookupMI,
             this.categoriesToolStripMenuItem,
+            this.toolsMI,
             this.aboutMI});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -208,28 +211,28 @@
             // entreesToolStripMenuItem
             // 
             this.entreesToolStripMenuItem.Name = "entreesToolStripMenuItem";
-            this.entreesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.entreesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.entreesToolStripMenuItem.Text = "Entrees";
             this.entreesToolStripMenuItem.Click += new System.EventHandler(this.entreesToolStripMenuItem_Click);
             // 
             // sideDishesToolStripMenuItem
             // 
             this.sideDishesToolStripMenuItem.Name = "sideDishesToolStripMenuItem";
-            this.sideDishesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.sideDishesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sideDishesToolStripMenuItem.Text = "Side Dishes";
             this.sideDishesToolStripMenuItem.Click += new System.EventHandler(this.sideDishesToolStripMenuItem_Click);
             // 
             // dessertsToolStripMenuItem
             // 
             this.dessertsToolStripMenuItem.Name = "dessertsToolStripMenuItem";
-            this.dessertsToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.dessertsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dessertsToolStripMenuItem.Text = "Desserts";
             this.dessertsToolStripMenuItem.Click += new System.EventHandler(this.dessertsToolStripMenuItem_Click);
             // 
             // snacksToolStripMenuItem
             // 
             this.snacksToolStripMenuItem.Name = "snacksToolStripMenuItem";
-            this.snacksToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.snacksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.snacksToolStripMenuItem.Text = "Snacks";
             this.snacksToolStripMenuItem.Click += new System.EventHandler(this.snacksToolStripMenuItem_Click);
             // 
@@ -335,7 +338,7 @@
             this.dirTB.Multiline = true;
             this.dirTB.Name = "dirTB";
             this.dirTB.Size = new System.Drawing.Size(250, 276);
-            this.dirTB.TabIndex = 22;
+            this.dirTB.TabIndex = 60;
             // 
             // directionsLbl
             // 
@@ -659,7 +662,7 @@
             this.addPicBtn.Location = new System.Drawing.Point(478, 101);
             this.addPicBtn.Name = "addPicBtn";
             this.addPicBtn.Size = new System.Drawing.Size(118, 23);
-            this.addPicBtn.TabIndex = 60;
+            this.addPicBtn.TabIndex = 59;
             this.addPicBtn.Text = "Add a Picture";
             this.addPicBtn.UseVisualStyleBackColor = true;
             this.addPicBtn.Click += new System.EventHandler(this.addPicBtn_Click);
@@ -769,6 +772,21 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
+            // 
+            // toolsMI
+            // 
+            this.toolsMI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.recipeCalcMI});
+            this.toolsMI.Name = "toolsMI";
+            this.toolsMI.Size = new System.Drawing.Size(46, 20);
+            this.toolsMI.Text = "Tools";
+            // 
+            // recipeCalcMI
+            // 
+            this.recipeCalcMI.Name = "recipeCalcMI";
+            this.recipeCalcMI.Size = new System.Drawing.Size(180, 22);
+            this.recipeCalcMI.Text = "Recipe Calculator";
+            this.recipeCalcMI.Click += new System.EventHandler(this.recipeCalcMI_Click);
             // 
             // AddScreen
             // 
@@ -932,5 +950,7 @@
         private System.Windows.Forms.ToolStripMenuItem saveCBMI;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.ToolStripMenuItem toolsMI;
+        private System.Windows.Forms.ToolStripMenuItem recipeCalcMI;
     }
 }

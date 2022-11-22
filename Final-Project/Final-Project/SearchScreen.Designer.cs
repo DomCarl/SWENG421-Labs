@@ -196,8 +196,7 @@
             this.searchTB.Location = new System.Drawing.Point(130, 265);
             this.searchTB.Name = "searchTB";
             this.searchTB.Size = new System.Drawing.Size(537, 20);
-            this.searchTB.TabIndex = 9;
-            this.searchTB.TextChanged += new System.EventHandler(this.searchTB_TextChanged);
+            this.searchTB.TabIndex = 9;            
             this.searchTB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchTB_KeyDown);
             // 
             // searchBtn

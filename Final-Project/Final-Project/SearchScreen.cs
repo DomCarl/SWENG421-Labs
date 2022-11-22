@@ -86,8 +86,6 @@ namespace Final_Project
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            ListManager.createLinkLabelsLists();
-
             if (searchTB.Text == "")
             {
                 MessageBox.Show("Please enter a search term.");
@@ -317,11 +315,6 @@ namespace Final_Project
             {
                 MessageBox.Show("Please select a category to search.");
             }            
-        }
-
-        private void searchTB_TextChanged(object sender, EventArgs e)
-        {
-            ListManager.createLinkLabelsLists();
         }
 
         private void searchTB_KeyDown(object sender, KeyEventArgs e)
