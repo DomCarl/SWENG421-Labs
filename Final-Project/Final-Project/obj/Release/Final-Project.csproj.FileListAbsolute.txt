@@ -20,3 +20,4 @@ C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Fi
 C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Final-Project\Final-Project\obj\Release\Final-Project.application
 C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Final-Project\Final-Project\obj\Release\Final-Project.exe
 C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Final-Project\Final-Project\obj\Release\Final-Project.pdb
+C:\Users\Jason\OneDrive\Desktop\School\Fall 2022\SWENG 421\Labs\SWENG421-Labs\Final-Project\Final-Project\obj\Release\Final_Project.RecipeCalc.resources

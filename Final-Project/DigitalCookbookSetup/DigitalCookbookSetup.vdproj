@@ -21,12 +21,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_18C192E58F6F41DD8ABB3622110376AC"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_39ABAADBAD7E4D47A58F5F9DCE1AAA80"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -34,6 +28,12 @@
         "Entry"
         {
         "MsmKey" = "8:_39B19C86187949D39AB4221E89F0DA68"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_45F39525B8074D6AA80278B0BCC7D3F1"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -64,7 +64,7 @@
         "Entry"
         {
         "MsmKey" = "8:_68106E6EC412B7189A884C07A990B865"
-        "OwnerKey" = "8:_18C192E58F6F41DD8ABB3622110376AC"
+        "OwnerKey" = "8:_45F39525B8074D6AA80278B0BCC7D3F1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -94,6 +94,12 @@
         "Entry"
         {
         "MsmKey" = "8:_B82402C5289444768D792B482EE0914D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C63DF85C17D44C4498F0406C0F42D2BB"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -130,7 +136,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_18C192E58F6F41DD8ABB3622110376AC"
+        "OwnerKey" = "8:_45F39525B8074D6AA80278B0BCC7D3F1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -164,6 +170,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -188,6 +202,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -489,6 +511,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C63DF85C17D44C4498F0406C0F42D2BB"
+            {
+            "SourcePath" = "8:..\\Final-Project\\Hopstarter-Soft-Scraps-Calculator.ico"
+            "TargetName" = "8:Hopstarter-Soft-Scraps-Calculator.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_F0174AB539FA4DA3847ED42E6E170FDC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ED0CC821E0BE4AC7A0BE5152C6CED893"
             {
             "SourcePath" = "8:..\\Final-Project\\Nylon-American-Flag-closeup-1 copy.png"
@@ -646,7 +688,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Digital Cookbook"
         "ProductCode" = "8:{8EBC4307-73E2-4A75-AE25-AB4C92FA9962}"
-        "PackageCode" = "8:{7BBBAA16-4860-4BE1-9383-1EBDE2951DEF}"
+        "PackageCode" = "8:{3953801F-A03D-4CA6-9832-102EFE2BB790}"
         "UpgradeCode" = "8:{4A5AF5AA-5A14-49EB-88E5-F022C22B6C0B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -766,7 +808,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_3A5FA148D2844CC98A5642DAA2571ECF"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_65D9959359304F38AC0A8162913C7EE5"
             {
             "Name" = "8:Digital Cookbook"
             "Arguments" = "8:"
@@ -774,13 +816,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_18C192E58F6F41DD8ABB3622110376AC"
-            "Folder" = "8:_709E0DD24B544841955D33F7460C8B48"
+            "Target" = "8:_45F39525B8074D6AA80278B0BCC7D3F1"
+            "Folder" = "8:_59911F7936AB42FA83A144AAAE9D6ADC"
             "WorkingFolder" = "8:_F0174AB539FA4DA3847ED42E6E170FDC"
             "Icon" = "8:_60A0F3EB0D314B9DB7BFC7EF1CD4A9D6"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_D0C2D060C08648449FD720398741C584"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_BDBCAC26A88441C19661A7939A8A0370"
             {
             "Name" = "8:Digital Cookbook"
             "Arguments" = "8:"
@@ -788,8 +830,8 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_18C192E58F6F41DD8ABB3622110376AC"
-            "Folder" = "8:_59911F7936AB42FA83A144AAAE9D6ADC"
+            "Target" = "8:_45F39525B8074D6AA80278B0BCC7D3F1"
+            "Folder" = "8:_709E0DD24B544841955D33F7460C8B48"
             "WorkingFolder" = "8:_F0174AB539FA4DA3847ED42E6E170FDC"
             "Icon" = "8:_60A0F3EB0D314B9DB7BFC7EF1CD4A9D6"
             "Feature" = "8:"
@@ -1193,7 +1235,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_18C192E58F6F41DD8ABB3622110376AC"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_45F39525B8074D6AA80278B0BCC7D3F1"
             {
             "SourcePath" = "8:..\\Final-Project\\obj\\Release\\Final-Project.exe"
             "TargetName" = "8:"
