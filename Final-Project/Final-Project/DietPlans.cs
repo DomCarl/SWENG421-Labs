@@ -64,30 +64,22 @@ namespace Final_Project
 
         private void entreesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Hide();
-            FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = "Entrees";
+            FormManager.cs.entreeBtn_Click(sender, e);
         }
 
         private void sideDishesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Hide();
-            FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = "Side Dishes";
+            FormManager.cs.sidesBtn_Click(sender, e);
         }
 
         private void dessertsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Hide();
-            FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = "Desserts";
+            FormManager.cs.dessertBtn_Click(sender, e);
         }
 
         private void snacksToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Hide();
-            FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = "Snacks";
+            FormManager.cs.snackBtn_Click(sender, e);
         }
 
         private void aboutMI_Click(object sender, EventArgs e)

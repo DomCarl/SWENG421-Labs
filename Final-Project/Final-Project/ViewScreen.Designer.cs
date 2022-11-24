@@ -370,6 +370,7 @@
             this.linkLabel20.TabStop = true;
             this.linkLabel20.Text = "linkLabel20";
             this.linkLabel20.Visible = false;
+            this.linkLabel20.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel20_LinkClicked);
             // 
             // linkLabel19
             // 
@@ -381,6 +382,7 @@
             this.linkLabel19.TabStop = true;
             this.linkLabel19.Text = "linkLabel19";
             this.linkLabel19.Visible = false;
+            this.linkLabel19.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel19_LinkClicked);
             // 
             // linkLabel18
             // 
@@ -392,6 +394,7 @@
             this.linkLabel18.TabStop = true;
             this.linkLabel18.Text = "linkLabel18";
             this.linkLabel18.Visible = false;
+            this.linkLabel18.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel18_LinkClicked);
             // 
             // linkLabel17
             // 
@@ -403,6 +406,7 @@
             this.linkLabel17.TabStop = true;
             this.linkLabel17.Text = "linkLabel17";
             this.linkLabel17.Visible = false;
+            this.linkLabel17.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel17_LinkClicked);
             // 
             // linkLabel16
             // 
@@ -414,6 +418,7 @@
             this.linkLabel16.TabStop = true;
             this.linkLabel16.Text = "linkLabel16";
             this.linkLabel16.Visible = false;
+            this.linkLabel16.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel16_LinkClicked);
             // 
             // linkLabel15
             // 
@@ -425,6 +430,7 @@
             this.linkLabel15.TabStop = true;
             this.linkLabel15.Text = "linkLabel15";
             this.linkLabel15.Visible = false;
+            this.linkLabel15.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel15_LinkClicked);
             // 
             // linkLabel14
             // 
@@ -436,6 +442,7 @@
             this.linkLabel14.TabStop = true;
             this.linkLabel14.Text = "linkLabel14";
             this.linkLabel14.Visible = false;
+            this.linkLabel14.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel14_LinkClicked);
             // 
             // linkLabel13
             // 
@@ -447,6 +454,7 @@
             this.linkLabel13.TabStop = true;
             this.linkLabel13.Text = "linkLabel13";
             this.linkLabel13.Visible = false;
+            this.linkLabel13.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel13_LinkClicked);
             // 
             // linkLabel12
             // 
@@ -458,6 +466,7 @@
             this.linkLabel12.TabStop = true;
             this.linkLabel12.Text = "linkLabel12";
             this.linkLabel12.Visible = false;
+            this.linkLabel12.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel12_LinkClicked);
             // 
             // linkLabel11
             // 
@@ -469,6 +478,7 @@
             this.linkLabel11.TabStop = true;
             this.linkLabel11.Text = "linkLabel11";
             this.linkLabel11.Visible = false;
+            this.linkLabel11.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel11_LinkClicked);
             // 
             // dessertLbl
             // 
@@ -491,6 +501,7 @@
             this.linkLabel30.TabStop = true;
             this.linkLabel30.Text = "linkLabel30";
             this.linkLabel30.Visible = false;
+            this.linkLabel30.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel30_LinkClicked);
             // 
             // linkLabel29
             // 
@@ -502,6 +513,7 @@
             this.linkLabel29.TabStop = true;
             this.linkLabel29.Text = "linkLabel29";
             this.linkLabel29.Visible = false;
+            this.linkLabel29.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel29_LinkClicked);
             // 
             // linkLabel28
             // 
@@ -513,6 +525,7 @@
             this.linkLabel28.TabStop = true;
             this.linkLabel28.Text = "linkLabel28";
             this.linkLabel28.Visible = false;
+            this.linkLabel28.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel28_LinkClicked);
             // 
             // linkLabel27
             // 
@@ -524,6 +537,7 @@
             this.linkLabel27.TabStop = true;
             this.linkLabel27.Text = "linkLabel27";
             this.linkLabel27.Visible = false;
+            this.linkLabel27.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel27_LinkClicked);
             // 
             // linkLabel26
             // 
@@ -535,6 +549,7 @@
             this.linkLabel26.TabStop = true;
             this.linkLabel26.Text = "linkLabel26";
             this.linkLabel26.Visible = false;
+            this.linkLabel26.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel26_LinkClicked);
             // 
             // linkLabel25
             // 
@@ -546,6 +561,7 @@
             this.linkLabel25.TabStop = true;
             this.linkLabel25.Text = "linkLabel25";
             this.linkLabel25.Visible = false;
+            this.linkLabel25.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel25_LinkClicked);
             // 
             // linkLabel24
             // 
@@ -557,6 +573,7 @@
             this.linkLabel24.TabStop = true;
             this.linkLabel24.Text = "linkLabel24";
             this.linkLabel24.Visible = false;
+            this.linkLabel24.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel24_LinkClicked);
             // 
             // linkLabel23
             // 
@@ -568,6 +585,7 @@
             this.linkLabel23.TabStop = true;
             this.linkLabel23.Text = "linkLabel23";
             this.linkLabel23.Visible = false;
+            this.linkLabel23.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel23_LinkClicked);
             // 
             // linkLabel22
             // 
@@ -579,6 +597,7 @@
             this.linkLabel22.TabStop = true;
             this.linkLabel22.Text = "linkLabel22";
             this.linkLabel22.Visible = false;
+            this.linkLabel22.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel22_LinkClicked);
             // 
             // linkLabel21
             // 
@@ -590,6 +609,7 @@
             this.linkLabel21.TabStop = true;
             this.linkLabel21.Text = "linkLabel21";
             this.linkLabel21.Visible = false;
+            this.linkLabel21.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel21_LinkClicked);
             // 
             // snackLbl
             // 
@@ -612,6 +632,7 @@
             this.linkLabel40.TabStop = true;
             this.linkLabel40.Text = "linkLabel40";
             this.linkLabel40.Visible = false;
+            this.linkLabel40.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel40_LinkClicked);
             // 
             // linkLabel39
             // 
@@ -623,6 +644,7 @@
             this.linkLabel39.TabStop = true;
             this.linkLabel39.Text = "linkLabel39";
             this.linkLabel39.Visible = false;
+            this.linkLabel39.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel39_LinkClicked);
             // 
             // linkLabel38
             // 
@@ -634,6 +656,7 @@
             this.linkLabel38.TabStop = true;
             this.linkLabel38.Text = "linkLabel38";
             this.linkLabel38.Visible = false;
+            this.linkLabel38.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel38_LinkClicked);
             // 
             // linkLabel37
             // 
@@ -645,6 +668,7 @@
             this.linkLabel37.TabStop = true;
             this.linkLabel37.Text = "linkLabel37";
             this.linkLabel37.Visible = false;
+            this.linkLabel37.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel37_LinkClicked);
             // 
             // linkLabel36
             // 
@@ -656,6 +680,7 @@
             this.linkLabel36.TabStop = true;
             this.linkLabel36.Text = "linkLabel36";
             this.linkLabel36.Visible = false;
+            this.linkLabel36.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel36_LinkClicked);
             // 
             // linkLabel35
             // 
@@ -667,6 +692,7 @@
             this.linkLabel35.TabStop = true;
             this.linkLabel35.Text = "linkLabel35";
             this.linkLabel35.Visible = false;
+            this.linkLabel35.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel35_LinkClicked);
             // 
             // linkLabel34
             // 
@@ -678,6 +704,7 @@
             this.linkLabel34.TabStop = true;
             this.linkLabel34.Text = "linkLabel34";
             this.linkLabel34.Visible = false;
+            this.linkLabel34.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel34_LinkClicked);
             // 
             // linkLabel33
             // 
@@ -689,6 +716,7 @@
             this.linkLabel33.TabStop = true;
             this.linkLabel33.Text = "linkLabel33";
             this.linkLabel33.Visible = false;
+            this.linkLabel33.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel33_LinkClicked);
             // 
             // linkLabel32
             // 
@@ -700,6 +728,7 @@
             this.linkLabel32.TabStop = true;
             this.linkLabel32.Text = "linkLabel32";
             this.linkLabel32.Visible = false;
+            this.linkLabel32.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel32_LinkClicked);
             // 
             // linkLabel31
             // 
@@ -711,6 +740,7 @@
             this.linkLabel31.TabStop = true;
             this.linkLabel31.Text = "linkLabel31";
             this.linkLabel31.Visible = false;
+            this.linkLabel31.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel31_LinkClicked);
             // 
             // ViewScreen
             // 
@@ -777,7 +807,8 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();            
+            this.PerformLayout();
+
         }
 
         

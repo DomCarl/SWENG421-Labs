@@ -39,7 +39,7 @@ namespace Final_Project
             FormManager.adds.Show();
         }
 
-        private void entreeBtn_Click(object sender, EventArgs e)
+        public void entreeBtn_Click(object sender, EventArgs e)
         {
             List<Recipe> results = new List<Recipe>();
             results = ListManager.entreeList.FindAll(x => x.category.ToLower().Contains("entree"));
@@ -68,7 +68,7 @@ namespace Final_Project
             }
         }
 
-        private void sidesBtn_Click(object sender, EventArgs e)
+        public void sidesBtn_Click(object sender, EventArgs e)
         {
             List<Recipe> results = new List<Recipe>();
             results = ListManager.sideList.FindAll(x => x.category.ToLower().Contains("side dish"));
@@ -97,7 +97,7 @@ namespace Final_Project
             }
         }
 
-        private void dessertBtn_Click(object sender, EventArgs e)
+        public void dessertBtn_Click(object sender, EventArgs e)
         {
             List<Recipe> results = new List<Recipe>();
             results = ListManager.dessertList.FindAll(x => x.category.ToLower().Contains("dessert"));
@@ -126,7 +126,7 @@ namespace Final_Project
             }
         }
 
-        private void snackBtn_Click(object sender, EventArgs e)
+        public void snackBtn_Click(object sender, EventArgs e)
         {
             List<Recipe> results = new List<Recipe>();
             results = ListManager.snackList.FindAll(x => x.category.ToLower().Contains("snack"));
