@@ -43,8 +43,12 @@ namespace Final_Project
         {
             List<Recipe> results = new List<Recipe>();
             results = ListManager.entreeList.FindAll(x => x.category.ToLower().Contains("entree"));
-            List<LinkLabel> links = new List<LinkLabel>();
-            links = ListManager.entreeLinkLabels;
+            for (int i = 0; i < FormManager.vs.sidelinks.Count; i++)
+            {
+                FormManager.vs.sidelinks[i].Visible = false;
+                FormManager.vs.dessertlinks[i].Visible = false;
+                FormManager.vs.snacklinks[i].Visible = false;
+            }
 
             if (results.Count == 0)
             {
@@ -68,8 +72,12 @@ namespace Final_Project
         {
             List<Recipe> results = new List<Recipe>();
             results = ListManager.sideList.FindAll(x => x.category.ToLower().Contains("side dish"));
-            List<LinkLabel> links = new List<LinkLabel>();
-            links = ListManager.entreeLinkLabels;
+            for (int i = 0; i < FormManager.vs.entreelinks.Count; i++)
+            {
+                FormManager.vs.entreelinks[i].Visible = false;
+                FormManager.vs.dessertlinks[i].Visible = false;
+                FormManager.vs.snacklinks[i].Visible = false;
+            }
 
             if (results.Count == 0)
             {
@@ -83,24 +91,68 @@ namespace Final_Project
 
                 for (int i = 0; i < results.Count; i++)
                 {
-                    FormManager.vs.entreelinks[i].Visible = true;
-                    FormManager.vs.entreelinks[i].Text = results[i].name;
+                    FormManager.vs.sidelinks[i].Visible = true;
+                    FormManager.vs.sidelinks[i].Text = results[i].name;
                 }
             }
         }
 
         private void dessertBtn_Click(object sender, EventArgs e)
         {
-            Hide();
-            FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = "Desserts!";
+            List<Recipe> results = new List<Recipe>();
+            results = ListManager.dessertList.FindAll(x => x.category.ToLower().Contains("dessert"));
+            for (int i = 0; i < FormManager.vs.entreelinks.Count; i++)
+            {
+                FormManager.vs.entreelinks[i].Visible = false;
+                FormManager.vs.sidelinks[i].Visible = false;
+                FormManager.vs.snacklinks[i].Visible = false;
+            }
+
+            if (results.Count == 0)
+            {
+                MessageBox.Show("No results found.");
+            }
+            else
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Desserts";
+
+                for (int i = 0; i < results.Count; i++)
+                {
+                    FormManager.vs.dessertlinks[i].Visible = true;
+                    FormManager.vs.dessertlinks[i].Text = results[i].name;
+                }
+            }
         }
 
         private void snackBtn_Click(object sender, EventArgs e)
         {
-            Hide();
-            FormManager.vs.Show();
-            FormManager.vs.vsLbl.Text = "Snacks";
+            List<Recipe> results = new List<Recipe>();
+            results = ListManager.snackList.FindAll(x => x.category.ToLower().Contains("snack"));
+            for (int i = 0; i < FormManager.vs.entreelinks.Count; i++)
+            {
+                FormManager.vs.entreelinks[i].Visible = false;
+                FormManager.vs.sidelinks[i].Visible = false;
+                FormManager.vs.dessertlinks[i].Visible = false;
+            }
+
+            if (results.Count == 0)
+            {
+                MessageBox.Show("No results found.");
+            }
+            else
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Snacks";
+
+                for (int i = 0; i < results.Count; i++)
+                {
+                    FormManager.vs.snacklinks[i].Visible = true;
+                    FormManager.vs.snacklinks[i].Text = results[i].name;
+                }
+            }
         }
 
         private void searchMI_Click(object sender, EventArgs e)

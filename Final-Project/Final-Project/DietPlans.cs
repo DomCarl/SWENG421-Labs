@@ -95,37 +95,217 @@ namespace Final_Project
             About ab = new About();
             ab.Show();
         }
-
+        
         private void standardBtn_Click(object sender, EventArgs e)
         {
-            List<Recipe> resultsEntree = ListManager.entreeList.FindAll(x => x.category.Contains("Standard"));
-            List<Recipe> resultsSides = ListManager.sideList.FindAll(x => x.category.Contains("Standard"));
-            List<Recipe> resultsDesserts = ListManager.dessertList.FindAll(x => x.category.Contains("Standard"));
-            List<Recipe> resultsSnacks = ListManager.snackList.FindAll(x => x.category.Contains("Standard"));
+            List<Recipe> resultsEntree = ListManager.entreeList.FindAll(x => x.diet.ToLower().Contains("standard"));
+            List<Recipe> resultsSide = ListManager.sideList.FindAll(x => x.diet.ToLower().Contains("standard"));
+            List<Recipe> resultsDessert = ListManager.dessertList.FindAll(x => x.diet.ToLower().Contains("standard"));
+            List<Recipe> resultsSnack = ListManager.snackList.FindAll(x => x.diet.ToLower().Contains("standard"));
+
+            for (int i = 0; i < FormManager.vs.sidelinks.Count; i++)
+            {
+                FormManager.vs.entreelinks[i].Visible = false;
+                FormManager.vs.sidelinks[i].Visible = false;
+                FormManager.vs.dessertlinks[i].Visible = false;
+                FormManager.vs.snacklinks[i].Visible = false;
+            }
+
+            if (resultsEntree.Count == 0 && resultsSide.Count == 0 && resultsDessert.Count == 0 && resultsSnack.Count == 0)           
+            {
+                MessageBox.Show("No results found.");
+            }
+            else
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Standard Diet Options";
+
+                FormManager.vs.entreeLbl.Visible = true;
+                FormManager.vs.sideLbl.Visible = true;
+                FormManager.vs.dessertLbl.Visible = true;
+                FormManager.vs.snackLbl.Visible = true;
+
+                for (int i = 0; i < resultsEntree.Count; i++)
+                {
+                    FormManager.vs.entreelinks[i].Visible = true;
+                    FormManager.vs.entreelinks[i].Text = resultsEntree[i].name;
+                }
+                for (int i = 0; i < resultsSide.Count; i++)
+                {
+                    FormManager.vs.sidelinks[i].Visible = true;
+                    FormManager.vs.sidelinks[i].Text = resultsSide[i].name;
+                }
+                for (int i = 0; i < resultsDessert.Count; i++)
+                {
+                    FormManager.vs.dessertlinks[i].Visible = true;
+                    FormManager.vs.dessertlinks[i].Text = resultsDessert[i].name;
+                }
+                for (int i = 0; i < resultsSnack.Count; i++)
+                {
+                    FormManager.vs.snacklinks[i].Visible = true;
+                    FormManager.vs.snacklinks[i].Text = resultsSnack[i].name;
+                }
+            }
         }
 
         private void ketoBtn_Click(object sender, EventArgs e)
         {
-            List<Recipe> resultsEntree = ListManager.entreeList.FindAll(x => x.category.Contains("Keto"));
-            List<Recipe> resultsSides = ListManager.sideList.FindAll(x => x.category.Contains("Keto"));
-            List<Recipe> resultsDesserts = ListManager.dessertList.FindAll(x => x.category.Contains("Keto"));
-            List<Recipe> resultsSnacks = ListManager.snackList.FindAll(x => x.category.Contains("Keto"));
+            List<Recipe> resultsEntree = ListManager.entreeList.FindAll(x => x.diet.ToLower().Contains("keto"));
+            List<Recipe> resultsSide = ListManager.sideList.FindAll(x => x.diet.ToLower().Contains("keto"));
+            List<Recipe> resultsDessert = ListManager.dessertList.FindAll(x => x.diet.ToLower().Contains("keto"));
+            List<Recipe> resultsSnack = ListManager.snackList.FindAll(x => x.diet.ToLower().Contains("keto"));
+
+            for (int i = 0; i < FormManager.vs.sidelinks.Count; i++)
+            {
+                FormManager.vs.entreelinks[i].Visible = false;
+                FormManager.vs.sidelinks[i].Visible = false;
+                FormManager.vs.dessertlinks[i].Visible = false;
+                FormManager.vs.snacklinks[i].Visible = false;
+            }
+
+            if (resultsEntree.Count == 0 && resultsSide.Count == 0 && resultsDessert.Count == 0 && resultsSnack.Count == 0)
+            {
+                MessageBox.Show("No results found.");
+            }
+            else
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "Keto Diet Options";
+
+                FormManager.vs.entreeLbl.Visible = true;
+                FormManager.vs.sideLbl.Visible = true;
+                FormManager.vs.dessertLbl.Visible = true;
+                FormManager.vs.snackLbl.Visible = true;
+
+                for (int i = 0; i < resultsEntree.Count; i++)
+                {
+                    FormManager.vs.entreelinks[i].Visible = true;
+                    FormManager.vs.entreelinks[i].Text = resultsEntree[i].name;
+                }
+                for (int i = 0; i < resultsSide.Count; i++)
+                {
+                    FormManager.vs.sidelinks[i].Visible = true;
+                    FormManager.vs.sidelinks[i].Text = resultsSide[i].name;
+                }
+                for (int i = 0; i < resultsDessert.Count; i++)
+                {
+                    FormManager.vs.dessertlinks[i].Visible = true;
+                    FormManager.vs.dessertlinks[i].Text = resultsDessert[i].name;
+                }
+                for (int i = 0; i < resultsSnack.Count; i++)
+                {
+                    FormManager.vs.snacklinks[i].Visible = true;
+                    FormManager.vs.snacklinks[i].Text = resultsSnack[i].name;
+                }
+            }
         }
 
         private void sbBtn_Click(object sender, EventArgs e)
         {
-            List<Recipe> resultsEntree = ListManager.entreeList.FindAll(x => x.category.Contains("South Beach"));
-            List<Recipe> resultsSides = ListManager.sideList.FindAll(x => x.category.Contains("South Beach"));
-            List<Recipe> resultsDesserts = ListManager.dessertList.FindAll(x => x.category.Contains("South Beach"));
-            List<Recipe> resultsSnacks = ListManager.snackList.FindAll(x => x.category.Contains("South Beach"));
+            List<Recipe> resultsEntree = ListManager.entreeList.FindAll(x => x.diet.ToLower().Contains("south beach"));
+            List<Recipe> resultsSide = ListManager.sideList.FindAll(x => x.diet.ToLower().Contains("south beach"));
+            List<Recipe> resultsDessert = ListManager.dessertList.FindAll(x => x.diet.ToLower().Contains("south beach"));
+            List<Recipe> resultsSnack = ListManager.snackList.FindAll(x => x.diet.ToLower().Contains("south beach"));
+
+            for (int i = 0; i < FormManager.vs.sidelinks.Count; i++)
+            {
+                FormManager.vs.entreelinks[i].Visible = false;
+                FormManager.vs.sidelinks[i].Visible = false;
+                FormManager.vs.dessertlinks[i].Visible = false;
+                FormManager.vs.snacklinks[i].Visible = false;
+            }
+
+            if (resultsEntree.Count == 0 && resultsSide.Count == 0 && resultsDessert.Count == 0 && resultsSnack.Count == 0)
+            {
+                MessageBox.Show("No results found.");
+            }
+            else
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "South Beach Diet Options";
+
+                FormManager.vs.entreeLbl.Visible = true;
+                FormManager.vs.sideLbl.Visible = true;
+                FormManager.vs.dessertLbl.Visible = true;
+                FormManager.vs.snackLbl.Visible = true;
+
+                for (int i = 0; i < resultsEntree.Count; i++)
+                {
+                    FormManager.vs.entreelinks[i].Visible = true;
+                    FormManager.vs.entreelinks[i].Text = resultsEntree[i].name;
+                }
+                for (int i = 0; i < resultsSide.Count; i++)
+                {
+                    FormManager.vs.sidelinks[i].Visible = true;
+                    FormManager.vs.sidelinks[i].Text = resultsSide[i].name;
+                }
+                for (int i = 0; i < resultsDessert.Count; i++)
+                {
+                    FormManager.vs.dessertlinks[i].Visible = true;
+                    FormManager.vs.dessertlinks[i].Text = resultsDessert[i].name;
+                }
+                for (int i = 0; i < resultsSnack.Count; i++)
+                {
+                    FormManager.vs.snacklinks[i].Visible = true;
+                    FormManager.vs.snacklinks[i].Text = resultsSnack[i].name;
+                }
+            }
         }
 
         private void sfBtn_Click(object sender, EventArgs e)
         {
-            List<Recipe> resultsEntree = ListManager.entreeList.FindAll(x => x.category.Contains("See Food"));
-            List<Recipe> resultsSides = ListManager.sideList.FindAll(x => x.category.Contains("See Food"));
-            List<Recipe> resultsDesserts = ListManager.dessertList.FindAll(x => x.category.Contains("See Food"));
-            List<Recipe> resultsSnacks = ListManager.snackList.FindAll(x => x.category.Contains("See Food"));
+            List<Recipe> resultsEntree = ListManager.entreeList.FindAll(x => x.diet.ToLower().Contains("see food"));
+            List<Recipe> resultsSide = ListManager.sideList.FindAll(x => x.diet.ToLower().Contains("see food"));
+            List<Recipe> resultsDessert = ListManager.dessertList.FindAll(x => x.diet.ToLower().Contains("see food"));
+            List<Recipe> resultsSnack = ListManager.snackList.FindAll(x => x.diet.ToLower().Contains("see food"));
+
+            for (int i = 0; i < FormManager.vs.sidelinks.Count; i++)
+            {
+                FormManager.vs.entreelinks[i].Visible = false;
+                FormManager.vs.sidelinks[i].Visible = false;
+                FormManager.vs.dessertlinks[i].Visible = false;
+                FormManager.vs.snacklinks[i].Visible = false;
+            }
+
+            if (resultsEntree.Count == 0 && resultsSide.Count == 0 && resultsDessert.Count == 0 && resultsSnack.Count == 0)
+            {
+                MessageBox.Show("No results found.");
+            }
+            else
+            {
+                Hide();
+                FormManager.vs.Show();
+                FormManager.vs.vsLbl.Text = "See Food Diet Options";
+
+                FormManager.vs.entreeLbl.Visible = true;
+                FormManager.vs.sideLbl.Visible = true;
+                FormManager.vs.dessertLbl.Visible = true;
+                FormManager.vs.snackLbl.Visible = true;
+
+                for (int i = 0; i < resultsEntree.Count; i++)
+                {
+                    FormManager.vs.entreelinks[i].Visible = true;
+                    FormManager.vs.entreelinks[i].Text = resultsEntree[i].name;
+                }
+                for (int i = 0; i < resultsSide.Count; i++)
+                {
+                    FormManager.vs.sidelinks[i].Visible = true;
+                    FormManager.vs.sidelinks[i].Text = resultsSide[i].name;
+                }
+                for (int i = 0; i < resultsDessert.Count; i++)
+                {
+                    FormManager.vs.dessertlinks[i].Visible = true;
+                    FormManager.vs.dessertlinks[i].Text = resultsDessert[i].name;
+                }
+                for (int i = 0; i < resultsSnack.Count; i++)
+                {
+                    FormManager.vs.snacklinks[i].Visible = true;
+                    FormManager.vs.snacklinks[i].Text = resultsSnack[i].name;
+                }
+            }
         }
     }
 }
