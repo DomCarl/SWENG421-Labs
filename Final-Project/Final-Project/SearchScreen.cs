@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace Final_Project
 {
-    public partial class SearchScreen : Form
+    public partial class SearchScreen: Form
     {
+        AbsRecipeFilter filter;
+        
         public SearchScreen()
         {
             InitializeComponent();

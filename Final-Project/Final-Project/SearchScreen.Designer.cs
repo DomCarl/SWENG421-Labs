@@ -1,4 +1,5 @@
-﻿namespace Final_Project
+﻿using System.Windows.Forms;
+namespace Final_Project
 {
     partial class SearchScreen
     {

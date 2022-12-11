@@ -12,6 +12,8 @@ namespace Final_Project
 {
     public partial class ViewScreen : Form
     {
+        public LoadFromUSB lfusb;
+        public ReadWriteLock rwl;
         public List<LinkLabel> entreelinks = ListManager.entreeLinkLabels;
         public List<LinkLabel> sidelinks = ListManager.sideLinkLabels;
         public List<LinkLabel> dessertlinks = ListManager.dessertLinkLabels;

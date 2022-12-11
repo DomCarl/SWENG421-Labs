@@ -15,6 +15,7 @@ namespace Final_Project
     {
         string fileName;
         Bitmap image;
+        LoadFromUSB lfUSB = new LoadFromUSB();
 
         public AddScreen()
         {
@@ -390,6 +391,16 @@ namespace Final_Project
         {
             Hide();
             FormManager.rc.Show();
+        }
+
+        private void AddScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lfUSB.Grab();
         }
     }
 }

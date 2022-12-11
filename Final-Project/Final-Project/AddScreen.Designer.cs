@@ -44,6 +44,8 @@
             this.sideDishesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dessertsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.snacksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsMI = new System.Windows.Forms.ToolStripMenuItem();
+            this.recipeCalcMI = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMI = new System.Windows.Forms.ToolStripMenuItem();
             this.quitBtn = new System.Windows.Forms.Button();
             this.mainMenuBtn = new System.Windows.Forms.Button();
@@ -107,8 +109,7 @@
             this.addIng8 = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.toolsMI = new System.Windows.Forms.ToolStripMenuItem();
-            this.recipeCalcMI = new System.Windows.Forms.ToolStripMenuItem();
+            this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.SuspendLayout();
@@ -133,7 +134,8 @@
             this.newItemMI,
             this.printMI,
             this.saveCBMI,
-            this.closeMI});
+            this.closeMI,
+            this.loadToolStripMenuItem});
             this.fileMI.Name = "fileMI";
             this.fileMI.Size = new System.Drawing.Size(37, 20);
             this.fileMI.Text = "File";
@@ -211,30 +213,45 @@
             // entreesToolStripMenuItem
             // 
             this.entreesToolStripMenuItem.Name = "entreesToolStripMenuItem";
-            this.entreesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.entreesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.entreesToolStripMenuItem.Text = "Entrees";
             this.entreesToolStripMenuItem.Click += new System.EventHandler(this.entreesToolStripMenuItem_Click);
             // 
             // sideDishesToolStripMenuItem
             // 
             this.sideDishesToolStripMenuItem.Name = "sideDishesToolStripMenuItem";
-            this.sideDishesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sideDishesToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.sideDishesToolStripMenuItem.Text = "Side Dishes";
             this.sideDishesToolStripMenuItem.Click += new System.EventHandler(this.sideDishesToolStripMenuItem_Click);
             // 
             // dessertsToolStripMenuItem
             // 
             this.dessertsToolStripMenuItem.Name = "dessertsToolStripMenuItem";
-            this.dessertsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dessertsToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.dessertsToolStripMenuItem.Text = "Desserts";
             this.dessertsToolStripMenuItem.Click += new System.EventHandler(this.dessertsToolStripMenuItem_Click);
             // 
             // snacksToolStripMenuItem
             // 
             this.snacksToolStripMenuItem.Name = "snacksToolStripMenuItem";
-            this.snacksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.snacksToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.snacksToolStripMenuItem.Text = "Snacks";
             this.snacksToolStripMenuItem.Click += new System.EventHandler(this.snacksToolStripMenuItem_Click);
+            // 
+            // toolsMI
+            // 
+            this.toolsMI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.recipeCalcMI});
+            this.toolsMI.Name = "toolsMI";
+            this.toolsMI.Size = new System.Drawing.Size(46, 20);
+            this.toolsMI.Text = "Tools";
+            // 
+            // recipeCalcMI
+            // 
+            this.recipeCalcMI.Name = "recipeCalcMI";
+            this.recipeCalcMI.Size = new System.Drawing.Size(166, 22);
+            this.recipeCalcMI.Text = "Recipe Calculator";
+            this.recipeCalcMI.Click += new System.EventHandler(this.recipeCalcMI_Click);
             // 
             // aboutMI
             // 
@@ -773,20 +790,12 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
-            // toolsMI
+            // loadToolStripMenuItem
             // 
-            this.toolsMI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.recipeCalcMI});
-            this.toolsMI.Name = "toolsMI";
-            this.toolsMI.Size = new System.Drawing.Size(46, 20);
-            this.toolsMI.Text = "Tools";
-            // 
-            // recipeCalcMI
-            // 
-            this.recipeCalcMI.Name = "recipeCalcMI";
-            this.recipeCalcMI.Size = new System.Drawing.Size(180, 22);
-            this.recipeCalcMI.Text = "Recipe Calculator";
-            this.recipeCalcMI.Click += new System.EventHandler(this.recipeCalcMI_Click);
+            this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadToolStripMenuItem.Text = "Load";
+            this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // AddScreen
             // 
@@ -862,6 +871,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add A Recipe";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddScreen_FormClosed);
+            this.Load += new System.EventHandler(this.AddScreen_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
@@ -888,28 +898,15 @@
         private System.Windows.Forms.Button quitBtn;
         private System.Windows.Forms.Button mainMenuBtn;
         private System.Windows.Forms.PictureBox pb1;
-        private System.Windows.Forms.TextBox nameTB;
         private System.Windows.Forms.Label nameLbl;
         private System.Windows.Forms.Label typeLbl;
-        private System.Windows.Forms.ComboBox typeCB;
-        private System.Windows.Forms.ComboBox dietCB;
         private System.Windows.Forms.Label dietLbl;
         private System.Windows.Forms.TextBox dirTB;
         private System.Windows.Forms.Label directionsLbl;
         private System.Windows.Forms.Label servingsLbl;
-        private System.Windows.Forms.TextBox servingsTB;
         private System.Windows.Forms.Label IngLbl;
         private System.Windows.Forms.Label amntLbl;
         private System.Windows.Forms.Label unitLbl;
-        private System.Windows.Forms.TextBox ingTB1;
-        private System.Windows.Forms.TextBox amtTB1;
-        private System.Windows.Forms.TextBox unitTB1;
-        private System.Windows.Forms.TextBox unitTB2;
-        private System.Windows.Forms.TextBox amtTB2;
-        private System.Windows.Forms.TextBox ingTB2;
-        private System.Windows.Forms.TextBox unitTB3;
-        private System.Windows.Forms.TextBox amtTB3;
-        private System.Windows.Forms.TextBox ingTB3;
         private System.Windows.Forms.TextBox unitTB4;
         private System.Windows.Forms.TextBox amtTB4;
         private System.Windows.Forms.TextBox ingTB4;
@@ -952,5 +949,19 @@
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.ToolStripMenuItem toolsMI;
         private System.Windows.Forms.ToolStripMenuItem recipeCalcMI;
+        public System.Windows.Forms.TextBox nameTB;
+        public System.Windows.Forms.ComboBox typeCB;
+        public System.Windows.Forms.ComboBox dietCB;
+        public System.Windows.Forms.TextBox servingsTB;
+        public System.Windows.Forms.TextBox ingTB1;
+        public System.Windows.Forms.TextBox amtTB1;
+        public System.Windows.Forms.TextBox unitTB1;
+        public System.Windows.Forms.TextBox unitTB2;
+        public System.Windows.Forms.TextBox amtTB2;
+        public System.Windows.Forms.TextBox ingTB2;
+        public System.Windows.Forms.TextBox unitTB3;
+        public System.Windows.Forms.TextBox amtTB3;
+        public System.Windows.Forms.TextBox ingTB3;
+        private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
     }
 }

@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Final-Project.exe" size="2008504">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Final-Project.exe" size="2010552">
       <assemblyIdentity name="Final-Project" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5osb6+13Wi1LV9B51QBQL+1WkcyTVxLxAI2YeMAGcrg=</dsig:DigestValue>
+        <dsig:DigestValue>fESE4PXdO/TJtB+5vcmzp02CuedbRfssYdWqkd/whgk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -60,6 +60,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SampleImport.txt" size="83">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>77KdtJYde/sb7JvNRPPp06dk5TIHzJY59wd9EcPUlMk=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

@@ -80,12 +80,14 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="AbsRecipeFilter.cs" />
     <Compile Include="Categories.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Categories.Designer.cs">
       <DependentUpon>Categories.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConcreteLoadableClass.cs" />
     <Compile Include="DietPlans.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +96,7 @@
     </Compile>
     <Compile Include="FormManager.cs" />
     <Compile Include="ListManager.cs" />
+    <Compile Include="LoadFromUSB.cs" />
     <Compile Include="MakeAMeal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +108,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ReadWriteLock.cs" />
     <Compile Include="Recipe.cs" />
     <Compile Include="RecipeCalc.cs">
       <SubType>Form</SubType>
@@ -112,6 +116,7 @@
     <Compile Include="RecipeCalc.Designer.cs">
       <DependentUpon>RecipeCalc.cs</DependentUpon>
     </Compile>
+    <Compile Include="RecipeFilterIF.cs" />
     <Compile Include="SearchScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,7 +201,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="SampleImport.txt" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Nylon-American-Flag-closeup-1 copy.png" />
   </ItemGroup>
