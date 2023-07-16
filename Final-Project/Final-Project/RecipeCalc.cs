@@ -37,7 +37,10 @@ namespace Final_Project
             {
                 MessageBox.Show("Please enter a search term and number of servings.");
             }
-            else if (entreeResults.Count)
+            else if (entreeResults.Count == 0)
+            {
+                
+            }
         }
     }
 }

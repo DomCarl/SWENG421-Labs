@@ -34,4 +34,20 @@
     <image>C:\Users\Jason\OneDrive\Pictures\Althalena.jpg</image>
     <instructions>Do it.</instructions>
   </Recipe>
+  <Recipe>
+    <name>Popcorn</name>
+    <category>Snack</category>
+    <diet>See Food</diet>
+    <servings>1</servings>
+    <ingredients>
+      <string>Kernels</string>
+    </ingredients>
+    <amounts>
+      <double>1</double>
+    </amounts>
+    <units>
+      <string>cup</string>
+    </units>
+    <instructions>Put in microwave</instructions>
+  </Recipe>
 </ArrayOfRecipe>
